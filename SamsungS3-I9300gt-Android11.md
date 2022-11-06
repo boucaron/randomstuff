@@ -20,9 +20,9 @@ I took the pico version for the OpenGApps due to size limitations
 3) On Windows: Download Odin 3.x
 4) Download the last TWRP
 Copy on the sdcard if you have a running Android on the phone 
- a) Activate Developper Mode: Settings/About my phone/Go on the release name really at the bottom/Tap several time (it will tell you this is activated)
- b) Settings/System/Developper stuff/Default USB Mode/Transfer 
- c) Disconnect/Reconnect the USB cable and TADA you will see both Internal and SDCARD
+	- Activate Developper Mode: Settings/About my phone/Go on the release name really at the bottom/Tap several time (it will tell you this is activated)
+	- Settings/System/Developper stuff/Default USB Mode/Transfer 
+	- Disconnect/Reconnect the USB cable and TADA you will see both Internal and SDCARD
 
 Follows instructions from here: https://www.mhs-solutions.com/instructions-s3/
 1) Run Odin
