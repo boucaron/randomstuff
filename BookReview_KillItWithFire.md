@@ -6,7 +6,7 @@ At least I am not too crazy.
 I fully agree that software is a leaving stuff, and if you don't take care of it, it will die
 Some small missing stuff, reduce dependencies: 
 will the library tool you use be there is few years (at least), 
-if it is managed by one guy on his spare time 
+if it is managed by one guy on his spare time ?
 
 Few citations from the Book that I like:
 
