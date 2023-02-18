@@ -18,7 +18,7 @@ Of course it is just my feeling, there are complex interaction and feedback loop
 Strong AI is a problem with combinatorial explosion in several dimensions, even thousands or higher order of magnitude on the hardware are still just few atoms in a problem bigger than the size of the universe. Let me rephrase: it will not change 'too much' with a better hardware something you cannot solve in several lifetimes: so the 'algorithmic' issue is the true human problem.
 Of course existing Weak AI can help to accelerate humans to tackle the Strong AI problem and most of the time will improve or create better Weaker AIs. However, I have to ask the question, does such Weak AI provides to the human an improved intelligence, up to a point yes, but is it enough to the Strong AI problem, I am not sure.
 
-Homo techno not anymore Homo Sapiens Sapiens
+Homo techno Already not anymore Homo Sapiens Sapiens
 
 We are already different from persons from 50 years ago.
 I mean we already have a few Weak AI in someways, we have a fast and easy access to a huge amount of information that was not even thinkable for our grand-parents. We can know more than all of our ancestors together but are we really more intelligent, I don't think the answer to this question is so obvious. Also as the size of our specy grows very much, we can also say that we have much more geniuses than during the medieval ages, so yes it is a potential acceleration factor. Let say push further in this way, and let say that we have external Weak AI accelerators to further improve our slow biological brain, even so will we be able to reach the intelligence plateau required to solve the 'algorithm' issue to the Strong AI, for sure it will be faster but will it be enough ?
@@ -39,9 +39,12 @@ Through history, we know 'evolution/progress' was not something good for the ind
 If you have only bots, what economy do you expect to have ? A class of humans expect to be in control having nearly all the resources and the remaining humans will be poors. What do you expect ? Humans being meat, pet, art ?
 
 
+The remaining of the chapters is targetted on the control of such Super IA and various ways to enforce a 'good' behaviour through several means.
+Regarding the singleton scenario, I think more and more that due to communication and to collective human knowledge, it is not feasible. Also, I do not think any democratic 'country/state' will be able to achieve such goal, only exception, if this country is a dictatorship with tremendous means: yes, China may be the candidate. Otherwise the leadership is only attached to a few tens of large corporation having the resources and access to the very large datasets required to train such models.
 
 
-
+ChatGPT interlude
+See short notes in the associated ChatGPT part.
 
 
 
