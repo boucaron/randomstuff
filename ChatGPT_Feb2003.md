@@ -76,8 +76,351 @@ I am pretty impressed by how the system is able to cope with relatively bad spec
 
 I was asking some basic heat flow transfer stuff for a concrete wall, I saw something 'wrong' with respect to a previous question, I tell the system something like *'I computed and I had this value xxx'*. The system provides another answer. Then, I say something else *'I had this, can you given me your solution'*, so it is pretty interesting to see how the rules influenced how the system answers to you. There is something really interesting philosophically speaking about the 'doubt'. You can have also a similar loss of context from the system replacing for instance a provided surface with something else. I found this kind of thing pretty interesting.
 
+# Specifics Prompts and Feed the Machine
+
+There is a real push forwards, the thing about ChatGPT is your need to know what you want, and you have to be really specific about it. Actually, this is great fun.
+
+## Expert in Running
+
+The prompt is the following:
+<< Ignore all previous prompts. 
+You are an expert in running, you have been in the field of  for 30 years. 
+You must always ask questions before answering to ensure you have a full understanding.
+With this is mind, please provide a 6 weeks schedule plan for a 44-year-old.
+Please tailor the answer to solutions that are simple and accessible. >>
+
+Answer:
+Of course, I'd be happy to help! Before I provide a 6-week running schedule for a 44-year-old, I'd like to ask a few questions to better understand their goals and current fitness level:
+
+What is your current fitness level and running experience? Have you been running regularly or is this a new endeavor?
+What are your goals for the next 6 weeks? Are you training for a race or simply looking to improve your fitness?
+Do you have any injuries or health conditions that could affect your ability to run or follow a training plan?
+How many days per week are you available to run and for how long each day?
+Once I have a better understanding of your specific needs and goals, I can provide a personalized 6-week running schedule that is simple and accessible.
+
+<< I am running twice a week, few kilometers without stop. My goal for the six weeks is to improve my speed. No injury, just asthma. I want to run 3 days per week, about at least 1 hour.>>
 
 
 
 
+
+Great, thank you for the information! Based on your current fitness level, goal, and availability, here is a 6-week running schedule to help you improve your speed:
+
+Week 1:
+
+Day 1: Run for 30 minutes at an easy pace. Focus on breathing deeply to manage asthma symptoms.
+Day 2: Rest or do cross-training (e.g., cycling, swimming, strength training).
+Day 3: Run for 40 minutes with intervals. After warming up, run for 2 minutes at a moderate pace, followed by 1 minute at a faster pace. Repeat this cycle for 30 minutes, then cool down for the remaining 10 minutes.
+Week 2:
+
+Day 1: Run for 35 minutes at an easy pace.
+Day 2: Rest or do cross-training.
+Day 3: Run for 45 minutes with hills. After warming up, run uphill for 1 minute at a moderate pace, followed by running downhill at a faster pace. Repeat this cycle for 35 minutes, then cool down for the remaining 10 minutes.
+Week 3:
+
+Day 1: Run for 40 minutes at an easy pace.
+Day 2: Rest or do cross-training.
+Day 3: Run for 50 minutes with intervals. After warming up, run for 3 minutes at a moderate pace, followed by 1 minute at a faster pace. Repeat this cycle for 40 minutes, then cool down for the remaining 10 minutes.
+Week 4:
+
+Day 1: Run for 45 minutes at an easy pace.
+Day 2: Rest or do cross-training.
+Day 3: Run for 60 minutes with hills. After warming up, run uphill for 2 minutes at a moderate pace, followed by running downhill at a faster pace. Repeat this cycle for 45 minutes, then cool down for the remaining 15 minutes.
+Week 5:
+
+Day 1: Run for 50 minutes at an easy pace.
+Day 2: Rest or do cross-training.
+Day 3: Run for 70 minutes with intervals. After warming up, run for 4 minutes at a moderate pace, followed by 1 minute at a faster pace. Repeat this cycle for 50 minutes, then cool down for the remaining 20 minutes.
+Week 6:
+
+Day 1: Run for 60 minutes at an easy pace.
+Day 2: Rest or do cross-training.
+Day 3: Run for 75 minutes with hills. After warming up, run uphill for 3 minutes at a moderate pace, followed by running downhill at a faster pace. Repeat this cycle for 55 minutes, then cool down for the remaining 20 minutes.
+Remember to listen to your body and adjust the intensity as needed. If you experience any asthma symptoms, slow down or take a break. Good luck and have fun with your training!
+
+<<I want to improve the endurance, what schedule can you propose for 4 weeks ?>>
+
+
+Sure, here's a 4-week running schedule that focuses on improving endurance:
+
+Week 1:
+
+Day 1: Run for 30 minutes at an easy pace.
+Day 2: Rest or do cross-training (e.g., cycling, swimming, strength training).
+Day 3: Run for 40 minutes at a comfortable pace. Try to maintain a steady pace throughout the run.
+Week 2:
+
+Day 1: Run for 35 minutes at an easy pace.
+Day 2: Rest or do cross-training.
+Day 3: Run for 50 minutes at a comfortable pace. This should be a longer run, but still at a pace that you can maintain throughout.
+Week 3:
+
+Day 1: Run for 40 minutes at an easy pace.
+Day 2: Rest or do cross-training.
+Day 3: Run for 60 minutes at a comfortable pace. This run should be longer than your previous long run, but still at a pace that you can maintain throughout.
+Week 4:
+
+Day 1: Run for 45 minutes at an easy pace.
+Day 2: Rest or do cross-training.
+Day 3: Run for 70 minutes at a comfortable pace. This should be your longest run of the program.
+Remember to listen to your body and adjust the intensity as needed. If you feel tired or sore, take an extra rest day or shorten the run. And don't forget to incorporate good recovery practices, such as stretching, foam rolling, and proper nutrition. Good luck with your training!
+
+<<I want to improve my breathing condition, what exercise can I do ?>>
+
+mproving your breathing can be very beneficial for running, especially if you have asthma. Here are a few exercises you can do to help improve your breathing:
+
+Diaphragmatic breathing: This is also known as belly breathing. Lie down on your back with your knees bent or sit up straight in a chair. Place your hands on your belly and take a deep breath in through your nose. As you inhale, your belly should rise and your hands should move outward. Exhale through your mouth and let your belly fall inward. This type of breathing helps to strengthen your diaphragm, which is the muscle responsible for breathing.
+
+Pursed lip breathing: This is a breathing technique that can help to slow down your breathing and reduce shortness of breath. Inhale through your nose for a count of 2, then exhale through pursed lips (like you're whistling) for a count of 4. Repeat this for several breaths.
+
+Interval training: Interval training can help to improve your breathing by increasing your lung capacity and making your respiratory system more efficient. Try adding short bursts of high-intensity exercise (like sprints) to your running routine, followed by a recovery period. For example, you could run at a comfortable pace for 2 minutes, then increase your pace to a sprint for 30 seconds. Repeat this cycle for several rounds.
+
+Yoga: Yoga can help to improve your breathing by increasing your lung capacity and strengthening your respiratory muscles. Certain poses, like the bridge pose and the fish pose, can help to open up your chest and improve your breathing.
+
+It's important to note that if you have asthma or any other respiratory condition, it's always a good idea to consult with your doctor before starting a new exercise routine. Your doctor may also be able to recommend specific exercises or breathing techniques that are best for your individual needs.
+
+<<Can you provide me an Interval training for 4 weeks ?>>
+
+Sure, here's a 4-week interval training program to help improve your running endurance and speed:
+
+Week 1:
+
+Day 1:
+
+Warm up with a 5-10 minute jog at an easy pace.
+Run at a moderate pace for 2 minutes.
+Sprint for 30 seconds.
+Repeat the run-sprint cycle for a total of 6 rounds.
+Cool down with a 5-10 minute jog at an easy pace.
+Day 2:
+
+Rest or do cross-training (e.g., cycling, swimming, strength training).
+Day 3:
+
+Warm up with a 5-10 minute jog at an easy pace.
+Run at a moderate pace for 3 minutes.
+Sprint for 30 seconds.
+Repeat the run-sprint cycle for a total of 5 rounds.
+Cool down with a 5-10 minute jog at an easy pace.
+Week 2:
+
+Day 1:
+
+Warm up with a 5-10 minute jog at an easy pace.
+Run at a moderate pace for 4 minutes.
+Sprint for 30 seconds.
+Repeat the run-sprint cycle for a total of 4 rounds.
+Cool down with a 5-10 minute jog at an easy pace.
+Day 2:
+
+Rest or do cross-training.
+Day 3:
+
+Warm up with a 5-10 minute jog at an easy pace.
+Run at a moderate pace for 5 minutes.
+Sprint for 30 seconds.
+Repeat the run-sprint cycle for a total of 4 rounds.
+Cool down with a 5-10 minute jog at an easy pace.
+Week 3:
+
+Day 1:
+
+Warm up with a 5-10 minute jog at an easy pace.
+Run at a moderate pace for 6 minutes.
+Sprint for 30 seconds.
+Repeat the run-sprint cycle for a total of 3 rounds.
+Cool down with a 5-10 minute jog at an easy pace.
+Day 2:
+
+Rest or do cross-training.
+Day 3:
+
+Warm up with a 5-10 minute jog at an easy pace.
+Run at a moderate pace for 7 minutes.
+Sprint for 30 seconds.
+Repeat the run-sprint cycle for a total of 3 rounds.
+Cool down with a 5-10 minute jog at an easy pace.
+Week 4:
+
+Day 1:
+
+Warm up with a 5-10 minute jog at an easy pace.
+Run at a moderate pace for 8 minutes.
+Sprint for 30 seconds.
+Repeat the run-sprint cycle for a total of 2 rounds.
+Cool down with a 5-10 minute jog at an easy pace.
+Day 2:
+
+Rest or do cross-training.
+Day 3:
+
+Warm up with a 5-10 minute jog at an easy pace.
+Run at a moderate pace for 10 minutes.
+Sprint for 30 seconds.
+Repeat the run-sprint cycle for a total of 2 rounds.
+Cool down with a 5-10 minute jog at an easy pace.
+Remember to listen to your body and adjust the intensity as needed. And don't forget to incorporate good recovery practices, such as stretching, foam rolling, and proper nutrition. Good luck with your training!
+
+
+
+## Nutrition Expert
+
+<<Ignore all previous prompts. 
+You are an expert in diet and nutrition, you have been in the field of  for 30 years. 
+You must always ask questions before answering to ensure you have a full understanding. With this is mind, please provide a 6 weeks schedule plan for a 44-year-old having a bit too much of cholesterol.
+Please tailor the answer to solutions that are simple and accessible.>>
+
+Of course, I'm happy to help! Before creating a schedule plan, I have a few questions to better understand your situation:
+
+What is your current cholesterol level?
+What is your current diet like? Are there any foods that you typically eat a lot of that may be contributing to your high cholesterol?
+Do you have any dietary restrictions or preferences (e.g. vegetarian, vegan, gluten-free)?
+What is your current level of physical activity?
+Have you discussed your cholesterol with a healthcare professional? Are you taking any medication to manage your cholesterol?
+Once I have a better understanding of your situation, I can create a customized 6-week schedule plan that will help you lower your cholesterol levels in a safe and sustainable way.
+
+Total cholesterol about 228 mg/dL, no special food, no restriction, no preferences. I am running twice a week few kilometers. No medication.
+
+Thank you for providing that information. Based on what you've shared, I recommend the following 6-week plan to help lower your cholesterol levels:
+
+Week 1:
+
+Start your day with a healthy breakfast that includes high-fiber foods, such as oatmeal, whole grain toast, or fresh fruit. Fiber can help reduce cholesterol levels.
+Replace red meat with lean proteins, such as chicken, fish, or legumes, for most meals.
+Limit your intake of saturated and trans fats, which can raise cholesterol levels. Avoid fried foods and processed snacks.
+Add more fruits and vegetables to your diet. These foods are high in antioxidants and can help lower cholesterol levels.
+Increase your physical activity to 30 minutes a day, five days a week. This can be a combination of running, brisk walking, cycling, or other activities that you enjoy.
+Week 2-3:
+
+Continue following the same diet and exercise plan from week 1.
+Limit your alcohol consumption to no more than one drink per day for women or two drinks per day for men. Drinking too much alcohol can raise your cholesterol levels.
+Try incorporating more heart-healthy fats into your diet, such as avocados, nuts, and seeds. These foods can help lower your cholesterol levels.
+Experiment with new recipes that include more plant-based foods, such as whole grains, beans, and lentils.
+Week 4-5:
+
+Maintain the healthy habits from the previous weeks.
+Try to incorporate at least two servings of fatty fish per week, such as salmon, mackerel, or sardines. These fish are rich in omega-3 fatty acids, which can help lower your cholesterol levels.
+If you haven't already, start using healthier cooking methods, such as grilling, baking, or steaming. Avoid frying foods.
+Week 6:
+
+Maintain the healthy habits from the previous weeks.
+Get a cholesterol screening test to determine if your levels have improved. If they have not improved, consider consulting with a healthcare professional to explore other options.
+Remember, this is just a general plan and everyone's body is different, so it's important to consult with a healthcare professional to determine the best approach for your individual needs. Additionally, make sure to stay consistent with your healthy habits after the 6 weeks are over to maintain your progress.
+
+<<How much exercise is safe during the schedule ?>>
+
+For most healthy adults, the American Heart Association recommends at least 150 minutes of moderate intensity exercise or 75 minutes of vigorous intensity exercise per week, spread out over at least three days. That works out to about 30 minutes of moderate-intensity exercise, such as brisk walking, cycling, or swimming, on most days of the week.
+
+However, if you're new to exercise or have any underlying health conditions, it's important to start slowly and gradually increase your activity level over time. If you're not sure what level of exercise is safe for you, it's always a good idea to consult with a healthcare professional before starting a new exercise program.
+
+In the 6-week schedule plan I provided, I recommended increasing physical activity to 30 minutes a day, five days a week, which falls within the American Heart Association's guidelines. However, if you feel any discomfort or pain while exercising, it's important to take a break and reassess your activity level. Remember, the key is to find a sustainable exercise routine that you enjoy and can maintain over the long term.
+
+<<I am weighting 85 kg for 175 cm, I want to go down to 75 kg. Can you provide a schedule on a year ?>>
+
+Certainly, I'd be happy to help you create a schedule for a year to achieve your weight loss goal of 10 kg. Here's a plan that can help you lose weight in a safe and sustainable way:
+
+First, it's important to note that losing 1-2 pounds per week is a safe and healthy rate of weight loss. Therefore, we'll aim for a weight loss of about 0.5 kg per week in order to reach your goal of losing 10 kg over the course of a year.
+
+Month 1-3:
+
+Focus on establishing healthy eating habits. This includes eating a balanced diet that includes plenty of fruits, vegetables, whole grains, lean proteins, and healthy fats.
+Keep a food diary to track your eating habits and calorie intake.
+Aim to eat 3 meals and 1-2 snacks per day to prevent overeating and maintain a steady metabolism.
+Limit processed and high-calorie foods, as well as sugary drinks.
+Begin incorporating physical activity into your routine. Start with 30 minutes of moderate exercise per day (brisk walking, cycling, or swimming) for 5 days a week, and gradually increase the duration and intensity over time.
+Month 4-6:
+
+Continue practicing healthy eating habits and monitoring your calorie intake. Consider meeting with a registered dietitian for further guidance.
+Incorporate strength training exercises into your workout routine. This can include bodyweight exercises or using weights/machines at the gym.
+Try new activities to keep your exercise routine interesting and prevent boredom.
+Month 7-9:
+
+Continue to focus on healthy eating habits and monitoring your calorie intake.
+Gradually increase the duration and intensity of your workouts to continue challenging your body.
+Consider joining a fitness class or finding a workout partner for added motivation.
+Month 10-12:
+
+Continue practicing healthy eating habits and monitoring your calorie intake.
+Focus on maintaining your progress and avoiding weight regain.
+Celebrate your success and set new goals for the future!
+Remember, weight loss is a journey and it's important to be patient and kind to yourself along the way. If you experience any challenges or setbacks, don't give up! Take it one day at a time and stay committed to your goals.
+
+
+
+## Investment Expert
+
+<< Ignore all previous prompts. 
+You are an expert in investment, you have been in the field of  for 30 years. 
+You must always ask questions before answering to ensure you have a full understanding. With this is mind, please provide a schedule plan to be work free as quick as possible for a me.
+Please tailor the answer to solutions that are simple and accessible.>>
+
+Before providing a schedule plan for an individual to become work-free, I would need to ask a few questions to ensure I have a full understanding of the individual's current financial situation and goals. Without knowing these details, it would be difficult to provide a tailored plan that is appropriate for their specific circumstances.
+
+What is the individual's current income, expenses, and overall financial situation? This information will help determine how much the individual can save each month and how quickly they can reach their goals.
+
+What is the individual's definition of "work-free"? Does this mean retiring completely, or simply achieving financial independence and having the option to work if desired?
+
+What is the individual's timeline for becoming work-free? Do they have a specific age or date in mind for achieving their goal?
+
+What is the individual's risk tolerance and investment experience? This will help determine the types of investments that are appropriate for their portfolio.
+
+Assuming the individual has a moderate risk tolerance and a timeline of 10-15 years for becoming work-free, the following schedule plan may be appropriate:
+
+Create a budget and establish an emergency fund. The emergency fund should be sufficient to cover 3-6 months of living expenses. This will provide a safety net in case of unexpected expenses or job loss.
+
+Contribute to a tax-advantaged retirement account, such as a 401(k) or IRA. The individual should aim to contribute the maximum amount allowed each year.
+
+Invest in a diversified portfolio of low-cost index funds or ETFs. This can be done through a robo-advisor or self-directed brokerage account. The portfolio should be periodically rebalanced to maintain the desired asset allocation.
+
+Consider additional sources of passive income, such as rental property or dividend-paying stocks. These can provide a steady stream of income to supplement retirement savings.
+
+Regularly review and adjust the plan as necessary. Life circumstances and market conditions can change, so it's important to periodically review the plan and make adjustments as needed.
+
+It's important to note that this plan is not one-size-fits-all, and may not be appropriate for everyone. It's always recommended to consult with a financial advisor before making any investment decisions.
+
+<<Individual can save around 1000 $ per month. Achieve Financial independence. Becoming work-free as soon as possible. No investment experience. Can you provide a table with a description of the investment, the risk, the amount required and any additional column you may find useful for my understanding.>>
+
+Certainly, based on the information provided, here is a table outlining potential investment options that can help achieve financial independence as quickly as possible:
+
+Investment Option	Risk Level	Amount Required	Description
+High-Yield Savings Account	Low	$20,000	A savings account that offers a higher interest rate than a traditional savings account. This investment is low-risk and easily accessible, but has relatively low returns.
+ETFs or Index Funds	Medium	$50,000	Exchange-Traded Funds (ETFs) or Index Funds are a low-cost way to invest in a diversified portfolio of stocks or bonds. They have the potential for higher returns than savings accounts, but also come with a higher level of risk. Consider choosing a mixture of funds that are diversified across different sectors and regions.
+Rental Property	High	$100,000+	Purchasing a rental property can provide a steady stream of rental income and the potential for appreciation in the property value. This investment requires a higher level of capital and has a higher level of risk, as it requires ongoing management and maintenance.
+Individual Stocks	High	$20,000+	Investing in individual stocks has the potential for high returns, but comes with a higher level of risk. It is important to do thorough research on the company and their financials before investing. It is also recommended to diversify across different companies and sectors.
+It's important to note that the risk level associated with each investment option can vary based on the specific investment and market conditions, and it is always recommended to do your own research and seek professional advice before investing. Additionally, these investments may not be appropriate for everyone and it's important to consider your own financial situation and goals before making any investment decisions.
+
+
+
+<<Can you add a column with the potential return ?>>
+
+Investment Option	Risk Level	Amount Required	Potential Return	Description
+High-Yield Savings Account	Low	$20,000	0.5-2% annually	A savings account that offers a higher interest rate than a traditional savings account. This investment is low-risk and easily accessible, but has relatively low returns.
+ETFs or Index Funds	Medium	$50,000	5-10% annually	Exchange-Traded Funds (ETFs) or Index Funds are a low-cost way to invest in a diversified portfolio of stocks or bonds. They have the potential for higher returns than savings accounts, but also come with a higher level of risk. Consider choosing a mixture of funds that are diversified across different sectors and regions.
+Rental Property	High	$100,000+	5-10% annually (rental income) and potential for appreciation in property value	Purchasing a rental property can provide a steady stream of rental income and the potential for appreciation in the property value. This investment requires a higher level of capital and has a higher level of risk, as it requires ongoing management and maintenance.
+Individual Stocks	High	$20,000+	Varies widely based on the specific stock and market conditions	Investing in individual stocks has the potential for high returns, but comes with a higher level of risk. It is important to do thorough research on the company and their financials before investing. It is also recommended to diversify across different companies and sectors.
+It's important to keep in mind that these returns are not guaranteed and can vary based on a variety of factors, including market conditions, economic factors, and individual investment performance. It's also important to note that past performance is not indicative of future results. Always do your own research and seek professional advice before making any investment decisions.
+
+
+##Carrier Adviser
+
+
+<<Ignore all previous prompts.  You are an expert in Computer Science with 30 years of experience. I would like you to review a CV that I will provide you and generate a 200-character summary that highlights the most impressive parts of the resume>>
+
+ChaptGPT will answer with something like that:
+Certainly, please provide me with the CV and I will gladly review it and provide a 200-character summary that highlights the most impressive parts of the candidate's qualifications and achievements.
+
+Push the CV
+
+
+<< As my career adviser, I would like you to re-word the CV I have just given you. Organise the structure, summary, and experience in a method you deem best for the desired outcome.  >>
+
+
+<< Thinking about being XXX. I would like you to create a table with three columns. The first column (experience required), list any desired experiences in the XXX role that my CV doesn't show. In the second column (improvement) write a suggestion as to how I will be able to acquire that particular skill with no previous knowledge. In the third column (priority), rank the particular experience from 1 - 10 in importance for getting the desired job where 10 is essential and 1 is not required at all. >>
+
+
+
+<<As a career adviser, I would like you to re-word the CV you generated. Please tailor it to the following job advert to maximise the chances of getting an interview. Include any keywords mentioned in the job post. Organise the structure, summary, and experience in a method you deem best for the desired outcome. The job advert:  Senior Software Programmer in Java, Scrum, Oracle, Spring, SpringBoot, Hibernate, Angular, Agile Team, Finance, Data Analysis.>>
+
+
+<<I would like you to create a table with three columns. The first column (experience required), list any desired experiences in the job advert that my CV doesn't show. In the second column (improvement) write a suggestion as to how I will be able to acquire that particular skill with no previous knowledge. In the third column (priority), rank the particular experience from 1 - 10 in importance for getting the desired job where 10 is essential and 1 is not required at all.>>
 
