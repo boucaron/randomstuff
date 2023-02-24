@@ -1,8 +1,8 @@
 Superintelligence: Paths, Dangers, Strategies by Nick Bostrom
 
-NB: I still have some strong bias that Superintelligence is feasible: it does not mean that I disagree on the reasonning of the author assuming Superintelligence is there and also the implication and various topics discussed. I think this is probably one of the more interesting part of this book.
+NB: I still have some strong bias that Superintelligence is feasible: it does not mean that I disagree on the reasonning of the author assuming Superintelligence is there and also the implication and various topics discussed about 'control'. I think this is probably one of the more interesting part of this book.
 
-First Iteration, I am skeptical through the exponential complexity and also we are reaching limits on the hardware side.
+First Iteration, I am skeptical through the exponential complexity and also we are reaching limits on the hardware side. I think the simulation hypothesis is pointless and it is digitally driven due to the effective improvement, feasability, speed and cost.
 
 I had a first initial quick read and I was not in the mood.
 I mean that I was not concentrated enough to really dive into and start to appreciate it.
@@ -39,12 +39,16 @@ Through history, we know 'evolution/progress' was not something good for the ind
 If you have only bots, what economy do you expect to have ? A class of humans expect to be in control having nearly all the resources and the remaining humans will be poors. What do you expect ? Humans being meat, pet, art ?
 
 
-The remaining of the chapters is targetted on the control of such Super IA and various ways to enforce a 'good' behaviour through several means.
+The remaining of the chapters is targetted on the control of such Super IA and various ways to enforce a 'good' behaviour through several control means.
 Regarding the singleton scenario, I think more and more that due to communication and to collective human knowledge, it is not feasible. Also, I do not think any democratic 'country/state' will be able to achieve such goal, only exception, if this country is a dictatorship with tremendous means: yes, China may be the candidate. Otherwise the leadership is only attached to a few tens of large corporation having the resources and access to the very large datasets required to train such models.
 
+It is worth reading ? May be the few first chapters and the last ones. There are too many repetition: minor scenario variations without really any additional value to the end result. Also, it is a bit outdated already and boring.
 
-ChatGPT interlude
-See short notes in the associated ChatGPT part.
+
+
+ 
+
+
 
 
 
