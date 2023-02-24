@@ -550,6 +550,9 @@ Grevenmacher	4,500	8.34	49.6745	6.4411	Wine-producing region
 Mersch	3,414	12.42	49.7486	6.1089	Picturesque medieval town
 This table includes the name of each city, its population, size in square kilometers, latitude and longitude coordinates, as well as an interesting or relevant parameter for each city.
 
+# Understanding GPT
+
+* Stanford Webinar - GPT 3 & Beyond https://youtu.be/-lnHHWRCDGk
 
 
 
