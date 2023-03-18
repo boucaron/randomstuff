@@ -1,0 +1,17 @@
+QWTBuild
+
+Depends on QT
+
+cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build
+vcvars64.bat
+set PATH=C:\DEV\qt-5.15.7\bin;%PATH%
+
+Edit qwtbuild.pri to put only release for win32 
+Update qwtconfig.pri for the prefix (QWT_INSTALL_PREFIX)
+
+qmake qwt.pro
+nmake
+nmake install
+
+You can remove the tests and the examples in qwtconfig.pri
+I also removed the doc in the qwt.pro, just comment ou doc in SUBDIRS

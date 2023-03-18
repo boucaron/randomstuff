@@ -1,0 +1,31 @@
+oneTBB
+
+Cmake
+
+cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build
+vcvars64.bat
+
+
+
+mkdir build
+cd build
+
+mkdir C:\DEV\oneTBB-2021.6.0\SDK
+cmake-gui ..
+
+Configure
+CMAKE_INSTALL_PREFIX = C:\DEV\oneTBB-2021.6.0\SDK
+
+
+Generate
+
+cmake --build . --config Release
+cmake --build . --config Release --target install
+
+cmake --build . --config Debug
+cmake --build . --config Debug --target install
+
+
+cd C:/DEV/oneTBB-2021.6.0/SDK
+
+

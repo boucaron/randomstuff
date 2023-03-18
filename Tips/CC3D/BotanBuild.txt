@@ -1,0 +1,18 @@
+Botan Build
+Python required
+
+cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build
+vcvars64.bat
+
+cd C:\DEV\botan-2.19.2
+
+python configure.py --cc=msvc --os=windows --prefix=C:\DEV\botan-2.19.2\release
+nmake
+nmake check
+nmake install
+
+
+python configure.py --cc=msvc --os=windows --prefix=C:\DEV\botan-2.19.2\debug --debug-mode
+nmake
+nmake check
+nmake install

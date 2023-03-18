@@ -1,0 +1,21 @@
+QT Build 
+Visual Studio 2019 -> Not 2022
+Python 2.7.x
+
+--> nmake distclean fails
+--> Just remove and unpack the archive if something is not detected during the configure step...
+
+cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build
+vcvars64.bat
+cd C:\DEV\qt-everywhere-src-5.15.6
+set _ROOT=C:\DEV\qt-everywhere-src-5.15.6
+set PATH=%_ROOT%\qtbase\bin;%_ROOT%\gnuwin32\bin;%PATH%
+set _ROOT=
+set PYTHONDIR=C:\Python27
+set INCLUDE=%PYTHONDIR%;%INCLUDE%
+set PATH=C:\Strawberry\perl\bin;%PATH%
+set PATH=C:\Python27\Scripts;C:\Python27;%PATH%
+configure -debug-and-release -nomake examples -nomake tests -opensource -prefix C:\DEV\qt-5.15.6 -opengl desktop
+set CL=/MP
+nmake
+
