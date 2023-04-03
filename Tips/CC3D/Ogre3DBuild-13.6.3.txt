@@ -1,0 +1,27 @@
+Ogre3D Build
+Cmake
+
+
+cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build
+vcvars64.bat
+set PATH=C:\DEV\qt-5.15.7\bin;%PATH%
+cd c:\DEV\ogre-13.6.3
+mkdir build
+cd build
+cmake-gui
+Select Source in c:\DEV\ogre-13.6.3
+Click on configure
+Select Visual Studio 16 2019 
+Wait
+Update Qt directory
+Disable D3D9 and D3D11
+Generate
+
+
+cmake --build . --config Release
+cmake --build . --config Release --target install
+
+cmake --build . --config Debug
+cmake --build . --config Debug --target install
+
+cd c:\DEV\ogre-13.6.3\build\sdk
