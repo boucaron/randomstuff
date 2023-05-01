@@ -1,55 +1,44 @@
 One of those interesting random walk on the 'net', trying to see what are the current updates on Solar Panels and associated tech
 
-In Luxembourg, my house is having 380/400V Triphase electricity above 20KW
-
-I am still thinking about setting up a combo including a 48V battery + hybrid Victron or equivalent on a phase to start. This should not really be a problem because I have only 3 really power angry resistive loads for the cooking and for the water heating. But it is not really nice from balancing point of view.
-
-It seems there is an interesting hybrid inverter alternative for Triphase.
-There are Triphase Fronius Symo Gen24 Plus hybrid inverters with Dual MPPTs.
-Tt can works with a BYD High Voltage battery (400V), hopefully some talented guys managed to reverse engineer the protocol used with the BYD battery and use a Tesla Model 3 battery back instead. This is pretty cool stuff.
+My house in Luxembourg has 380/400V Triphase electricity above 20KW. I am considering setting up a 48V battery + hybrid Victron or a similar device on one phase to help with balancing, even though I only have three power-hungry resistive loads for cooking and water heating. However, I have found an interesting alternative in the form of Triphase Fronius Symo Gen24 Plus hybrid inverters with Dual MPPTs. These inverters can work with a BYD High Voltage battery (400V), and some people have even managed to use a Tesla Model 3 battery pack instead by reverse engineering the protocol.
 
 # Economics
 
-- A commercial 48 V battery pack  will be about 8 to 12 K€ for about 10 to 12 kWh. ( 1 to 1.5 Wh per euro)
-- A DIY 48V 16 Cells battery about 13 KWh will cost you about 3K€ with a descent BMS, fuse-box and all needed security (4.3 Wh per euro). 
-- If you consider the Tesla Model 3 small capacity pack: for about 7K€ you will have about 50 kWh of capacity (7.8 Wh per euro)
-- For a Tesla Model 3 75 kWh battery pack about 10 K€ (7.5 Wh per euro)
+- A commercial 48V battery pack with 10-12 kWh of energy will cost around 8-12 K€ (1-1.5 Wh per euro).
+- A DIY 48V battery with 16 cells and 13 kWh of energy, including a BMS and safety features, will cost about 3K€ (4.3 Wh per euro).
+- The Tesla Model 3 small capacity battery pack, costing approximately 7K€, has a capacity of about 50 kWh (7.8 Wh per euro).
+- The cost of a Tesla Model 3 75 kWh battery pack is around 10 K€ (7.5 Wh per euro).
 
 
 # Size matters
-So for a 'large' installation (about 15 to 20KW of PV), it makes a ton of sense because the battery pack is by far the most expensive item in any solar installation.
-But this is another kind of investment, you need to think first of the power you use.
+For a solar installation with a capacity of around 15 to 20KW, it makes sense to invest in a large battery pack because it is typically the most expensive component. However, it is important to consider your power usage needs before making this investment.
 
-The drawback is the cost of entry of this tech, there are no small 12 to 20 Kwh battery available to enable to use it on 4 to 8 KW of PV.
-The minimum ticket for entry is either a Tesla Model 3 50 KWh pack or a Nissan Leaf one.
-The target price of an equivalent 13 kWh battery should be around 1666 €, so let say nearly a 50 % reduction in price on a DIY made one.
+The downside is that this technology has a high cost of entry, with no small batteries (12 to 20 KWh) available for use with 4 to 8 KW of PV. The minimum entry point is either a Tesla Model 3 50 KWh pack or a Nissan Leaf one. The ideal target price for an equivalent 13 kWh battery would be around 1666 €, which represents almost a 50% reduction in price compared to a DIY battery.
 
-But I think it is too big for a small or medium sized home, not sure the economics make sense for a heat-pump (depends on the house, climate...)
-Still, I think it makes a lot of sense also for small/medium sized offices and small industrial companies.
+However, for small or medium-sized homes, the battery pack may be too large and may not make economic sense for a heat pump (depending on the house and climate). Nevertheless, it could be a smart investment for small/medium-sized offices and small industrial companies.
+
 
 # Technical Drawbacks
 
-I do not think it is possible to attach more than one inverter to the Tesla battery pack. It would made sense to push and to get more load from the battery pack. You are limited about 10KW of power with existing line of Gen24 inverters. A 75 kWh Tesla Model 3 battery can push more than 400 A continuously so about 142 KW ! (assuming 355 V)
-Clearly the inverter is the weakest link in the chain.
-
+It's not possible to connect multiple inverters to the Tesla battery pack, which limits the amount of power that can be drawn from it. While a 75 kWh Tesla Model 3 battery can continuously output more than 400 A, providing up to 142 KW of power (assuming 355 V), the existing line of Gen24 inverters can only handle up to 10KW of power. Therefore, the inverter is the weakest point in the system.
 
 # Installation cost
 
-- Let say about 5 KW PVs (2K€) + Victron 5KVA Hybrid Inverter (2.5K€) + DIY 13kWh Battery (3K€) will cost around 10 K€ (including all hardware for installion).
-- Now a 12 KW PVs (4.8K€] + 10KVA Fronius Hybrid Inverter (3K€) + 50 kWh Tesla Battery Pack (7K€) will cost you around 20 K€ (including all hardware for installation). I think it is really interesting, but really the main limitating factor is the power of inverter that limits both the size of the PV array. If there was a 16 to 20 KVA version it will make more sense.
+A solar installation consisting of 5 KW PVs (2K€), a Victron 5KVA Hybrid Inverter (2.5K€), and a DIY 13kWh Battery (3K€) will cost around 10 K€ including all necessary hardware for installation.
+
+However, a larger 12 KW PV system (4.8K€), a 10KVA Fronius Hybrid Inverter (3K€), and a 50 kWh Tesla Battery Pack (7K€) will cost around 20 K€, including all hardware for installation. While this option is interesting, the main limiting factor is the power of the inverter, which restricts both the size of the PV array and the battery pack. If a 16 to 20 KVA version were available, it would make more sense.
 
 # Simulation 
 
-Evaluation using https://re.jrc.ec.europa.eu/pvg_tools/en/ with Luxembourg using a non optimal slope of 20 deg and South-West orientation.
-- 5 KW PV array, around 600 kWh from April to August included so a daily mean of 19.35 kWh daily (yearly 5000 kWh), a battery of 13 kWh is a bit undersized (of course depends on your load, it would cover nearly yearly my needs including aging of PV array, but this is not that simple ;)).
-- 12 KW PV array, due to 10KVA limitation of the inverter a strong and steady 1250 kWh from April to September included (effect of oversizing the PV array, yearly above 11000 kWh), so a daily mean of 40 kWh, a battery of 50 kWh is better sized, it can cover few days of bad weather (depends on your load of course). If you are in Marbella (Spain) you just just need 10 KW of PV array to nearly fill the battery daily on the same period.
-- A battery of 75 kWh will not make sense in this context due to the huge limitation of the 10 KVA inverter. You will need at least a 18 KW PV array and a 18 KVA inverter to be able to load the battery fully during a day (Lux latitude). If you are in Marbella (Spain) assuming a 17KW PV array/inverter but you will have a lot of power from nearly March to October (32 deg slope and -4 deg azimuth).
+The evaluation was conducted using https://re.jrc.ec.europa.eu/pvg_tools/en/ for Luxembourg with a non-optimal slope of 20 degrees and South-West orientation. A 5 KW PV array would generate around 600 kWh from April to August, with a daily average of 19.35 kWh (yearly 5000 kWh). A 13 kWh battery would be undersized, depending on your load. 
+
+A 12 KW PV array, due to the 10KVA inverter limitation, would generate a strong and steady 1250 kWh from April to September, with a daily average of 40 kWh (yearly above 11000 kWh). A 50 kWh battery would be better sized and can cover a few days of bad weather, depending on your load.
+
+However, a 75 kWh battery would not make sense due to the inverter's huge limitation. You would need at least an 18 KW PV array and an 18 KVA inverter to fully load the battery during a day (Lux latitude). If you are in Marbella (Spain), a 17 KW PV array/inverter would suffice, but you will have a lot of power from nearly March to October (32 deg slope and -4 deg azimuth).
+
 
 # Conclusion
-I thought the 50 kWh battery was way too big for a small to a medium house, I am not sure sure about that anymore.
-Let me explain, in a few years you will not be allowed to use fossil fuel to heat your house.
-If you think about adding a heat-pump I think it is on the low side (depends on your location/your house/your load of course), with a big spoon even with good insulation renovation I think at least a 12/16 KW heat-pump will be needed. 
-There are larger swings in temperature, even in end of April the temperature in Luxembourg can go down to 1°C during the night.
+Initially, I believed that a 50 kWh battery would be too large for a small or medium-sized house. However, I am reconsidering this viewpoint due to the future ban on fossil fuel usage for heating homes. In this scenario, a heat-pump may be necessary and a 50 kWh battery could be appropriate depending on location, house size, and energy needs. Larger heat-pumps may also be required due to temperature fluctuations, with temperatures in Luxembourg potentially dropping to 1°C even in late April.
 
 # Hack Links 
 
