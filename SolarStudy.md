@@ -27,8 +27,8 @@ An interesting part is when we are in vacation which is providing a pretty good 
 - Yearly power usage: 4500 kWh.
 - Daily mean power usage = 12.32 kWh
 - Daily Night power usage: 0.105 * 8 = 0.840 kWh
-- Daily Evaluated "Regular" Usage from 8h to 24h: 0.4 * 16 = 6.4 kWh
-- Daily Vacation power usage: 0.105 * 24 = 2.520 kWh
+- Daily Evaluated "Regular" Usage from 8h to 24h: 0.4kW * 16 = 6.4 kWh
+- Daily Vacation power usage: 0.105 * 24 = 2.520 kWh 
 - Yearly 24 continuous power usage: 2.52 * 365 = 919.8 kWh, around 20% of the total usage.
 - Yearly "Regular" Usage from 8h to 24h: 2336 kWh, around 51% of the total usage.
 - Yearly "Remaining" Usage (including peak High power): 1244 kWh
@@ -36,6 +36,7 @@ An interesting part is when we are in vacation which is providing a pretty good 
 - Most of the power peaks are:
   - Shower time 8 to 18 KW
   - Breakfast, Lunch, Dinner
+  - Washing Machine and Dish Washer (2 to 4 KW when heating)
 
 
 # Understanding the loads 
@@ -46,6 +47,8 @@ The cooking is about 2 to 5 KW, it depends on how many things you turn on.
 The washing machine and the dish washer about 2 to 4 KW.
 PCs/Laptops are about 40 to 400 W.
 TV/Large screen about 100W to 200W.
+
+
 
 # Tech Overview
 
@@ -69,14 +72,18 @@ An inverter is a device transforming PV DC fluctuating voltage/current to either
 - DC to provide electricity to a battery
 - AC to provide electricity to various loads and the grid.
 
+### Micro inverters
 Micro-inverters are small inverters that are attached to either one, two, four and up to six pannels. The main argument is that each micro-inverter is having one or more MPP trackers.
 If there is a bit of shade on one panel, only the production of the pnale is affected because it has its own MPP tracker. You can one, two or four panels attached to a MPP tracker. They can range from 200W for single panel version to 2500W for six panel versions. Nearly all existing micro-inverters are grid connected, if the grid fails the production stops to avoid killing staff working on the grid. 
 Price range from 130 € for single PV unit to 450 € for triple MPP with 6 PVs.
 There is a price advantage to have at least two or more PVs attached to the micro-inverter, also regarding shading there is not too much advantage to have only one PV.
 
+
+### String inverters
 String-inverters  inverters having one, two or more MPP trackers where you attach a 'string' of PV panels connected together in serie. Most of the time they range from 3 KW to 30 KW.
 Regarding pricing, it is not so obvious for some brands it is cheaper to put 2 times 5 KW inverter than to buy a single 10 KW.
 
+### Hybrid inverters
 Hybrid-inverter means this is an inverter coupled to a battery. The PV array can charge the battery and/or provide power to the load through the inverter. It is a versatile device, it can be connected to the grid, a generator ...etc... There are hybrid inverters for 12/24 and mostly 48V batteries (Victron for instance), there are some inverters for high voltage batteries (Fronius/Huawei for instance)
 
 Offgrid inverter it is an hybrid inverter not connected to the grid.
@@ -168,3 +175,57 @@ If a large enough PV array is installed and the battery is a on the short side f
 
 
 
+# Study case
+
+Nearly nothing should be sent back to the grid, which is the point since we do not want to overproduce and to overinvest. 
+Because it is pointless to be payed peanuts for our produced electricity sent back to the grid to your neighbours by the electricity operator, where the operator does not invest and it makes a very favorable arbitrage on your back.
+
+I call the 'ghost load' the power usage when nothing is running during th night or where you are not in the house: in my case it is about 0.1 to 0.15 kW.
+I call the 'steady daily load' the power usage during the day time from when we are awake until the night, it is kind of the mean load without the power peaks: in my case about 0.4 to 0.5 kW.
+
+## No Battery case
+
+I think micro inverters are the cheapest way to cover the 'ghost load' and/or the 'steady daily load'.
+It means you can buy few panels and one or few micro-inverters to cover such load.
+Micro-inverters are now coming with multiple-ways and are way cheaper than before.
+
+### Ghost load
+The 'ghost load' is about 0.1 to 0.15 kW, one or two 400W panels with a double microinverter will cover partially this load from April to September on my latitude. It will cost about 700 to 900 €. Actually, it is oversized for the ghost load, but it will cover also a good part of the steady daily load.
+   ROI: 
+    - Assuming 0.25 € per kWh, assuming very bad production from 600 to 800 kWh (including aging of panels), it will remove about 150 to 200 € yearly easily, in the worst case in 6 years the break-even point is reached (and it is very pessimistic).
+	- Assuming 0.4 € per kWh, same production, saving 240 to 320 € yearly, break-even point in 4 years.
+	- Assuming 0.5 € per kWh, same production, saving 300 to 400 € yearly, break-even point in 3 years.
+	
+	
+### Steady daily load	
+  The 'steady daily load' is about 0.4 to 0.5 kW (including the ghost load), three to four 400W panels with a 4-way microinverter will cover such load. It will cost about 1000 to 1200 €. As you can see, the return on investment is better in this case, the cost of 4-way microinverter is cheaper and having 4 panels is cheaper than 2 when including packaging and shipping. 
+  Also despite being over-sized for the steady load, the total contribution will enable to reduce partially peaks during the lunch time when we are cooking, launching the washing machine, the dish washer, with a peak power production of about 1.1 to 1.3 KW.
+  ROI:
+  - Assuming 0.25 € per kWh, with 1200 to 1600 kWh, saving 300 to 400 € yearly, break-even point in 4 years.
+  - Assuming 0.4 € per kWh, same production, saving 480 to 640 € yearly, break-even point in less than 3 years.
+  - Assuming 0.5 € per kWh, same production, saving 600 to 800 € yearly, break-even point in 2 years.
+  
+  Putting a bit more panels and larger 4 way microinverter is worth the money in my context.
+  
+
+## Orientation/Placement
+
+I took nearly a full-year to details where are the various shadow patterns including the hill, the trees and the buildings surrounding my place.
+I know it sounds a bit crazy, but I am interested in covering all the potential places where I can put panels and to understand all the associated drawbacks and advantages.
+
+Just putting panels on the roof of the house does not make sense to me from a cost, from a maintenance and also from a risk perspective.
+Yes, your panels can develop a short-circuit due to aging (even super-branded name), create sparks and then burn your roof.
+
+When you put your panel on your roof there is only one orientation possible. If you put your panels in the garden, it is possible to have one or more than one orientations, which makes possiblee to start the production earlier with an array of panels oriented more to the East and/or to make it runs later with an additional panel array more oriented to the West. By spreading out the production you will cover more of your electricity needs during the day, which is something important if you run with no battery or small batteries.
+
+For instance during the summer, I know the sun kicks in the morning on my terrasse and shadows arrives around 14 to 15h due to a building. Similary the sun starts to kick in at back of the garden around 10h due to trees and shadows comes around 19 to 20h. Which means I can put a first panel array on the terrasse facing the East with a very high slope, and in the back of the garden facing South-West, allowing me to produce from 8 to 20 during the summer with a large peak of power from 10 to 14h.
+
+
+
+
+
+
+
+
+  
+ 
