@@ -210,15 +210,14 @@ Considering my context, it is worth investing a bit more in additional panels an
 
 ## Orientation/Placement
 
-I took nearly a full-year to details where are the various shadow patterns including the hill, the trees and the buildings surrounding my place.
-I know it sounds a bit crazy, but I am interested in covering all the potential places where I can put panels and to understand all the associated drawbacks and advantages.
+I took nearly a full year to detail the various shadow patterns, including those caused by the hill, trees, and surrounding buildings near my place. It may sound a bit crazy, but I am interested in covering all the potential places where I can put panels and understanding all the associated drawbacks and advantages.
 
-Just putting panels on the roof of the house does not make sense to me from a cost, from a maintenance and also from a risk perspective.
-Yes, your panels can develop a short-circuit due to aging (even super-branded name), create sparks and then burn your roof.
+Just putting panels on the roof of the house does not make sense to me from a cost, maintenance, and risk perspective. Yes, your panels can develop a short-circuit due to aging (even super-branded name), create sparks, and then burn your roof.
 
-When you put your panel on your roof there is only one orientation possible. If you put your panels in the garden, it is possible to have one or more than one orientations, which makes possiblee to start the production earlier with an array of panels oriented more to the East and/or to make it runs later with an additional panel array more oriented to the West. By spreading out the production you will cover more of your electricity needs during the day, which is something important if you run with no battery or small batteries.
+When you put your panel on your roof, there is only one orientation possible. If you put your panels in the garden, it is possible to have one or more than one orientations, which makes it possible to start the production earlier with an array of panels oriented more to the East and/or to make it run later with an additional panel array more oriented to the West. By spreading out the production, you will cover more of your electricity needs during the day, which is something important if you run with no battery or small batteries.
 
-For instance during the summer, I know the sun kicks in the morning on my terrasse and shadows arrives around 14 to 15h due to a building. Similary the sun starts to kick in at back of the garden around 10h due to trees and shadows comes around 19 to 20h. Which means I can put a first panel array on the terrasse facing the East with a very high slope, and in the back of the garden facing South-West, allowing me to produce from 8 to 20 during the summer with a large peak of power from 10 to 14h.
+For instance, during the summer, I know the sun kicks in the morning on my terrace, and shadows arrive around 2pm to 3pm due to a building. Similarly, the sun starts to kick in at the back of the garden around 10 am due to trees, and shadows come around 7pm to 8pm. This means I can put a first panel array on the terrace facing the East with a very high slope and in the back of the garden facing South-West, allowing me to produce from 8 am to 8 pm during the summer with a large peak of power from 10 am to 2 pm.
+
 
 
 
