@@ -174,38 +174,38 @@ Let say 2 showers a day during a year:
 If a large enough PV array is installed and the battery is a on the short side for the storage, you will have overproduction during summer. The washing machine or the dish washer should be running in the middle of the morning or just after lunch using relatively short cycles to take full advantage of the full sun  still being able to fill the battery for the evening and night usage.
 
 
+# Study Case
 
-# Study case
+The main objective is to minimize electricity sent back to the grid in order to avoid overproduction and overinvestment. It is pointless to receive minimal compensation for the electricity we produce, which is then distributed to our neighbors by the electricity operator, who doesn't make any significant investment but benefits greatly from this arrangement.
 
-Nearly nothing should be sent back to the grid, which is the point since we do not want to overproduce and to overinvest. 
-Because it is pointless to be payed peanuts for our produced electricity sent back to the grid to your neighbours by the electricity operator, where the operator does not invest and it makes a very favorable arbitrage on your back.
+I refer to the power consumption when no appliances are running during the night or when the house is unoccupied as the "ghost load." In my case, this load amounts to approximately 0.1 to 0.15 kW. The "steady daily load" refers to the power consumption throughout the day, from waking until nighttime, excluding power peaks. In my case, this load averages around 0.4 to 0.5 kW.
 
-I call the 'ghost load' the power usage when nothing is running during th night or where you are not in the house: in my case it is about 0.1 to 0.15 kW.
-I call the 'steady daily load' the power usage during the day time from when we are awake until the night, it is kind of the mean load without the power peaks: in my case about 0.4 to 0.5 kW.
+## No Battery Case
 
-## No Battery case
+I believe that microinverters are the most cost-effective solution for addressing the "ghost load" and/or the "steady daily load." This means purchasing a few solar panels and one or a few microinverters to meet this demand. Microinverters now come with multiple options and are much cheaper than before.
 
-I think micro inverters are the cheapest way to cover the 'ghost load' and/or the 'steady daily load'.
-It means you can buy few panels and one or few micro-inverters to cover such load.
-Micro-inverters are now coming with multiple-ways and are way cheaper than before.
+### Ghost Load
 
-### Ghost load
-The 'ghost load' is about 0.1 to 0.15 kW, one or two 400W panels with a double microinverter will cover partially this load from April to September on my latitude. It will cost about 700 to 900 €. Actually, it is oversized for the ghost load, but it will cover also a good part of the steady daily load.
-   ROI: 
-    - Assuming 0.25 € per kWh, assuming very bad production from 600 to 800 kWh (including aging of panels), it will remove about 150 to 200 € yearly easily, in the worst case in 6 years the break-even point is reached (and it is very pessimistic).
-	- Assuming 0.4 € per kWh, same production, saving 240 to 320 € yearly, break-even point in 4 years.
-	- Assuming 0.5 € per kWh, same production, saving 300 to 400 € yearly, break-even point in 3 years.
-	
-	
-### Steady daily load	
-  The 'steady daily load' is about 0.4 to 0.5 kW (including the ghost load), three to four 400W panels with a 4-way microinverter will cover such load. It will cost about 1000 to 1200 €. As you can see, the return on investment is better in this case, the cost of 4-way microinverter is cheaper and having 4 panels is cheaper than 2 when including packaging and shipping. 
-  Also despite being over-sized for the steady load, the total contribution will enable to reduce partially peaks during the lunch time when we are cooking, launching the washing machine, the dish washer, with a peak power production of about 1.1 to 1.3 KW.
-  ROI:
-  - Assuming 0.25 € per kWh, with 1200 to 1600 kWh, saving 300 to 400 € yearly, break-even point in 4 years.
-  - Assuming 0.4 € per kWh, same production, saving 480 to 640 € yearly, break-even point in less than 3 years.
-  - Assuming 0.5 € per kWh, same production, saving 600 to 800 € yearly, break-even point in 2 years.
-  
-  Putting a bit more panels and larger 4 way microinverter is worth the money in my context.
+To partially cover the "ghost load" from April to September at my latitude, one or two 400W panels with a double microinverter will suffice. The cost for this setup would be around 700 to 900 €. Although this configuration may be oversized for the ghost load, it will also cover a significant portion of the steady daily load.
+
+Return on Investment (ROI):
+- Assuming an electricity cost of 0.25 € per kWh, and a conservative production estimate of 600 to 800 kWh (accounting for panel aging), this setup would save approximately 150 to 200 € per year. In the worst-case scenario, the break-even point would be reached within 6 years (under very pessimistic assumptions).
+- Assuming an electricity cost of 0.4 € per kWh, with the same production estimate, the savings would amount to 240 to 320 € per year, resulting in a break-even point within 4 years.
+- Assuming an electricity cost of 0.5 € per kWh, with the same production estimate, the savings would be approximately 300 to 400 € per year, leading to a break-even point within 3 years.
+
+### Steady Daily Load
+
+To cover the "steady daily load" of about 0.4 to 0.5 kW (including the ghost load), approximately three to four 400W panels with a 4-way microinverter would be necessary. This setup would cost around 1000 to 1200 €. As you can see, the return on investment is better in this case. The cost of a 4-way microinverter is lower, and including packaging and shipping, having 4 panels is more cost-effective than having 2.
+
+Additionally, despite being oversized for the steady load, this configuration would partially offset peaks during lunchtime when high-power appliances such as cooking equipment, washing machines, and dishwashers are in use, resulting in a peak power production of about 1.1 to 1.3 kW.
+
+Return on Investment (ROI):
+- Assuming an electricity cost of 0.25 € per kWh, and a production estimate of 1200 to 1600 kWh, the annual savings would be around 300 to 400 €, with a break-even point within 4 years.
+- Assuming an electricity cost of 0.4 € per kWh, with the same production estimate, the savings would amount to 480 to 640 € per year, resulting in a break-even point in less than 3 years.
+- Assuming an electricity cost of 0.5 € per kWh, with the same production estimate, the savings would be approximately 600 to 800 € per year, leading to a break-even point within 2 years.
+
+Considering my context, it is worth investing a bit more in additional panels and a larger 4-way microinverter.
+
   
 
 ## Orientation/Placement
