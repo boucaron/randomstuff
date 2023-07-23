@@ -34,11 +34,13 @@ Start with a gentle pace and low intensity for the first 10 to 20 minutes. This 
 Begin the intervals by gradually increasing the intensity and pace for the next 10 minutes.
 Push yourself to a higher intensity for the subsequent 10 minutes, simulating a challenging uphill or sprinting scenario. This will elevate your heart rate and boost your cardio endurance.
 Remember to stay focused on your form and maintain proper posture throughout the intervals.
+
 	 - Short Break and Hydration (1-2 minutes):
 
 After completing the intense intervals, take a short break for 1-2 minutes to catch your breath and hydrate.
 Take a few sips of water or a full glass to stay properly hydrated during the workout.
-Resumed Intervals (10 minutes):
+
+     - Resumed Intervals (10 minutes):
 
 Resume the intervals, gradually increasing the intensity and pace once again for the next 10 minutes.
 The goal is to push yourself but also listen to your body. Find a balance that challenges you without causing excessive strain.
