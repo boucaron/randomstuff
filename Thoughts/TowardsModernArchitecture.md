@@ -85,11 +85,29 @@ easy to repurpose or reuse. This is why it's crucial not to tie a building to a 
 Modularity is a key aspect of sustainable building design, as it allows for greater adaptability and flexibility in the use of a building over time. By designing buildings with modular components that can be easily assembled, disassembled, and reconfigured, the same structure can be used for multiple purposes throughout its lifespan. This reduces the need for new construction and demolition, which saves resources and minimizes waste. In addition, modular building design can facilitate more efficient use of space, as areas can be easily repurposed or combined as needed. Overall, modularity is a powerful tool for creating buildings that are adaptable to changing needs and can be used for many years to come.
 
 
-## Maintenable building
+## Maintenable and Upgradable building
 
-A building that is designed to be maintainable means that it is built with the ability to easily and cost-effectively modify or repair its various systems and components over time, without requiring significant renovations or demolitions. This is particularly important when it comes to the building's electrical, cooling, heating, network, and plumbing systems, which are essential for its functioning. A maintainable building ensures that these systems are easy to access and repair, without the need to demolish existing walls or components. This reduces the overall cost and time required for maintenance and repairs, and helps to ensure that the building can remain functional and efficient over the long term.
+A building that is designed to be maintainable and upgradable is essential for ensuring long-term sustainability, efficiency, and adaptability to changing needs.
 
- 
+A maintainable building is one that is constructed with the ability to efficiently modify or repair its systems and components over time, without the need for extensive renovations or demolitions. Key systems such as electrical, cooling, heating, network, and plumbing should be easily accessible, enabling straightforward maintenance and repairs. This reduces both the overall cost and the time required for upkeep, ensuring the building can remain functional and efficient in the long term.
+
+The significance of maintainability becomes particularly apparent in crucial building systems such as electrical, cooling, heating, network, and plumbing. These systems play a vital role in the building's functionality and require consistent care to avoid disruptions.
+
+
+For example, let's consider a situation where a water leak occurs in a bathroom. The leak originates behind a tiled wall that is not easily accessible. As a result, the water seeps down to the floor below and damages the ceiling. Detecting the leak becomes challenging, and by the time it's discovered, significant damage has already occurred, necessitating costly repairs amounting to several thousands of dollars.
+
+However, had the pipe been designed to be more accessible, the water leak could have been detected much earlier and resolved with ease. A simple and prompt fix, without the need for sophisticated tools like thermal cameras, would have involved accessing the pipe, fixing the issue, and then making the necessary repairs to the tiles and ceiling. This alternative approach would have cost only a few hundred dollars, significantly less than the extensive repairs required when the pipe is not readily accessible.
+
+
+A maintainable building ensures that these systems are easy to access and repair, without the need to demolish existing walls or components. This reduces the overall cost and time required for maintenance and repairs, and helps to ensure that the building can remain functional and efficient over the long term.
+
+
+ In light of rapid technological advancements, it becomes crucial for buildings to be upgradable. For example, the integration of proper insulation significantly reduces heating and cooling demands.Therefore, building design should incorporate the flexibility to accommodate future upgrades, such as enhancing insulation capabilities.
+
+Some might argue that designing a maintainable and upgradable building may appear oversized and costly initially. However, taking a short-term cost-saving approach might lead to severe consequences in the future. If there is no allowance for improvement and expansion, it could necessitate demolishing the entire structure, leading to a significant waste of resources and energy. Thus, considering the long-term benefits, it is wise to slightly oversize the building or plan for future extensions.
+
+
+
 
 
 
