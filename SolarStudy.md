@@ -59,9 +59,10 @@ Given an area, the PV generates an amount of electricity (in watt).
 Technically speaking most of them are equals and more like a commodity, there is not any revolutionary technology from a manufacturer to another one.
 Chinese manufacturers are leading the market.
 You need to take in account the size, the power to surface/area ratio.
-Bi-facial can be interesting if you are outdoor, bi-facial means there is a front and a back face, the back face is covered with a transparent glass. It can produce additional electricity, for instance the light reflect on the  grass in a garden which is captured by the back face.
+Bi-facial can be interesting if you are outdoor, bi-facial means there is a front and a back face, the back face is covered with a transparent glass. It can produce additional electricity, for instance the light reflect on the  grass in a garden which is captured by the back face. However, I think the real production advantage may be around 5 to 10%, which is not really interesting from a price point of view.
 You can also have partially transparent PV that can be useful for agriculture or pergola.
 The bang for the buck for today PV around 400 to 500W (1700 mm to 2300 mm length, 770 mm large and 35 mm height) costing about 150 to 250 Euros (including VAT).
+Shadows can be a challenge, there are some difference with Half Cells and Shingle, I would say Half Cells are more consistent from a production point of view: in the case of Shingle when it reach 20 to 30% shadows, it does not produce anything (depends on the shadow configuration), while this is not the case for the Half Cells. Market Leaders are Chinese manufacturers, so far I do not know anything better from a price/performance point of view.
 
 
 
@@ -86,7 +87,28 @@ Regarding pricing, it is not so obvious for some brands it is cheaper to put 2 t
 ### Hybrid inverters
 Hybrid-inverter means this is an inverter coupled to a battery. The PV array can charge the battery and/or provide power to the load through the inverter. It is a versatile device, it can be connected to the grid, a generator ...etc... There are hybrid inverters for 12/24 and mostly 48V batteries (Victron for instance), there are some inverters for high voltage batteries (Fronius/Huawei for instance)
 
-Offgrid inverter it is an hybrid inverter not connected to the grid.
+An off-grid inverter is a hybrid inverter that operates independently without being connected to the grid. Hybrid inverters offer different modes to meet various needs. However, for off-grid setups, it's crucial to understand the load requirements and the inverter's efficiency. The cost of the off-grid system depends on the battery size. Opting for a cheaper, less efficient inverter might lead to higher expenses on batteries and additional panels. On the other hand, investing in a reputable brand-name inverter (though more expensive upfront) can lead to overall cost savings by requiring fewer PVs and batteries. Finding the right balance is essential, and it's vital to consider future needs or expansions as well. You may want to do zero injection in the future but your inverter cannot do it and you may need to change your inverter.
+
+### Metrics
+Each inverter is associated with various metrics, and for an effective off-grid setup, it's essential to consider these factors. Having a smaller but more efficient inverter can be advantageous, especially if the majority of your loads are small.
+
+The key metrics to consider are:
+
+Max Load/Peak Power: This metric is crucial for off-grid systems because certain electric devices require higher current/power during startup. For example, the Victron Multiplus II 48/5000 has a max load of 10kVA, while its nominal power is around 5kVA. Similarly, the WKS Evo Circle 5.6 kVA peaks at 11kVA, and the Studer Xtender 3.5 kVA reaches 9kVA during peak. Cheaper inverters may handle only the nominal kVA, so it's important to choose wisely.
+
+Efficiency: Inverters usually provide a max efficiency rating, but this is not very informative for off-grid setups where efficiency at various loads matters. Some inverters excel at small and medium loads but may have lower efficiency at high loads, making them suitable for off-grid installations. Conversely, some inverters are efficient only at middle to high loads, which could be beneficial for industrial loads like welding or running machines.
+
+Zero Load Power: This metric is often overlooked but crucial for off-grid setups. It measures how much power the inverter consumes without any load. Lower zero load power is desirable as it reduces unnecessary energy consumption when the inverter is idle.
+
+Here are examples of zero load power usage for some inverters:
+
+(Data measured from https://www.youtube.com/watch?v=rnFXSEsfoaI)
+- WKS Evo Circle 5.6 kVA 48V: Not provided (measured around 71W), 1.704 kWh daily, 622.386 kWh yearly.
+- Victron Multiplus II 48/5000: 18W zero load (measured around 25W), 600 Wh daily, 219.150 kWh yearly.
+- Xtender Studer XTM 3500-24: 12W zero load (measured around 16W), 384 Wh daily, 140.256 kWh yearly.
+- Victron Multiplus II 12/3000 and 24/3000: 13W zero load (estimated around 18W), 432 Wh daily, 157.788 kWh yearly.
+- Victron Multiplus II 48/3000: 11W zero load (estimated around 15W), 360 Wh daily, 131.490 kWh yearly.
+
 
 ## Batteries
 
@@ -206,7 +228,18 @@ Return on Investment (ROI):
 
 Considering my context, it is worth investing a bit more in additional panels and a larger 4-way microinverter.
 
-  
+## Battery Case
+
+The most cost-effective battery setup is a DIY 16S (48V) lithium iron phosphate (LiFePo4) battery using 3.2V cells with a capacity of 280 to 300A, along with a 100 to 200A/BMS (Battery Management System). Building this battery will cost less than 3000 € (at the time of writing). Using smaller cells is not recommended considering the balance between capacity and price.
+
+
+### Factors Affecting Battery Aging
+Battery aging occurs due to several factors, including temperature resulting from loads and the environment, the number of charging cycles, and the extent of capacity utilized between charges. To prolong battery life, it is advisable to store them in a room with a consistent temperature throughout the year, such as a basement. Additionally, using larger battery capacities makes sense if you aim to extend their lifespan. For instance, a battery discharged to more than 50% capacity will endure 2 to 3 times more charging cycles compared to a battery discharged to 80% capacity. Certainly, the cost of the battery remains the most significant deciding factor in any off-grid or hybrid installation. However, in the long run, it proves to be a sensible investment.
+
+### Offgrid case
+
+Meteo is a problem, you can have several days without any sun according to your place, you need to take in account this case to avoid having a blackout.
+
 
 ## Orientation/Placement
 
