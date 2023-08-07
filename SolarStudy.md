@@ -255,6 +255,101 @@ For instance, during the summer, I know the sun kicks in the morning on my terra
 
 
 
+## PV Arrays Study
+
+This study explores various possibilities for PV arrays in different locations on the property.
+On my latitude the optimal slope is about 35 to 36 degrees and the optimal azimuth about 0 to -1 degree.
+
+
+
+### Terrase East Wall
+
+A small array ranging from 800W to 2KW, consisting of 2 to 4 panels with power outputs between 400W to 550W each, is proposed for the Terrase East Wall. The primary objective is to harness morning to noon sunlight efficiently to cover power usage for low-demand devices and mitigate power peaks. However, despite its simplicity, this option might not provide the most favorable return on investment. Additionally, the presence of a hill may impact the system's early morning startup.
+
+Here are the yearly energy production estimates (in kWh) for different configurations:
+
+| Power Capacity | Slope (degrees) | Azimuth (degrees) | Yearly Energy Production (kWh) | My Estimation(kWh) |
+|----------------|-----------------|------------------|--------------------------------|-------------------|
+| 800W           | 90              | -20              | 588.19                         |  -125 kWh     463.19 kWh |
+| 800W           | 90              | 0                | 590.28                         |  -125 kWh     465.28 kWh |
+| 800W           | 90              | 20               | 582.23                         |  -125 kWh     457.23 kWh |
+| 1.6KW          | 90              | -20              | 1177.38                        |  -250 kWh     927.38 kWh |
+| 1.6KW          | 90              | 0                | 1180.57                        |  -250 kWh     930.58 kWh |
+| 1.6KW          | 90              | 20               | 1164.45                        |  -250 kWh     914.45 kWh |
+| 2KW            | 90              | -20              | 1470.47                        |  -300 kWh     1170.47 kWh |
+| 2KW            | 90              | 0                | 1475.71                        |  -300 kWh     1175.71 kWh |
+| 2KW            | 90              | 20               | 1455.57                        |  -300 kWh     1155.57 kWh |
+
+My estimation is to remove Jan, Feb, Nov and Dec from the Production.
+As observed, the Azimuth does not significantly affect the overall production. For this setup, inexpensive micro-inverters with 2 or 4 ways, or a small 2KW or 2.5KW grid-tied inverter, are suitable for the inverter configuration.
+
+Potential return on investment:
+| Power Capacity | Supplyer Cost per kWh | Invested Money | Yearly Production kWh | Production Money | ROI Time (years) |
+|----------------|--------------|----------------|-----------------------|------------------|------------------|
+| 800W           |  0.3         | 800            | 460                   | 138              | 5.8              |
+| 800W           |  0.4         | 800            | 460                   | 184              | 4.4              |
+| 800W           |  0.5         | 800            | 460                   | 230              | 3.5              |
+| 800W           |  0.6         | 800            | 460                   | 276              | 2.9              |
+| 800W           |  0.7         | 800            | 460                   | 322              | 2.5              |
+| 800W           |  0.8         | 800            | 460                   | 368              | 2.2              |
+
+
+| Power Capacity | Supplyer Cost per kWh | Invested Money | Yearly Production kWh | Production Money | ROI Time (years) |
+----------------|--------------|----------------|-----------------------|------------------|------------------|
+| 1600W          |  0.3         | 1250           | 930                   | 279              | 4.5              |
+| 1600W          |  0.4         | 1250           | 930                   | 372              | 3.4              |
+| 1600W          |  0.5         | 1250           | 930                   | 465              | 2.7              |
+| 1600W          |  0.6         | 1250           | 930                   | 558              | 2.3              |
+| 1600W          |  0.7         | 1250           | 930                   | 651              | 2                |
+| 1600W          |  0.8         | 1250           | 930                   | 744              | 1.7              |
+
+As discussed before there is a better ROI to put 4 panels instead of 2.
+
+### Backyard Garden - Power Shed
+
+The Backyard Garden setup involves an array of 4KW to 5KW (8 to 10 panels with 400W to 550W each) arranged in two rows. The array will be located in a shed or at a low height in the garden to facilitate maintenance and improve the return on investment. An orientation angle of 20 degrees is chosen for the shed.
+
+| Panel W | Row Size | Row Number | Total Power KW |
+|---------|----------|------------|----------------|
+| 400     | 4        | 2          | 3.2            |
+| 400     | 5        | 2          | 4              |
+| 550     | 4        | 2          | 4.4            |
+| 550     | 5        | 2          | 5.5            |
+
+
+| Power Capacity | Slope (degrees) | Azimuth (degrees) | Yearly Energy Production (kWh) | My Estimation(kWh) |
+|----------------|-----------------|-------------------|--------------------------------|-------------------|
+| 4KW            | 20              | -20               |   4145.78                      |  -550 kWh     3595.78 kWh |
+| 4KW            | 20              | 0                 | 4174.03                        |  -550 kWh     3624.03 kWh |
+| 4W             | 20              | 20                | 4139.33                        |  -550 kWh     3589.33 kWh |
+
+My estimation is to remove Jan, Feb, Nov and Dec from the Production.
+Increasing the optimal slope to 35 degrees would result in a 100 kWh increase, but it is not feasible as it would significantly raise the height of the shed.
+Considering the production level, it becomes essential to store a significant portion of the energy in batteries for later use during the afternoon, night, and early morning. Due to the exposure and surroundings, the PV array starts relatively late in the morning, making the Terrase East Wall PV Array an attractive idea.
+
+### Middle Garden
+
+Similar to the Power Shed setup, the Middle Garden will have one or two rows of panels with the same specifications. The orientation and performance will be identical, with an earlier startup compared to the Power Shed. Bifacial panels are not considered due to their high price and minimal power difference, which does not justify the investment.
+
+### House Roof
+
+Installing panels on the house roof is not preferred due to the high cost and the inability to carry out the installation personally. The cost in Luxembourg is prohibitive, making it more cost-effective to build a DIY three-phase 15KW system instead, even with potential government assistance.
+
+## Inverter
+
+For a single 4KW to 5KW per phase setup, the [Victron Multiplus II/48/5000](https://www.victronenergy.com/inverters/48v-5000va) inverter is chosen for its versatility and reasonable standby power usage, providing the best value for the investment.
+
+## PV MPPT Controller
+
+There are two options for the PV MPPT Controller:
+
+1. The cost-effective [SNRE 250V/70A](https://www.srnesolar.com/product/%E2%80%8Bmppt-solar-regulator-solar-charge-controller-mc48v60-70a) (around €350) and/or [250/85A](https://www.srnesolar.com/product/%e2%80%8bmppt-solar-charge-controller-mc48v85-100a) (around €485) for 5S/2P in 550W peak.
+2. The more expensive [Victron 250V/70A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838) and/or [250/85A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838).
+
+The dimensioning calculations for both options are provided based on the battery voltage and used for computation. Considering the price difference, it makes sense to opt for the SNRE 70A model to match the 4KW panel capacity. The "communication issue" with the SNRE MPPT Controller can be resolved using available software solutions to retrieve data.
+
+
+
 
 
 
