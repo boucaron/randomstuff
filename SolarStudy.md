@@ -400,7 +400,7 @@ Mean daily production for the configuration 2, caping on 4.845 KW of the MPPT co
 Yearly production 5013 kWh. (A 5.45 KW PV Array generates a yearly production of 5639 kWh)
 
 
-| Month | Daily Mean - Max (kWh) |
+| Month | Daily Mean - High and Upper bound (kWh) |
 |-------|------------------------|
 |  Jan  |   4.22 - 4.93          |
 |  Feb  |   7.80 - 8.78          |
@@ -418,6 +418,7 @@ Yearly production 5013 kWh. (A 5.45 KW PV Array generates a yearly production of
 My daily mean are about 12.3 kWh to 13.7 kWh.
 From March to September, this single array should provide enough.
 But I think a more realistic figure will be from April to mid September.
+Due to shadows not taken in account, the production will be less.
 
 
 ### Middle Garden
