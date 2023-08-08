@@ -253,13 +253,46 @@ For instance, during the summer, I know the sun kicks in the morning on my terra
 
 
 
-
-
 ## PV Arrays Study
 
 This study explores various possibilities for PV arrays in different locations on the property.
 On my latitude the optimal slope is about 35 to 36 degrees and the optimal azimuth about 0 to -1 degree.
 
+
+### Panels Configurations
+
+Let see a few panels, all prices are including VAT.
+|Panel W| Number |Unit Cost (€) | Link | Total Cost (€) | Total W |
+|-------|--------|--------------|------|----------------|---------|
+| 415W  | 8      | 119          | https://www.chocdiscount.com/panneaux-solaires/19175-panneau-solaire-ja-solar-415w-jam54s30-415mr-monocristallin-black-frame.html | 952 | 3320 |
+| 415W  | 10     | 119          | https://www.chocdiscount.com/panneaux-solaires/19175-panneau-solaire-ja-solar-415w-jam54s30-415mr-monocristallin-black-frame.html | 1190 | 4150 |
+| 545   | 8      | 143.99| https://autosolar.es/panel-solar-24-voltios/panel-solar-545w-ja-solar-mono-perc | 1151.92 | 4360 |
+| 545   | 10     | 143.99| https://autosolar.es/panel-solar-24-voltios/panel-solar-545w-ja-solar-mono-perc | 1439.90 | 5450 |
+| 385   | 10     |  99.0 | https://www.chocdiscount.com/panneaux-solaires/25763-panneau-solaire-amerisolar-385w-as-6m120-hc-demi-cellules-black.html | 990 | 3850 |
+| 385   | 15     |  99.0 |   https://www.chocdiscount.com/panneaux-solaires/25763-panneau-solaire-amerisolar-385w-as-6m120-hc-demi-cellules-black.html | 1485 | 5775  |
+ 
+
+
+### Inverter Configuration
+
+For a single 4KW to 5KW per phase setup, the [Victron Multiplus II/48/5000](https://www.victronenergy.com/inverters/48v-5000va) inverter is chosen for its versatility and reasonable standby power usage, providing the best value for the investment.
+It cost about 1500 to 1900 € (including VAT).
+
+For small load around 200 to 2 KW, there are microinverters in one, two, four and even six ways. This is a kind of new, so I am not sure about the reliability of such items. There are also small inverters from 800 to 2.5 KW, but the price is relatively high most of the time.
+
+### PV MPPT Controller Configurations
+
+There are two options for the PV MPPT Controller:
+
+1. The cost-effective [SNRE 250V/70A](https://www.srnesolar.com/product/%E2%80%8Bmppt-solar-regulator-solar-charge-controller-mc48v60-70a) (around €350) and/or [250/85A](https://www.srnesolar.com/product/%e2%80%8bmppt-solar-charge-controller-mc48v85-100a) (around €485) for 5S/2P in 550W peak.
+2. The more expensive [Victron 250V/70A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838) and/or [250/85A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838).
+
+The dimensioning calculations for both options are provided based on the battery voltage and used for computation. Considering the price difference, it makes sense to opt for the SNRE 70A model to match the 4KW panel capacity. The "communication issue" with the SNRE MPPT Controller can be resolved using available software solutions to retrieve data.
+
+### Battery Configurations
+
+DIY is the way to go: let say 3000 € for 13/14 kWh @ 48V so about 280 Ah to 300 Ah of capacity with a 150 A BMS with Active Balancing + all needed stuff around the battery to make it safe.
+The battery is most costly part of the installation.
 
 
 ### Terrase East Wall
@@ -280,30 +313,35 @@ Here are the yearly energy production estimates (in kWh) for different configura
 | 2KW            | 90              | 0                | 1475.71                        |  -300 kWh     1175.71 kWh |
 | 2KW            | 90              | 20               | 1455.57                        |  -300 kWh     1155.57 kWh |
 
-My estimation is to remove Jan, Feb, Nov and Dec from the Production.
-As observed, the Azimuth does not significantly affect the overall production. For this setup, inexpensive micro-inverters with 2 or 4 ways, or a small 2KW or 2.5KW grid-tied inverter, are suitable for the inverter configuration.
 
-Potential return on investment:
-| Power Capacity | Supplyer Cost per kWh | Invested Money | Yearly Production kWh | Production Money | ROI Time (years) |
-|----------------|--------------|----------------|-----------------------|------------------|------------------|
-| 800W           |  0.3         | 800            | 460                   | 138              | 5.8              |
-| 800W           |  0.4         | 800            | 460                   | 184              | 4.4              |
-| 800W           |  0.5         | 800            | 460                   | 230              | 3.5              |
-| 800W           |  0.6         | 800            | 460                   | 276              | 2.9              |
-| 800W           |  0.7         | 800            | 460                   | 322              | 2.5              |
-| 800W           |  0.8         | 800            | 460                   | 368              | 2.2              |
+**Estimated Production and Return on Investment**
 
+My estimation is to exclude the months of January, February, November, and December from the production calculations. As observed, the azimuth angle does not significantly impact overall production. Therefore, for this setup, inexpensive micro-inverters with 2 or 4 ways, or a small 2KW or 2.5KW grid-tied inverter, are suitable for the inverter configuration.
 
-| Power Capacity | Supplyer Cost per kWh | Invested Money | Yearly Production kWh | Production Money | ROI Time (years) |
-----------------|--------------|----------------|-----------------------|------------------|------------------|
-| 1600W          |  0.3         | 1250           | 930                   | 279              | 4.5              |
-| 1600W          |  0.4         | 1250           | 930                   | 372              | 3.4              |
-| 1600W          |  0.5         | 1250           | 930                   | 465              | 2.7              |
-| 1600W          |  0.6         | 1250           | 930                   | 558              | 2.3              |
-| 1600W          |  0.7         | 1250           | 930                   | 651              | 2                |
-| 1600W          |  0.8         | 1250           | 930                   | 744              | 1.7              |
+### Potential Return on Investment:
 
-As discussed before there is a better ROI to put 4 panels instead of 2.
+| Power Capacity | Supplier Cost per kWh (€) | Invested Money (€) | Yearly Production kWh | Production Money (€) | ROI Time (years) |
+|----------------|---------------------------|--------------------|-----------------------|----------------------|------------------|
+| 800W           | 0.3                       | 800                | 460                   | 138                  | 5.8              |
+| 800W           | 0.4                       | 800                | 460                   | 184                  | 4.4              |
+| 800W           | 0.5                       | 800                | 460                   | 230                  | 3.5              |
+| 800W           | 0.6                       | 800                | 460                   | 276                  | 2.9              |
+| 800W           | 0.7                       | 800                | 460                   | 322                  | 2.5              |
+| 800W           | 0.8                       | 800                | 460                   | 368                  | 2.2              |
+
+| Power Capacity | Supplier Cost per kWh (€) | Invested Money (€) | Yearly Production kWh | Production Money (€) | ROI Time (years) |
+|----------------|---------------------------|--------------------|-----------------------|----------------------|------------------|
+| 1600W          | 0.3                       | 1250               | 930                   | 279                  | 4.5              |
+| 1600W          | 0.4                       | 1250               | 930                   | 372                  | 3.4              |
+| 1600W          | 0.5                       | 1250               | 930                   | 465                  | 2.7              |
+| 1600W          | 0.6                       | 1250               | 930                   | 558                  | 2.3              |
+| 1600W          | 0.7                       | 1250               | 930                   | 651                  | 2.0              |
+| 1600W          | 0.8                       | 1250               | 930                   | 744                  | 1.7              |
+
+Based on the analysis, it is evident that the return on investment improves with higher power capacities and lower supplier costs per kWh. Additionally, installing a 1600W array (4 panels) generally results in a better ROI compared to an 800W array (2 panels). These insights can guide decision-making to optimize the PV array setup and achieve the best return on investment.
+
+TODO: Revised this part, I can save down by few hundreds euro easily
+
 
 ### Backyard Garden - Power Shed
 
@@ -316,40 +354,84 @@ The Backyard Garden setup involves an array of 4KW to 5KW (8 to 10 panels with 4
 | 550     | 4        | 2          | 4.4            |
 | 550     | 5        | 2          | 5.5            |
 
+| Power Capacity | Slope (degrees) | Azimuth (degrees) | Yearly Energy Production (kWh) | My Estimation (kWh) |
+|----------------|-----------------|-------------------|--------------------------------|---------------------|
+| 4KW            | 20              | -20               | 4145.78                        | 3595.78             |
+| 4KW            | 20              | 0                 | 4174.03                        | 3624.03             |
+| 4KW            | 20              | 20                | 4139.33                        | 3589.33             |
 
-| Power Capacity | Slope (degrees) | Azimuth (degrees) | Yearly Energy Production (kWh) | My Estimation(kWh) |
-|----------------|-----------------|-------------------|--------------------------------|-------------------|
-| 4KW            | 20              | -20               |   4145.78                      |  -550 kWh     3595.78 kWh |
-| 4KW            | 20              | 0                 | 4174.03                        |  -550 kWh     3624.03 kWh |
-| 4W             | 20              | 20                | 4139.33                        |  -550 kWh     3589.33 kWh |
+My estimation is to remove Jan, Feb, Nov, and Dec from the Production. Increasing the optimal slope to 35 degrees would result in a 100 kWh increase, but it is not feasible as it would significantly raise the height of the shed. Considering the production level, it becomes essential to store a significant portion of the energy in batteries for later use during the afternoon, night, and early morning. Due to the exposure and surroundings, the PV array starts relatively late in the morning, making the Terrace East Wall PV Array an attractive idea.
 
-My estimation is to remove Jan, Feb, Nov and Dec from the Production.
-Increasing the optimal slope to 35 degrees would result in a 100 kWh increase, but it is not feasible as it would significantly raise the height of the shed.
-Considering the production level, it becomes essential to store a significant portion of the energy in batteries for later use during the afternoon, night, and early morning. Due to the exposure and surroundings, the PV array starts relatively late in the morning, making the Terrase East Wall PV Array an attractive idea.
+Configurations:
+
+
+| Cfg | Panels  | Inverter                      | MPPT Controller         | Cost without Battery (€) *      | €/W       |
+|-----|---------|-------------------------------|-------------------------|---------------------------------|-----------|
+| 1   |  3850   |  Victron Multiplus II/48/5000 | SNRE 250/70A            | 990+1500+350 + 700 = 3540       | 0.9194    |
+| 2   |  5450   |  Victron Multiplus II/48/5000 | SNRE 250/85A            | 1439.90+1500+485 + 700 = 4124.9 | 0.7568    |
+| 3   |  4150   |  Victron Multiplus II/48/5000 | SNRE 250/70A            | 1190+1500+350 + 700 = 3740      | 0.9012    |
+| 4   |  5450   |  Victron Multiplus II/48/5000 | SNRE 250/70A            | 1439.90+1500+350 + 700 = 3989.9 | 0.7320    |
+| 5   |  4360   |  Victron Multiplus II/48/5000 | SNRE 250/70A            | 1151.92+1500+350 + 700 = 3701.91| 0.8490    |
+| 6   |  5775   |  Victron Multiplus II/48/5000 | SNRE 250/85A            | 1485+1500+485 + 700 = 4170 | 0.7220    |
+
+
+* Added 700 € of fixed cost for cables, switch, fuses, electric panel and protections...
+
+Now let see the figures when we add the DIY battery
+
+| Cfg |  Cost with Battery (€)        | €/W       |
+|-----|-------------------------------|-----------|
+| 1   |       6540                    | 1.6987    |
+| 2   |       7124.9                  | 1.3073    |
+| 3   |       6740                    | 1.6240    |
+| 4   |       6989.9                  | 1.2825    |
+| 5   |       6701.91                 | 1.5371    |
+| 6   |       7170                    | 1.2415    |
+
+As can be seen, it is important to have a bit more panels on this configuration to be confortable on the long run, there is about 10 % difference on the total price to go from the low cost configuration at 3.85 KW to the 5.45 KW. For me it is a no brainer, the only thing is that can you put the bigger panels on your application. Also oversizing a bit the panels can improve the performance even if there is a bit of 'clipping', your will produce more when there is less sun too.
+The configuration 4 is a bit on the edge: the MPPT Controller is undersized for cost reduction purpose:  57 * 70 = 3990 W. It means the panel array is oversized to 136.5% which is may be a bit too much. I would think more of the configuration number 2: 57 * 85 = 4845 W.
+The configuration 6 is also an interesting alternative, meaning adding 5 more panels improved slightly the ROI.
+
+When you consider the power to surface ratio, the configuration 2 takes less surface which is interesting if you want to put more panels or if you want to reduce the impact on the land.
+
+Of course, you need to add the fixed cost for the shed, but it will not change the trend as we already seen.
+
+Mean daily production for the configuration 2, caping on 4.845 KW of the MPPT controller, actually it should produce more.
+Yearly production 5013 kWh. (A 5.45 KW PV Array generates a yearly production of 5639 kWh)
+
+
+| Month | Daily Mean - Max (kWh) |
+|-------|------------------------|
+|  Jan  |   4.22 - 4.93          |
+|  Feb  |   7.80 - 8.78          |
+|  Mar  |  13.70 - 15.29         |
+|  Apr  |  19.73 - 22.2          |
+|  May  |  20.61 - 23.19         |
+|  Jun  |  22.20 - 24.96         |
+|  Jul  |  20.54 - 24.41         |
+|  Aug  |  19.06 - 21.45         |
+|  Sep  |  16.43 - 18.46         |
+|  Oct  |   9.90 - 11.5          |
+|  Now  |   5.13 - 5.61          |
+|  Dec  |   3.80 - 4.29          |
+
+My daily mean are about 12.3 kWh to 13.7 kWh.
+From March to September, this single array should provide enough.
+But I think a more realistic figure will be from April to mid September.
+
 
 ### Middle Garden
 
 Similar to the Power Shed setup, the Middle Garden will have one or two rows of panels with the same specifications. The orientation and performance will be identical, with an earlier startup compared to the Power Shed. Bifacial panels are not considered due to their high price and minimal power difference, which does not justify the investment.
 
+If the inverter is big enough, it is possible to only put panels, the mppt controller and the battery. It means you can save the cost and the power usage during the night of another inverter. The problem will be still a slighter overproduction during summer.
+
+
+
+
 ### House Roof
 
 Installing panels on the house roof is not preferred due to the high cost and the inability to carry out the installation personally. The cost in Luxembourg is prohibitive, making it more cost-effective to build a DIY three-phase 15KW system instead, even with potential government assistance.
-
-## Inverter
-
-For a single 4KW to 5KW per phase setup, the [Victron Multiplus II/48/5000](https://www.victronenergy.com/inverters/48v-5000va) inverter is chosen for its versatility and reasonable standby power usage, providing the best value for the investment.
-
-## PV MPPT Controller
-
-There are two options for the PV MPPT Controller:
-
-1. The cost-effective [SNRE 250V/70A](https://www.srnesolar.com/product/%E2%80%8Bmppt-solar-regulator-solar-charge-controller-mc48v60-70a) (around €350) and/or [250/85A](https://www.srnesolar.com/product/%e2%80%8bmppt-solar-charge-controller-mc48v85-100a) (around €485) for 5S/2P in 550W peak.
-2. The more expensive [Victron 250V/70A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838) and/or [250/85A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838).
-
-The dimensioning calculations for both options are provided based on the battery voltage and used for computation. Considering the price difference, it makes sense to opt for the SNRE 70A model to match the 4KW panel capacity. The "communication issue" with the SNRE MPPT Controller can be resolved using available software solutions to retrieve data.
-
-
-
 
 
 
