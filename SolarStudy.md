@@ -208,27 +208,34 @@ I refer to the power consumption when no appliances are running during the night
 
 I believe that microinverters are the most cost-effective solution for addressing the "ghost load" and/or the "steady daily load." This means purchasing a few solar panels and one or a few microinverters to meet this demand. Microinverters now come with multiple options and are much cheaper than before.
 
+
 ### Ghost Load
 
-To partially cover the "ghost load" from April to September at my latitude, one or two 400W panels with a double microinverter will suffice. The cost for this setup would be around 700 to 900 €. Although this configuration may be oversized for the ghost load, it will also cover a significant portion of the steady daily load.
+To partially address the "ghost load" during April to September in my region, utilizing one or two 400W panels with a double microinverter proves sufficient. The estimated cost for this setup ranges from 700 to 900 €. Although this configuration might appear oversized for the ghost load, it effectively covers a substantial portion of the steady daily load.
 
-Return on Investment (ROI):
-- Assuming an electricity cost of 0.25 € per kWh, and a conservative production estimate of 600 to 800 kWh (accounting for panel aging), this setup would save approximately 150 to 200 € per year. In the worst-case scenario, the break-even point would be reached within 6 years (under very pessimistic assumptions).
-- Assuming an electricity cost of 0.4 € per kWh, with the same production estimate, the savings would amount to 240 to 320 € per year, resulting in a break-even point within 4 years.
-- Assuming an electricity cost of 0.5 € per kWh, with the same production estimate, the savings would be approximately 300 to 400 € per year, leading to a break-even point within 3 years.
+**Return on Investment (ROI) Scenarios:**
+
+| Electricity Cost (€/kWh) | Annual Savings (€) | Break-Even Point (Years) |
+|--------------------------|--------------------|--------------------------|
+| 0.25                     | 150 - 200          | 6 (under pessimistic assumptions) |
+| 0.4                      | 240 - 320          | 4                        |
+| 0.5                      | 300 - 400          | 3                        |
 
 ### Steady Daily Load
 
-To cover the "steady daily load" of about 0.4 to 0.5 kW (including the ghost load), approximately three to four 400W panels with a 4-way microinverter would be necessary. This setup would cost around 1000 to 1200 €. As you can see, the return on investment is better in this case. The cost of a 4-way microinverter is lower, and including packaging and shipping, having 4 panels is more cost-effective than having 2.
+For meeting the "steady daily load" of around 0.4 to 0.5 kW (including the ghost load), approximately three to four 400W panels paired with a 4-way microinverter would be essential. The projected cost for this setup is about 1000 to 1200 €. Notably, the return on investment is more favorable in this case. The cost of a 4-way microinverter is lower, and factoring in packaging and shipping, having 4 panels becomes more cost-effective than opting for 2.
 
-Additionally, despite being oversized for the steady load, this configuration would partially offset peaks during lunchtime when high-power appliances such as cooking equipment, washing machines, and dishwashers are in use, resulting in a peak power production of about 1.1 to 1.3 kW.
+Moreover, despite its slight oversizing for the steady load, this configuration effectively mitigates peak usage during lunchtime when high-power appliances like cooking equipment, washing machines, and dishwashers are in operation. This leads to a peak power production of about 1.1 to 1.3 kW.
 
-Return on Investment (ROI):
-- Assuming an electricity cost of 0.25 € per kWh, and a production estimate of 1200 to 1600 kWh, the annual savings would be around 300 to 400 €, with a break-even point within 4 years.
-- Assuming an electricity cost of 0.4 € per kWh, with the same production estimate, the savings would amount to 480 to 640 € per year, resulting in a break-even point in less than 3 years.
-- Assuming an electricity cost of 0.5 € per kWh, with the same production estimate, the savings would be approximately 600 to 800 € per year, leading to a break-even point within 2 years.
+**Return on Investment (ROI) Scenarios:**
 
-Considering my context, it is worth investing a bit more in additional panels and a larger 4-way microinverter.
+| Electricity Cost (€/kWh) | Annual Savings (€) | Break-Even Point (Years) |
+|--------------------------|--------------------|--------------------------|
+| 0.25                     | 300 - 400          | 4                        |
+| 0.4                      | 480 - 640          | < 3                      |
+| 0.5                      | 600 - 800          | 2                        |
+
+Considering my specific context, the investment in additional panels and a larger 4-way microinverter appears to be worthwhile.
 
 ## Battery Case
 
