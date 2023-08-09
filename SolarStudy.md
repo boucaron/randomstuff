@@ -242,25 +242,30 @@ Considering my specific context, the investment in additional panels and a large
 The most cost-effective battery setup is a DIY 16S (48V) lithium iron phosphate (LiFePo4) battery using 3.2V cells with a capacity of 280 to 300A, along with a 100 to 200A/BMS (Battery Management System). Building this battery will cost less than 3000 € (at the time of writing). Using smaller cells is not recommended considering the balance between capacity and price.
 
 
+
+## Battery Case
+
+The most economically viable battery setup involves creating a DIY 16S (48V) lithium iron phosphate (LiFePO4) battery using 3.2V cells with a capacity of 280 to 300Ah, along with a 100 to 200A BMS (Battery Management System). The cost to construct this battery is estimated to be less than 3000 € (at the time of writing).
+
+
+
 ### Factors Affecting Battery Aging
 Battery aging occurs due to several factors, including temperature resulting from loads and the environment, the number of charging cycles, and the extent of capacity utilized between charges. To prolong battery life, it is advisable to store them in a room with a consistent temperature throughout the year, such as a basement. Additionally, using larger battery capacities makes sense if you aim to extend their lifespan. For instance, a battery discharged to more than 50% capacity will endure 2 to 3 times more charging cycles compared to a battery discharged to 80% capacity. Certainly, the cost of the battery remains the most significant deciding factor in any off-grid or hybrid installation. However, in the long run, it proves to be a sensible investment.
 
 ### Offgrid case
 
-Meteo is a problem, you can have several days without any sun according to your place, you need to take in account this case to avoid having a blackout.
+Weather conditions pose a challenge, as extended periods without sunlight are possible in certain locations. It's crucial to address this scenario to prevent the occurrence of a blackout.
 
 
 ## Orientation/Placement
 
-I took nearly a full year to detail the various shadow patterns, including those caused by the hill, trees, and surrounding buildings near my place. It may sound a bit crazy, but I am interested in covering all the potential places where I can put panels and understanding all the associated drawbacks and advantages.
+I dedicated a significant amount of time, spanning almost a full year, to meticulously analyze various shadow patterns. This investigation encompassed shadows caused by the surrounding hill, trees, and nearby buildings in close proximity to my location. While this might seem meticulous, I believe in thoroughly exploring all potential panel placement sites and comprehending the associated advantages and drawbacks.
 
-Just putting panels on the roof of the house does not make sense to me from a cost, maintenance, and risk perspective. Yes, your panels can develop a short-circuit due to aging (even super-branded name), create sparks, and then burn your roof.
+Merely installing panels on the roof of my house doesn't align with my considerations encompassing cost-effectiveness, maintenance concerns, and risk assessment. Even panels from renowned brands can develop issues like short-circuits due to aging, leading to sparks and potential roof damage.
 
-When you put your panel on your roof, there is only one orientation possible. If you put your panels in the garden, it is possible to have one or more than one orientations, which makes it possible to start the production earlier with an array of panels oriented more to the East and/or to make it run later with an additional panel array more oriented to the West. By spreading out the production, you will cover more of your electricity needs during the day, which is something important if you run with no battery or small batteries.
+One critical aspect is that placing panels on the roof offers only a single orientation possibility. On the other hand, situating panels in the garden allows for multiple orientations. This flexibility facilitates commencing production earlier by orienting a panel array more towards the East, or extending production later by introducing an additional panel array oriented towards the West. This strategic distribution of production assists in fulfilling a substantial portion of daily electricity needs when relying on a limited battery capacity or no battery at all.
 
-For instance, during the summer, I know the sun kicks in the morning on my terrace, and shadows arrive around 2pm to 3pm due to a building. Similarly, the sun starts to kick in at the back of the garden around 10 am due to trees, and shadows come around 7pm to 8pm. This means I can put a first panel array on the terrace facing the East with a very high slope and in the back of the garden facing South-West, allowing me to produce from 8 am to 8 pm during the summer with a large peak of power from 10 am to 2 pm.
-
-
+For instance, during summer, I've observed that the sun reaches my terrace in the morning, and shadows cast by a nearby building appear around 2pm to 3pm. Similarly, sunlight begins to reach the back of the garden around 10 am due to trees, while shadows emerge between 7pm and 8pm. Armed with this knowledge, I can strategically install a panel array on the terrace facing East with a steep slope and another at the back of the garden facing South-West. This setup empowers me to generate power from 8 am to 8 pm during summer, with a notable peak between 10 am and 2 pm.
 
 ## PV Arrays Study
 
@@ -271,24 +276,26 @@ This part I go in the details of the evaluation.
 
 ### Panels Configurations
 
-Let see a few panels, all prices are including VAT.
-|Panel W| Number |Unit Cost (€) | Link | Total Cost (€) | Total W |
-|-------|--------|--------------|------|----------------|---------|
-| 415W  | 8      | 119          | https://www.chocdiscount.com/panneaux-solaires/19175-panneau-solaire-ja-solar-415w-jam54s30-415mr-monocristallin-black-frame.html | 952 | 3320 |
-| 415W  | 10     | 119          | https://www.chocdiscount.com/panneaux-solaires/19175-panneau-solaire-ja-solar-415w-jam54s30-415mr-monocristallin-black-frame.html | 1190 | 4150 |
-| 545   | 8      | 143.99| https://autosolar.es/panel-solar-24-voltios/panel-solar-545w-ja-solar-mono-perc | 1151.92 | 4360 |
-| 545   | 10     | 143.99| https://autosolar.es/panel-solar-24-voltios/panel-solar-545w-ja-solar-mono-perc | 1439.90 | 5450 |
-| 385   | 10     |  99.0 | https://www.chocdiscount.com/panneaux-solaires/25763-panneau-solaire-amerisolar-385w-as-6m120-hc-demi-cellules-black.html | 990 | 3850 |
-| 385   | 15     |  99.0 |   https://www.chocdiscount.com/panneaux-solaires/25763-panneau-solaire-amerisolar-385w-as-6m120-hc-demi-cellules-black.html | 1485 | 5775  |
- 
+Let's explore various panel configurations, with all prices inclusive of VAT.
+
+| Panel W | Number | Unit Cost (€) | Link | Total Cost (€) | Total W |
+|---------|--------|---------------|------|----------------|---------|
+| 415W    | 8      | 119           | [Link](https://www.chocdiscount.com/panneaux-solaires/19175-panneau-solaire-ja-solar-415w-jam54s30-415mr-monocristallin-black-frame.html) | 952  | 3320   |
+| 415W    | 10     | 119           | [Link](https://www.chocdiscount.com/panneaux-solaires/19175-panneau-solaire-ja-solar-415w-jam54s30-415mr-monocristallin-black-frame.html) | 1190 | 4150   |
+| 545W    | 8      | 143.99        | [Link](https://autosolar.es/panel-solar-24-voltios/panel-solar-545w-ja-solar-mono-perc) | 1151.92 | 4360 |
+| 545W    | 10     | 143.99        | [Link](https://autosolar.es/panel-solar-24-voltios/panel-solar-545w-ja-solar-mono-perc) | 1439.90 | 5450 |
+| 385W    | 10     | 99.0          | [Link](https://www.chocdiscount.com/panneaux-solaires/25763-panneau-solaire-amerisolar-385w-as-6m120-hc-demi-cellules-black.html) | 990 | 3850   |
+| 385W    | 15     | 99.0          | [Link](https://www.chocdiscount.com/panneaux-solaires/25763-panneau-solaire-amerisolar-385w-as-6m120-hc-demi-cellules-black.html) | 1485 | 5775  |
+
+
+
 
 
 ### Inverter Configuration
 
-For a single 4KW to 5KW per phase setup, the [Victron Multiplus II/48/5000](https://www.victronenergy.com/inverters/48v-5000va) inverter is chosen for its versatility and reasonable standby power usage, providing the best value for the investment.
-It cost about 1500 to 1900 € (including VAT).
+For a single 4KW to 5KW per phase setup, the [Victron Multiplus II/48/5000](https://www.victronenergy.com/inverters/48v-5000va) inverter is selected due to its versatility and reasonable standby power usage, making it a cost-effective choice. The cost of this inverter is approximately 1500 to 1900 € (including VAT).
 
-For small load around 200 to 2 KW, there are microinverters in one, two, four and even six ways. This is a kind of new, so I am not sure about the reliability of such items. There are also small inverters from 800 to 2.5 KW, but the price is relatively high most of the time, except one with 2K that is also detailed.
+For smaller loads ranging from 200 to 2 KW, there are microinverters available in various configurations, such as one, two, four, and even six ways. While these options are relatively new and their reliability might be a concern, they offer flexibility for specific applications. There are also compact inverters available with power outputs from 800 to 2.5 KW, although their prices tend to be higher. One particular 2KW inverter option stands out and it is detailed after.
 
 ### PV MPPT Controller Configurations
 
