@@ -457,28 +457,31 @@ Configurations:
 
 * Added 700 € of fixed cost for cables, switch, fuses, electric panel and protections...
 
-Now let see the figures when we add the DIY battery
 
-| Cfg |  Cost with Battery (€)        | €/W       |
-|-----|-------------------------------|-----------|
-| 1   |       6540                    | 1.6987    |
-| 2   |       7124.9                  | 1.3073    |
-| 3   |       6740                    | 1.6240    |
-| 4   |       6989.9                  | 1.2825    |
-| 5   |       6701.91                 | 1.5371    |
-| 6   |       7170                    | 1.2415    |
+Now let's explore the figures with the addition of the DIY battery:
 
-As can be seen, it is important to have a bit more panels on this configuration to be confortable on the long run, there is about 10 % difference on the total price to go from the low cost configuration at 3.85 KW to the 5.45 KW. For me it is a no brainer, the only thing is that can you put the bigger panels on your application. Also oversizing a bit the panels can improve the performance even if there is a bit of 'clipping', your will produce more when there is less sun too.
-The configuration 4 is a bit on the edge: the MPPT Controller is undersized for cost reduction purpose:  57 * 70 = 3990 W. It means the panel array is oversized to 136.5% which is may be a bit too much. I would think more of the configuration number 2: 57 * 85 = 4845 W.
-The configuration 6 is also an interesting alternative, meaning adding 5 more panels improved slightly the ROI.
+| Configuration | Cost with Battery (€) | €/W    |
+|---------------|-----------------------|--------|
+| 1             | 6540                  | 1.6987 |
+| 2             | 7124.9                | 1.3073 |
+| 3             | 6740                  | 1.6240 |
+| 4             | 6989.9                | 1.2825 |
+| 5             | 6701.91               | 1.5371 |
+| 6             | 7170                  | 1.2415 |
 
-When you consider the power to surface ratio, the configuration 2 takes less surface which is interesting if you want to put more panels or if you want to reduce the impact on the land.
+Observing the results, it becomes evident that having a slightly larger panel configuration is more beneficial in the long run. The cost difference of around 10% between the low-cost 3.85 KW configuration and the 5.45 KW configuration justifies opting for the latter. The decision mainly hinges on the feasibility of accommodating larger panels within your setup. Additionally, a slight oversizing of panels can enhance performance, even accounting for some 'clipping'; this leads to increased energy production during periods of lower sunlight.
 
-Of course, you need to add the fixed cost for the shed, but it will not change the trend as we already seen.
+Configuration 4 appears to be on the edge, where the MPPT Controller is undersized for cost reduction (57 * 70 = 3990 W). The panel array is oversized at 136.5%, possibly more than necessary. Considering configuration 2, with 57 * 85 = 4845 W, might be a more balanced choice.
 
-Mean daily production for the configuration 2, caping on 4.845 KW of the MPPT controller, actually it should produce more.
-Yearly production 5013 kWh. (A 5.45 KW PV Array generates a yearly production of 5639 kWh)
+Configuration 6 offers an interesting alternative—incorporating 5 more panels leads to a slight improvement in ROI.
 
+When evaluating the power-to-surface ratio, configuration 2 stands out by utilizing less surface area. This aspect is advantageous if you intend to add more panels or minimize the land's impact.
+
+It's worth noting that while fixed costs for the shed need to be factored in, they are unlikely to alter the observed trends, as we've already discussed.
+
+
+
+Let's explore the mean daily production for Configuration 2, with a cap of 4.845 KW on the MPPT controller. It's important to highlight that the actual production should ideally surpass the observed figures. While the yearly production is estimated at 5013 kWh, a 5.45 KW PV Array generates a higher 5639 kWh annually.
 
 | Month | Daily Mean - High and Upper bound (kWh) |
 |-------|------------------------|
@@ -492,28 +495,21 @@ Yearly production 5013 kWh. (A 5.45 KW PV Array generates a yearly production of
 |  Aug  |  19.06 - 21.45         |
 |  Sep  |  16.43 - 18.46         |
 |  Oct  |   9.90 - 11.5          |
-|  Now  |   5.13 - 5.61          |
+|  Nov  |   5.13 - 5.61          |
 |  Dec  |   3.80 - 4.29          |
 
-My daily mean are about 12.3 kWh to 13.7 kWh.
-From March to September, this single array should provide enough.
-But I think a more realistic figure will be from April to mid September, due to shadows not taken in account, the production will be less.
+On average, the daily mean ranges between 12.3 kWh and 13.7 kWh. It's important to acknowledge that while this single array theoretically provides adequate power from March to September, practical factors suggest a more realistic timeframe from April to mid-September. Unaccounted shadows can lead to diminished production during this period.
 
 
 ### Middle Garden
 
-Similar to the Power Shed setup, the Middle Garden can have one or two rows of panels with the same specifications. The orientation and performance will be identical, with an earlier startup compared to the Power Shed. Bifacial panels are not considered due to their high price and minimal power difference, which does not justify the investment.
+The Middle Garden setup shares similarities with the Power Shed configuration. It can feature either one or two rows of panels, adhering to the same specifications. The orientation and performance characteristics remain consistent, with the added benefit of an earlier startup when compared to the Power Shed setup. Despite the potential advantages of bifacial panels, they are excluded from consideration due to their elevated cost and minimal power gain, which fails to justify the investment.
 
-If the inverter is big enough, it is possible to only put panels, the mppt controller and the battery. It means you can save the cost and the power usage during the night of another inverter. The problem will have an even slighter overproduction during summer.
-
-
-
+In instances where the inverter possesses sufficient capacity, a viable strategy involves placing only panels, the MPPT controller, and the battery. This approach leads to cost savings and reduces nighttime power consumption associated with an additional inverter. However, this method might lead to a slightly amplified overproduction during the summer months.
 
 ### House Roof
 
-Installing panels on the house roof is not preferred due to the high cost and the inability to carry out the installation personally. The cost in Luxembourg is prohibitive, making it more cost-effective to build a DIY three-phase 15KW system instead, even with potential government assistance.
-
-
+Mounting panels on the house roof is not the preferred choice, primarily due to the high associated costs and the impracticality of undertaking the installation independently. In Luxembourg, the cost factor acts as a significant deterrent, making it more financially viable to opt for a DIY three-phase 15KW system. This alternative stands out as a preferable choice, even considering potential government assistance.
 
 
   
