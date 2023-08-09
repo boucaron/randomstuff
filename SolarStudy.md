@@ -299,17 +299,20 @@ For smaller loads ranging from 200 to 2 KW, there are microinverters available i
 
 ### PV MPPT Controller Configurations
 
-There are two options for the PV MPPT Controller:
+| Option | Controller Model | Capacity | Cost (€) | Notes |
+|--------|------------------|----------|----------|-------|
+| 1      | [SNRE 250V/70A](https://www.srnesolar.com/product/%E2%80%8Bmppt-solar-regulator-solar-charge-controller-mc48v60-70a) | 5S/2P, 550W peak | around 350 | Cost-effective option |
+| 1      | [SNRE 250/85A](https://www.srnesolar.com/product/%e2%80%8bmppt-solar-charge-controller-mc48v85-100a) | 5S/2P, 550W peak | around 485 | More capacity, slightly more expensive |
+| 2      | [Victron 250V/70A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838) | - | - | Higher-end option |
+| 2      | [Victron 250/85A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838) | - | - | More capacity, higher-end option |
 
-1. The cost-effective [SNRE 250V/70A](https://www.srnesolar.com/product/%E2%80%8Bmppt-solar-regulator-solar-charge-controller-mc48v60-70a) (around €350) and/or [250/85A](https://www.srnesolar.com/product/%e2%80%8bmppt-solar-charge-controller-mc48v85-100a) (around €485) for 5S/2P in 550W peak.
-2. The more expensive [Victron 250V/70A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838) and/or [250/85A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838).
+The dimensioning calculations for both options are based on battery voltage and used for computation. Given the price difference, choosing the SNRE 70A model to match the 4KW panel capacity seems sensible. The "communication issue" between the SNRE MPPT Controller and Victron can be resolved using available software solutions to retrieve data.
 
-The dimensioning calculations for both options are provided based on the battery voltage and used for computation. Considering the price difference, it makes sense to opt for the SNRE 70A model to match the 4KW panel capacity. The "communication issue" with the SNRE MPPT Controller to the Victron can be resolved using available software solutions to retrieve data.
 
-### Battery Configurations
+### Battery Configuration
 
-DIY is the way to go: let say 3000 € for 13/14 kWh @ 48V so about 280 Ah to 300 Ah of capacity with a 150 A BMS with Active Balancing + all needed stuff around the battery to make it safe.
-The battery is the most costly part of the installation.
+For the battery configuration, the recommended approach is to go with a DIY setup. This involves creating a 13/14 kWh battery at 48V, which translates to a capacity of about 280 Ah to 300 Ah. This configuration includes a 150 A Battery Management System (BMS) with Active Balancing, along with all the necessary safety equipment.
+
 
 
 ### Terrase East Wall
