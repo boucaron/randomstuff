@@ -320,7 +320,7 @@ My estimation is to exclude the months of January, February, November, and Decem
 
 ### Potential Return on Investment:
 
-| Power Capacity | Supplier Cost per kWh (€) | Invested Money (€) | Yearly Production kWh | Production Money (€) | ROI Time (years) |
+| Power Capacity | Supplier Cost per kWh (€) | Invested Money (€) | Yearly Production kWh |  Yearly Saved Money (€) | ROI Time (years) |
 |----------------|---------------------------|--------------------|-----------------------|----------------------|------------------|
 | 800W           | 0.3                       | 800                | 460                   | 138                  | 5.8              |
 | 800W           | 0.4                       | 800                | 460                   | 184                  | 4.4              |
@@ -329,7 +329,7 @@ My estimation is to exclude the months of January, February, November, and Decem
 | 800W           | 0.7                       | 800                | 460                   | 322                  | 2.5              |
 | 800W           | 0.8                       | 800                | 460                   | 368                  | 2.2              |
 
-| Power Capacity | Supplier Cost per kWh (€) | Invested Money (€) | Yearly Production kWh | Production Money (€) | ROI Time (years) |
+| Power Capacity | Supplier Cost per kWh (€) | Invested Money (€) | Yearly Production kWh |  Yearly Saved Money (€) | ROI Time (years) |
 |----------------|---------------------------|--------------------|-----------------------|----------------------|------------------|
 | 1600W          | 0.3                       | 1250               | 930                   | 279                  | 4.5              |
 | 1600W          | 0.4                       | 1250               | 930                   | 372                  | 3.4              |
@@ -340,8 +340,76 @@ My estimation is to exclude the months of January, February, November, and Decem
 
 Based on the analysis, it is evident that the return on investment improves with higher power capacities and lower supplier costs per kWh. Additionally, installing a 1600W array (4 panels) generally results in a better ROI compared to an 800W array (2 panels). These insights can guide decision-making to optimize the PV array setup and achieve the best return on investment.
 
-TODO: Revised this part, I can save down by few hundreds euro easily
+#### August 2023 price, revised this part, I can save down a good hundreds euro, I found another supplier with very affordable PV panels.
 
+2 Panels configuration:
+- Hoymiles HMS-800 Micro Inverter: 231.93€  + EndKappe 6.90 + Cable 69.90 €  50€ Transport  https://www.offgridtec.com/hoymiles-hms-800-2t-microinverter-modulwechselrichter.html :  358.73 €
+- 2 * PV Panel 385W: 2 * 99€  https://www.chocdiscount.com/panneaux-solaires/25763-panneau-solaire-amerisolar-385w-as-6m120-hc-demi-cellules-black.html + 128 € Transport : 326 €
+- Total Price : 684.73 € 
+Kit with the same inverter: https://www.offgridtec.com/offgridtec-balkonkraftwerk-solardirect-luxen-wifi-900w-hm-800.html (800 € without transport)
+
+
+4 Panels configuration:
+- Hoymiles HM-1500 Microinverter: 278.86 + EndKappe 6.90 + Cable 69.90 €  +  4 * 11.19 MC4 2m  + 50€ Transport https://www.offgridtec.com/hoymiles-hm-1500-microinverter-modulwechselrichter.html : 450,42 €
+- 4 * PV Panel 385W: 4 * 99€  + (https://www.chocdiscount.com/panneaux-solaires/25763-panneau-solaire-amerisolar-385w-as-6m120-hc-demi-cellules-black.html) + 128 € Transport : 524 € 
+- Total Price: 974.42 €
+Kit with the same inverter: https://www.offgridtec.com/offgridtec-balkonkraftwerk-1700w-hm-1500-dtu-wlite-trina-vertex-s-425-mini-pv-solaranlage.html (1130.38 € without transport)
+
+| Power Capacity | Supplier Cost per kWh (€) | Invested Money (€) | Yearly Production kWh |  Yearly Saved Money (€) | ROI Time (years) |
+|----------------|---------------------------|--------------------|-----------------------|----------------------|------------------|
+| 770W           | 0.3                       | 690                | 450                   | 135                  | 5.1              |
+| 770W           | 0.4                       | 690                | 450                   | 180                  | 3.8              |
+| 770W           | 0.5                       | 690                | 450                   | 225                  | 3.1              |
+| 770W           | 0.6                       | 690                | 450                   | 270                  | 2.6              |
+| 770W           | 0.7                       | 690                | 450                   | 315                  | 2.2              |
+| 770W           | 0.8                       | 690                | 450                   | 360                  | 1.9              |
+
+Power capped by the micro inverter
+| Power Capacity | Supplier Cost per kWh (€) | Invested Money (€) | Yearly Production kWh |  Yearly Saved Money (€) | ROI Time (years) |
+|----------------|---------------------------|--------------------|-----------------------|----------------------|------------------|
+| 1500W          | 0.3                       | 980               | 873                   | 261                  | 3.8              |
+| 1500W          | 0.4                       | 980               | 873                   | 349                  | 2.8              |
+| 1500W          | 0.5                       | 980               | 873                   | 436                  | 2.3              |
+| 1500W          | 0.6                       | 980               | 873                   | 523                  | 1.9              |
+| 1500W          | 0.7                       | 980               | 873                   | 611                  | 1.6              |
+| 1500W          | 0.8                       | 980               | 873                   | 698                  | 1.4              |
+
+As you can the details maters, actually if the Transport can be from the same place, it is possible to save a bit more.
+The 4 panel version with the cheapest PV panels I found and the 1.5KW microinverter is making an important difference on the ROI, we have nearly an order of magnetude better with respect to the previous configuration.
+
+I introduce another configuration that I found interesting
+
+6 Panels configuration:
+- Solax X1 Mini 2.0 2KW 349 € + 19 € Transport (https://www.chocdiscount.com/onduleur-reseau/128-onduleur-solaire-reseau-solax-x1-mini-20-2000-watts-garantie-10-ans.html) 368 € (missing cables, fuses, and few other things) + 150 €  = 518 €
+- 6 * PV Panel 385W: 6 * 99 €  https://www.chocdiscount.com/panneaux-solaires/25763-panneau-solaire-amerisolar-385w-as-6m120-hc-demi-cellules-black.html + 128 € including Transport : 722 €
+- Total Price: 1240 €
+
+Power capped by the inverter
+| Power Capacity | Supplier Cost per kWh (€) | Invested Money (€) | Yearly Production kWh | Yearly Saved Money (€) | ROI Time (years) |
+|----------------|---------------------------|--------------------|-----------------------|----------------------|------------------|
+| 2000W          | 0.3                       | 1250               | 1150                  | 345                  | 3.6              |
+| 2000W          | 0.4                       | 1250               | 1150                  | 460                  | 2.7              |
+| 2000W          | 0.5                       | 1250               | 1150                  | 575                  | 2.2              |
+| 2000W          | 0.6                       | 1250               | 1150                  | 690                  | 1.8              |
+| 2000W          | 0.7                       | 1250               | 1150                  | 805                  | 1.6              |
+| 2000W          | 0.8                       | 1250               | 1150                  | 920                  | 1.4              |
+
+Actually the ROI should be better due to the PV array of 2.310 KW.
+
+If you choose a more classic orientation (20 Slope, 20 Azimut)
+Yearly production goes to 2069 kWh -> estimated 1809 kWh
+The ROI is further improved.
+
+| Power Capacity | Supplier Cost per kWh (€) | Invested Money (€) | Yearly Production kWh |  Yearly Saved Money (€) | ROI Time (years) |
+|----------------|---------------------------|--------------------|-----------------------|----------------------|------------------|
+| 2000W          | 0.3                       | 1250               | 1800                  | 540                  | 3.33             |
+| 2000W          | 0.4                       | 1250               | 1800                  | 720                  | 2.5              |
+| 2000W          | 0.5                       | 1250               | 1800                  | 900                  | 2                |
+| 2000W          | 0.6                       | 1250               | 1800                  | 1080                 | 1.66             |
+| 2000W          | 0.7                       | 1250               | 1800                  | 1260                 | 1.43             |
+| 2000W          | 0.8                       | 1250               | 1800                  | 1440                 | 1.25             |
+
+Of course since it is a grid tighed inverter, you need to consume the 2KW when it is produced, so it is a bit a corner case. Still interesting if you couple this with the possibility on the Victron Multiplus II to store the energy surplus from such grid inverter to the battery (with some additional losses)
 
 ### Backyard Garden - Power Shed
 
