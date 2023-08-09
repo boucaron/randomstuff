@@ -122,78 +122,80 @@ A DIY battery about 13 kWh with a 150 A BMS costs about 2.5 to 3 K€, if you pu
 
 BMS is used to charge/discharge a battery and have various protection according to the kind of battery (under-voltage, over-voltage, current protection, temperature protection, cell-balancing ...etc...)
 
-# Solar Estimating Tools
+## Exploring Tools for PV Analysis
 
-There are different tools available.
-I found the most useful and complete is the free tool provided by the EC: https://re.jrc.ec.europa.eu/pvg_tools/en/ (PVGIS)
-Basically you set the location, the orientation (slope, azimuth), the size of your PV array and it provides you an estimation of the production by month/year.
-If you the tool handy to see how sensitive is the production with respect to the slope which is surprisingly not so critical.
-What I found more interesting is the 'Daily Data' where you can really dig in when your production will run on the whole year and the hourly irradiance.
+Various tools are available for analyzing photovoltaic (PV) systems. Among them, the most comprehensive and useful one I've found is the free tool offered by the European Commission: [PVGIS](https://re.jrc.ec.europa.eu/pvg_tools/en/). PVGIS allows you to input location data, system orientation (slope and azimuth), and array size, providing estimations of monthly and yearly production. While it's convenient to gauge production sensitivity in relation to the slope, surprisingly, this aspect is not as critical as one might assume.
 
-But do not forget this is just an estimation, it cannot take in account shadows due to trees, to buildings, to mountains ...etc...
+The 'Daily Data' feature in PVGIS is particularly intriguing. It allows you to delve deep into the timing and duration of your production over the entire year, including hourly irradiance values. However, it's important to remember that PVGIS estimates are based on assumptions and cannot account for factors like shadows caused by trees, buildings, mountains, and more.
 
-## It is about details
-Personally, based on where I plan to put my PVs, I spent some time to see where and when the sun comes and goes along the year.
-I know for instance I can put some PV next to a wall (Azimuth -30 deg., Slope 90 deg.) and that from April to September, I will have some production from 7/8h to 14/15h but it will have a small irradiance about 200 to 600 W/m². So a 425W panel under 1000 W/m² irradiance will produce as much as 75 W at 200 W/m² irradiance to 240 W at 600 W/m². It is really important to know this details to have a realistic idea of the real production in your location.
-Also it gives you an hint if you can put more panels on the inverter which is a costly equipment, the inverter can produce more early and 'clip' the excess production, but there are limits.
+## Emphasizing the Importance of Details
+
+Personally, I invested time in observing the sun's path throughout the year in the locations where I plan to install my PV panels. For example, I discovered that placing PV panels next to a wall (with an Azimuth of -30 degrees and a Slope of 90 degrees) would yield production from 7/8 AM to 2/3 PM between April and September. However, during this period, the irradiance remains relatively low, ranging from 200 to 600 W/m². Knowing this detail is crucial, as a 425W panel under 1000 W/m² irradiance generates only around 75W at 200 W/m² and up to 240W at 600 W/m². This awareness is key to accurately estimating actual production in your specific location.
+
+Additionally, these insights can guide decisions about panel quantity for your inverter. While inverters are costly components, understanding that they can produce more power earlier in the day and manage excess production through "clipping" helps determine optimal panel-inverter ratios, considering inherent limitations.
 
 
 
-# Dimensionning is tricky
+## The Complexity of Dimensioning
 
-Solar panels, inverters, batteries, bms are coming as components with various 'size', but those sizes are discrete.
-For instance you may need a 20 kWh battery but you cannot build one, you will be able to build two 13 kWh battery for instance and couple both together.
-This is the same for inverters, you may need a 8KW inverter but you can either put a 10 KW, or 2 of 5 KW or 3 of 3 KW. 
+Sizing solar systems involves intricate considerations. Components like solar panels, inverters, batteries, and BMS (Battery Management Systems) come in different 'sizes,' although these sizes are often discrete. For instance, you might require a 20 kWh battery, but constructing such a battery might be impractical. Instead, you might opt for two 13 kWh batteries, effectively coupled together. Similarly, when it comes to inverters, your need for an 8KW inverter might translate to using a 10 KW inverter, or perhaps two 5 KW inverters, or even three 3 KW inverters.
 
-## Storage is mandatory
+## The Imperative of Energy Storage
 
-Why so ?
-Production is not during the same time as usage.
-Electric companies are not buying back at an interesting price. Also you are going to sell for cheap during the day whay you need during the night. It does not make any sense.
+But why is energy storage so crucial?
+
+The timing of energy production and consumption varies significantly. Solar production doesn't align perfectly with usage patterns. Electric companies don't typically offer compelling buyback rates, and selling surplus energy at a low price during the day while needing it at night doesn't make economic sense.
 
 
-## Basic idea
+## The Core Concept
 
-- 5 KW PV Array + 5 KW Inverter: about 5100 kWh in my place and specified orientation.
-- Being pessimistic, I can remove November, December, January, Februrary: about 641 kWh less, so 4459 kWh, it is more or less my yearly power usage.
-- I did not account for aging of the PV array on 25 years: -15% so 3790 kWh
+Let's break down the fundamental concept:
 
-But there are large peaks above 8 KW for the shower direct heaters: a single 5KW inverter cannot cope with such load.
-Also, this inverter is a single phase and I have three phases.
+- A 5 KW PV Array combined with a 5 KW Inverter: Yields approximately 5100 kWh under the specific orientation and conditions of my location.
+- Adopting a cautious approach, by excluding November, December, January, and February, we reduce the estimated output by around 641 kWh, resulting in 4459 kWh. Remarkably, this aligns quite closely with my annual power consumption.
+- Factoring in the natural aging of the PV array over 25 years, at a rate of -15%, we arrive at a more conservative estimate of 3790 kWh.
 
-With a big spoon let say it will cost 8 to 10 K€ with a 13.5 kWh DIY battery
-During summer the PV array will generates about 18 to 22 kWh daily.
-It means there is overproduction and the battery will be filled quickly.
-Habits need to be changed to use the power of the PV array (April to August) for the washing machine and the dish washer.
+However, challenges arise due to occasional high peaks exceeding 8 KW, mainly from direct shower heaters. Managing this load surpasses the capacity of a single 5KW inverter. Additionally, my three-phase setup necessitates an appropriate solution.
 
-## More batteries
-The daily average power usage is about 12 kWh, the life span of the LiPo battery being filled fully and empty is pretty bad for its life time. An additional battery should be added, the current will be spread out on both when charging and discharging, it means less heat. Let say a single battery will be not empty less than 20%, two batteries will have more than 50% of their capacity after each day, slightly improving the life of both batteries. Of course, it is a 3 K€ additional increase from 11 to 13 K€ on the system cost, but for a 3 times life improvement on the batteries which is critical in my point of view. Actually due to the reduce heat/stress on the current used, it will also reduce aging on the capacity of the batteries.
-According to https://batteryuniversity.com/article/bu-808-how-to-prolong-lithium-based-batteries
-- 80% DoD equals 900 cycles
-- 40% DoD equals 3000 cycles 
+Broadly speaking, the investment could range from 8 to 10 K€, encompassing a 13.5 kWh DIY battery. During the summer period, the PV array is projected to generate approximately 18 to 22 kWh per day. This surplus power prompts swift battery charging. Adjusting daily habits to make optimal use of this abundant energy (from April to August) becomes essential, particularly for appliances like the washing machine and dishwasher.
 
 
 
+## Expanding Battery Capacity
+
+Considering battery capacity expansion:
+
+On an average day, power consumption reaches about 12 kWh. However, the typical charging and discharging pattern of LiPo batteries – from full to empty – significantly impacts their lifespan. To mitigate this, an extra battery is recommended. By distributing the current between the batteries during charging and discharging, heat generation is reduced. This results in less strain on each battery, potentially extending their lives. Assuming each battery will never be discharged below 20%, this approach ensures that even after daily usage, both batteries will maintain over 50% of their capacity. 
+
+Although this entails a 3 K€ additional expense, raising the overall system cost from 11 to 13 K€, the trade-off is a substantial improvement in battery longevity, a critical aspect. Furthermore, the reduction in heat and stress on the battery currents not only extends lifespan but also minimizes capacity aging.
+
+As referenced from [Battery University](https://batteryuniversity.com/article/bu-808-how-to-prolong-lithium-based-batteries):
+
+- Discharging to 80% Depth of Discharge (DoD) results in around 900 cycles.
+- Discharging to 40% DoD allows for approximately 3000 cycles.
 
 
-# Improving habits
+# Enhancing Energy-Saving Habits
 
-## Shower power saving
-Shower is about 8 to 18 KW:
-- 15 minutes is about 2 kWh to 4.5 kWh.
-- 10 minutes is about 1.33 kWh to 3 kWh.
-- 5 minutes is about 0.66 kWh to 1.5 kWh.
-Speed matters.
+## Efficient Shower Practices
+Showers utilize a substantial amount of power, ranging from 8 to 18 kW, depending on the water heater's capacity. The duration of your shower significantly impacts your energy consumption:
 
-Let say 2 showers a day during a year:
-- At 3.3 kWh each: 2409 kWh
-- At 2.2 kWh each: 1606 kWh
-- At 1.1 kWh each: 803 kWh
-5 minutes saved is about 803 kWh saved on the yearly bill.
+- A 15-minute shower can consume around 2 to 4.5 kWh.
+- A 10-minute shower uses roughly 1.33 to 3 kWh.
+- A 5-minute shower requires about 0.66 to 1.5 kWh.
 
-## Washing machine/Dish washer
+Notably, the speed at which you shower plays a pivotal role in energy efficiency. To put it into perspective, let's consider a scenario where you take two showers a day over the course of a year:
 
-If a large enough PV array is installed and the battery is a on the short side for the storage, you will have overproduction during summer. The washing machine or the dish washer should be running in the middle of the morning or just after lunch using relatively short cycles to take full advantage of the full sun  still being able to fill the battery for the evening and night usage.
+- Showers lasting 15 minutes each: Estimated annual energy consumption of 2409 kWh.
+- Showers lasting 10 minutes each: Estimated annual energy consumption of 1606 kWh.
+- Showers lasting 5 minutes each: Estimated annual energy consumption of 803 kWh.
+
+By saving as little as 5 minutes per shower, you could potentially reduce your yearly energy usage by approximately 803 kWh.
+
+## Optimizing Washing Machine and Dishwasher Usage
+
+When your PV array is adequately sized, it's likely that you'll experience excess energy production during the sunniest summer months. To harness this surplus energy effectively, consider running your washing machine or dishwasher during mid-morning or immediately after lunch. Opting for shorter cycles during these peak sunlight periods allows you to maximize the benefits of ample sunlight. This strategy ensures that your battery is adequately charged to meet your energy needs throughout the evening and nighttime.
+
 
 
 # Study Case
