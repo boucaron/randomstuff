@@ -460,6 +460,23 @@ Please note that since it's a grid-tied inverter, power should be consumed when 
 It is also possible to make the same interesting configuration with 4 * PV Panel 550W, which is in my opinion more interesting because you need less cables, and it takes less area.
 
 
+Slope of wall mounted array:
+ Even a few degrees can improve your yearly production as shown after, assuming a 2KW PV Array/MicroInverter in the following tab
+| Slope (degrees) | Yearly Production Upper Bound (kWh) |  Gain (%)            | Power to Optimal (%) | Offset from the Wall (mm) - Panel Length 2278mm |  Offset from the Wall (mm) - Panel Length 1756 mm |
+|-----------------|-------------------------------------|----------------------|----------------------|-------------------------------------------------|---------------------------------------------------|
+| 90  (Vertical)  |  1455                               |  NA - Baseline       |        68.55         | 0                                               | 0                                                 |
+| 85              |  1567                               |  7.69                |        73.88         | 198.54                                          | 153.05                                            |
+| 80              |  1672                               |  14.91               |        78.83         | 395.57                                          | 304.95                                            |
+| 75              |  1764                               |  21.23               |        83.16         | 589.59                                          | 454.49                                            |
+| 70              |  1846                               |  26.87               |        87.03         | 779.12                                          | 600.59                                            |
+| 65              |  1919                               |  31.89               |        90.47         | 962.17                                          | 742.12                                            |
+| 60              |  1981                               |  36.15               |        93.39         | 1139.00                                         | 878.00                                            |
+| 35 (Optimal)    |  2121                               |  45.77               |        NA - Baseline | 1866.03                                         | 1438.43                                           |
+
+
+The table shows that even a small 10 degrees angle from the wall improve slightly the power production to nearly 80% from less than 70% (about 300 kWh more on the year), the offset is about 300 to 400 mm from the wall.
+
+
 ### Backyard Garden - Power Shed
 
 The Backyard Garden setup involves an array of 4KW to 5KW (8 to 10 panels with 400W to 550W each) arranged in two rows. The array will be located in a shed or at a low height in the garden to facilitate maintenance and improve the return on investment. An orientation angle of 20 degrees is chosen for the shed. 
@@ -584,6 +601,7 @@ Mounting panels on the house roof is not the preferred choice, primarily due to 
 
 # Reduce oversizing idea
 
+Just exploring an idea.
 I think the main issue in our latitudes is about optimizing the performance of the PV array for Winter in order to reduce overproduction.
 
 Given a fixed azimuth, let's try to check what is the slope for Winter (assuming a 4KW PV array).
@@ -614,7 +632,7 @@ In any case December is the minimum production in this area, 132 kWh means about
 
 If you need loosely about 13 kWh daily in December, it means you need at least 12 KW of such panels, and you will overproduce monthly more than 1200 kWh from April to September (mean of 39 kWh daily), probably you need at least a buffer of 3 to 4 days at least: 39 to 52 kWh of battery. At least 4 DIY batteries: 4 * 3 K€  = 12 K€ at the bare minimum, with a usable capacity of 80 % with 280 Ah of storage: 0.8 * 48 * 280 * 4 =  43 kWh of effective use of the battery, it is a 3.3 day buffer, adding another battery move it to 4 short days for 15 K€.
 A 12 KW PV array is about 24 to 36 panels costing about 3.5 K€ to 4.5 K€, this is small with respect to the battery needs.
-Let say you have 3 times a 4 KW PV array, you need 3 MPPTs of 85 A, for the inverter it depends, ideally you want to minimize the zero load power sucked by the inverter.
+Let say you have 3 times a 4 KW PV array, you need 3 MPPTs of 85 A, for the inverter it depends, ideally you want to minimize the zero load power sucked by the inverter(s).
 
 # Multiple inverters with different power rating
 
