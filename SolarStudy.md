@@ -364,6 +364,7 @@ Based on the analysis, it is evident that the return on investment improves with
 
 
 Upon revisiting this section, I've identified significant cost-saving opportunities. A new supplier offering budget-friendly PV panels has allowed for substantial reductions in expenses.
+More or less add 150/200 € for an Electronic Box with Protections + the Earth Cable.
 
 **2 Panels Configuration:**
 
@@ -371,6 +372,10 @@ Upon revisiting this section, I've identified significant cost-saving opportunit
 - 2 * PV Panel 385W: 2 * 99€ [Source](https://www.chocdiscount.com/panneaux-solaires/25763-panneau-solaire-amerisolar-385w-as-6m120-hc-demi-cellules-black.html) + 128 € Transport: 326 €
 - Total Price: 684.73 € 
    - Kit with the same inverter: [Link](https://www.offgridtec.com/offgridtec-balkonkraftwerk-solardirect-luxen-wifi-900w-hm-800.html) (800 € without transport)
+
+- *Interesting kit 700W*: 2 375W Panels + Hoymiles HMS-700 Micro Inverter + Caps 399 € + Cable 10 m 37.7 + Transport 128€ : Total 564.70 €
+  [Link](https://www.chocdiscount.com/kits-solaires-autoconsommation/21837-kit-solaire-750w-2-panneaux-dmegc-375w-autoconsommation-1-micro-onduleur-hoymiles-hm700-essentiel.html)
+ 
 
 **4 Panels Configuration:**
 
@@ -383,6 +388,9 @@ Upon revisiting this section, I've identified significant cost-saving opportunit
 - Hoymiles HMS-2000-4T Microinverter: 327.13 + EndKappe 6.90 + Cable 69.90 € + 4 * 11.19 € MC4 2m + 50€ Transport [Source](https://www.offgridtec.com/hoymiles-hms-2000-4t-microinverter-modulwechselrichter.html): 498,69 €
 -  4* PV Panel: 4 * 143.99 + 128 € Transport: 703.96 [Source](https://autosolar.es/panel-solar-24-voltios/panel-solar-545w-ja-solar-mono-perc)
 - Total Price: 1202.65 €
+
+- *Interesting kit 1400W*: 4 375 Panels + 2 Hoymiles HMS-700 Micro Inverter + 2 * MC4 1m + Caps 798 €  + 2* 37.7 € Cable 10 m + 128 € Transport: 1001 € [Source](https://www.chocdiscount.com/kits-solaires-autoconsommation/23298-kit-solaire-1500w-4-panneaux-dmegc-375w-autoconsommation-2-micro-onduleurs-hoymiles-hm700-essentiel.html)
+It is about the same price as the single 1500W configuration, the advantage is to have 2 small PV arrays that can be oriented differently (East, South for instance)
 
 **Power Capacity Analysis:**
 
@@ -585,9 +593,11 @@ Similarly the daily mean is covered on the same period, there is less 'overprodu
 
 ### Middle Garden
 
-The Middle Garden setup shares similarities with the Power Shed configuration. It can feature either one or two rows of panels, adhering to the same specifications. The orientation and performance characteristics remain consistent, with the added benefit of an earlier startup when compared to the Power Shed setup. Despite the potential advantages of bifacial panels, they are excluded from consideration due to their elevated cost and minimal power gain, which fails to justify the investment.
+The Middle Garden setup shares similarities with the Power Shed configuration. It can feature either one or two rows of panels, adhering to the same specifications. The orientation and performance characteristics remain consistent, with the added benefit of a slightly earlier startup when compared to the Power Shed setup. Despite the potential advantages of bifacial panels, they are excluded from consideration due to their elevated cost and minimal power gain, which fails to justify the investment.
 
 In instances where the inverter possesses sufficient capacity, a viable strategy involves placing only panels, the MPPT controller, and the battery. This approach leads to cost savings and reduces nighttime power consumption associated with an additional inverter. However, this method might lead to a slightly amplified overproduction during the summer months.
+
+From a cost point of view, just putting a few pillars and beams, it is slightly more cost effective than the Power shed if the main purpose is to provide power. 
 
 ### House Roof
 
