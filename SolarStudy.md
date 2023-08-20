@@ -459,8 +459,7 @@ Opting for a more classic orientation (20 Slope, 20 Azimuth), yearly production 
 Please note that since it's a grid-tied inverter, power should be consumed when produced. However, coupling this with the possibility of utilizing the Victron Multiplus II to store excess energy in the battery (with some additional losses) makes this a compelling option.
 It is also possible to make the same interesting configuration with 4 * PV Panel 550W, which is in my opinion more interesting because you need less cables, and it takes less area.
 
-
-Slope of wall mounted array:
+## Slope of wall mounted array
  Even a few degrees can improve your yearly production as shown after, assuming a 2KW PV Array/MicroInverter in the following tab
 | Slope (degrees) | Yearly Production Upper Bound (kWh) |  Gain (%)            | Power to Optimal (%) | Offset from the Wall (mm) - Panel Length 2278mm |  Offset from the Wall (mm) - Panel Length 1756 mm |
 |-----------------|-------------------------------------|----------------------|----------------------|-------------------------------------------------|---------------------------------------------------|
