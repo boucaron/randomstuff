@@ -317,7 +317,7 @@ For the battery configuration, the recommended approach is to go with a DIY setu
 
 ### Terrase East Wall
 
-A small array ranging from 800W to 2KW, consisting of 2 to 6 panels with power outputs between 400W to 550W each, is proposed for the Terrase East Wall. The primary objective is to harness morning to noon sunlight efficiently to cover power usage for low-demand devices and mitigate power peaks. However, despite its simplicity, this option might not provide the most favorable return on investment. Additionally, the presence of a hill may impact the system's early morning startup.
+A small array ranging from 800W to 2KW, consisting of 2 to 6 panels with power outputs between 350W to 550W each, is proposed for the Terrase East Wall. The primary objective is to harness morning to noon sunlight efficiently to cover power usage for low-demand devices and mitigate power peaks. However, despite its simplicity, this option might not provide the most favorable return on investment. Additionally, the presence of a hill may impact the system's early morning startup.
 
 Here are the yearly energy production estimates (in kWh) for different configurations:
 
@@ -359,6 +359,17 @@ My estimation is to exclude the months of January, February, November, and Decem
 | 1600W          | 0.8                       | 1250               | 930                   | 744                  | 1.7              |
 
 Based on the analysis, it is evident that the return on investment improves with higher power capacities and lower supplier costs per kWh. Additionally, installing a 1600W array (4 panels) generally results in a better ROI compared to an 800W array (2 panels). These insights can guide decision-making to optimize the PV array setup and achieve the best return on investment.
+
+### Daily Power Usage Hints
+
+The Daily Evaluated "Regular" Usage is set to 0.4kW for 16 hours: 0.4kW * 16 = 6.4 kWh
+
+Let say there is a production of 0.4 kW from 9 to 13: 0.4kW * 4 = 1.6 kWh
+It means a reduction of 25% on the "Regular" usage.
+Let say it works only during 6 month during the year and only 4 hours daily: 182.5 * 4 * 0.4 kW = 292 kWh
+It removes about 6.48 % of the total bill, and 12.5 % of the Daily Evaluated "Regular" Usage.
+
+Checking the Daily Charge there are patterns when you cook at lunch time from 11h to 13h, from 1KW to 3KW most of the time for 15 minutes at least to about 1 hour or bit more, in such case 4 panels may handle this, but you will 'loose' a lot of production. Moving from 2 panels to 4 panels is a 300 € to 400 € change. Adding a small battery with a hybrid inverter will make sense to cover both the lunch cooking time and the dining cooking time, however the budget is quiet different, I will discuss about this scenario later.
 
 #### August 2023 Price Analysis
 
@@ -469,19 +480,34 @@ It is also possible to make the same interesting configuration with 4 * PV Panel
 
 ## Slope of wall mounted array
  Even a few degrees can improve your yearly production as shown after, assuming a 2KW PV Array/MicroInverter in the following tab
-| Slope (degrees) | Yearly Production Upper Bound (kWh) |  Gain (%)            | Power to Optimal (%) | Offset from the Wall (mm) - Panel Length 2278mm |  Offset from the Wall (mm) - Panel Length 1756 mm |
-|-----------------|-------------------------------------|----------------------|----------------------|-------------------------------------------------|---------------------------------------------------|
-| 90  (Vertical)  |  1455                               |  NA - Baseline       |        68.55         | 0                                               | 0                                                 |
-| 85              |  1567                               |  7.69                |        73.88         | 198.54                                          | 153.05                                            |
-| 80              |  1672                               |  14.91               |        78.83         | 395.57                                          | 304.95                                            |
-| 75              |  1764                               |  21.23               |        83.16         | 589.59                                          | 454.49                                            |
-| 70              |  1846                               |  26.87               |        87.03         | 779.12                                          | 600.59                                            |
-| 65              |  1919                               |  31.89               |        90.47         | 962.17                                          | 742.12                                            |
-| 60              |  1981                               |  36.15               |        93.39         | 1139.00                                         | 878.00                                            |
-| 35 (Optimal)    |  2121                               |  45.77               |        NA - Baseline | 1866.03                                         | 1438.43                                           |
+| Slope (degrees) | Yearly Production Upper Bound (kWh) |  Gain (%)            | Power to Optimal (%) | Offset from the Wall (mm) - Panel Length 2278mm |  Offset from the Wall (mm) - Panel Length 1756 mm | Offset from the Wall (mm) - Panel "Length" 1038 mm |
+|-----------------|-------------------------------------|----------------------|----------------------|-------------------------------------------------|---------------------------------------------------|----------------------------------------------------|
+| 90  (Vertical)  |  1455                               |  NA - Baseline       |        68.55         | 0                                               | 0                                                 | 0 |
+| 85              |  1567                               |  7.69                |        73.88         | 198.54                                          | 153.05                                            | 90.47 mm  | 
+| 80              |  1672                               |  14.91               |        78.83         | 395.57                                          | 304.95                                            | 180.25 mm |
+| 75              |  1764                               |  21.23               |        83.16         | 589.59                                          | 454.49                                            | 268.65mm  |
+| 70              |  1846                               |  26.87               |        87.03         | 779.12                                          | 600.59                                            | 355.02 mm |
+| 65              |  1919                               |  31.89               |        90.47         | 962.17                                          | 742.12                                            | 438.65 mm |
+| 60              |  1981                               |  36.15               |        93.39         | 1139.00                                         | 878.00                                            | 519.00 mm |
+| 35 (Optimal)    |  2121                               |  45.77               |        NA - Baseline | 1866.03                                         | 1438.43                                           | 850.28 mm |
 
 
-The table shows that even a small 10 degrees angle from the wall improve slightly the power production to nearly 80% from less than 70% (about 300 kWh more on the year), the offset is about 300 to 400 mm from the wall.
+The table shows that even a small 10 degrees angle from the wall improve slightly the power production to nearly 80% from less than 70% (about 300 kWh more on the year), the offset is about 300 to 400 mm from the wall in portrait mode, the offset is about 200 mm for such angle in landscape mode: it means you can slightly improve the production for the same offset in landscape mode. An offset of about 400mm will be about about 70 and 65 degrees, achieving about 88.5% of the Optimal Power, or if you prefer increase about 30% the Production with respect to put it the Panel against the Wall. But in practice, it may depend on your configuration.
+
+Let see numbers for a small 2 panel system with a 0.700 W micro inverter.
+The Slope is 68 degrees and the Azimuth -40 degrees.
+Yearly PV production 635.89 kWh (removing Jan. Feb. Nov. Dec: 99 kWh):  536.89 kWh.
+Let assume it cost 600 € to build it.
+
+| Supplier Price €/kWh |Money Saved |  ROI (Years) |
+|----------------------|------------|--------------|
+| 0.25                 | 134.20     |  4.47        |
+| 0.30                 | 161.00     |  3.73        |
+| 0.40                 | 214.75     |  2.79        |
+| 0.50                 | 268.44     |  2.24        |
+| 0.60                 | 322.13     |  1.86        |
+| 0.70                 | 375.82     |  1.60        |
+| 0.80                 | 429.51     |  1.40        |
 
 
 ### Backyard Garden - Power Shed
