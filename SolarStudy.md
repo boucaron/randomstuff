@@ -301,10 +301,12 @@ For smaller loads ranging from 200 to 2 KW, there are microinverters available i
 
 | Option | Controller Model | Capacity | Cost (€) | Notes |
 |--------|------------------|----------|----------|-------|
-| 1      | [SNRE 250V/70A](https://www.srnesolar.com/product/%E2%80%8Bmppt-solar-regulator-solar-charge-controller-mc48v60-70a) | 4S/2P and/or 5S/2P, 550W peak | around 350 | Cost-effective option |
-| 1      | [SNRE 250/85A](https://www.srnesolar.com/product/%e2%80%8bmppt-solar-charge-controller-mc48v85-100a) | 4S/2P and/or 5S/2P, 550W peak | around 485 | More capacity, slightly more expensive |
+| 1      | [SNRE 250V/70A](https://www.srnesolar.com/product/%E2%80%8Bmppt-solar-regulator-solar-charge-controller-mc48v60-70a) [NEW MODEL](https://fr.aliexpress.com/item/1005004674334241.html?spm=a2g0o.store_pc_groupList.8148356.6.2ea8c85balNkhS&pdp_npi=3%40dis%21EUR%21%E2%82%AC%20384%2C34%21%E2%82%AC%20295%2C94%21%21%21%21%21%40210318d116935871915486338e8d0a%2112000030061281026%21sh%21FR%21839344662)| 4S/2P and/or 5S/2P, 550W peak | around 350 | Cost-effective option |
+| 1      | [SNRE 250/85A](https://www.srnesolar.com/product/%e2%80%8bmppt-solar-charge-controller-mc48v85-100a) [NEW_MODEL](https://fr.aliexpress.com/item/1005005369131585.html?spm=a2g0o.store_pc_groupList.8148356.15.2ea8c85bjfttRf&pdp_npi=3%40dis%21EUR%21%E2%82%AC%20559%2C04%21%E2%82%AC%20402%2C51%21%21%21%21%21%40210318d116935871915486338e8d0a%2112000032769315432%21sh%21FR%21839344662)| 4S/2P and/or 5S/2P, 550W peak | around 425 and 485 | More capacity, slightly more expensive |
+| 1      | [SNRE 250/100A](https://fr.aliexpress.com/item/1005005369131585.html?spm=a2g0o.store_pc_groupList.8148356.15.2ea8c85bjfttRf&pdp_npi=3%40dis%21EUR%21%E2%82%AC%20559%2C04%21%E2%82%AC%20402%2C51%21%21%21%21%21%40210318d116935871915486338e8d0a%2112000032769315432%21sh%21FR%21839344662)| 4S/4P and/or 5S/3P, 550W peak | around 475 | More capacity, slightly more expensive not really appropriate |
 | 2      | [Victron 250V/70A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838) | - | - | Higher-end option |
 | 2      | [Victron 250/85A](https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-ve.can?_ga=2.250982854.1958924882.1691273838-1387248659.1691273838) | - | - | More capacity, higher-end option |
+| 3      | [SNRE 150V/60A](https://www.ase-energy.com/1409-regulateur-de-charge-solaire-60a-mppt-12-24-48v-srne.html) | 2S/4P or 3S/3P | around 265 | Low Cost effective option | 
 
 The dimensioning calculations for both options are based on battery voltage and used for computation. Given the price difference, choosing the SNRE 70A model to match the 4KW panel capacity seems sensible. The "communication issue" between the SNRE MPPT Controller and Victron can be resolved using available software solutions to retrieve data.
 
@@ -443,6 +445,7 @@ The 4-panel configuration, featuring the most economical PV panels and a 1.5KW m
 A further improvement will be to have the 2KW microinverter and 4 * 550W panels, the ROI is a bit better.
 
 
+#### 6 Panel Inverter Configuration
 Let's explore another intriguing configuration:
 
 **6 Panels Configuration:**
@@ -477,6 +480,93 @@ Opting for a more classic orientation (20 Slope, 20 Azimuth), yearly production 
 
 Please note that since it's a grid-tied inverter, power should be consumed when produced. However, coupling this with the possibility of utilizing the Victron Multiplus II to store excess energy in the battery (with some additional losses) makes this a compelling option.
 It is also possible to make the same interesting configuration with 4 * PV Panel 550W, which is in my opinion more interesting because you need less cables, and it takes less area.
+
+
+
+#### Battery tied Configuration
+
+I am interested also in battery based solutions and most of MPPT battery chargers are known for being effective from a conversion point of view.
+I am investigating different array size and configuration, along with various MPPT controllers.
+
+| MPPT Model | Amps (A) | Voltage (V) | PV Max Voltage (V) | Price (€) |
+|------------|----------|-------------|--------------------|-----------|
+| [SNRE MC4860N15](https://fr.aliexpress.com/item/1005004674334241.html?spm=a2g0o.store_pc_groupList.8148356.10.2fdbc85b74K4uY&pdp_npi=3%40dis%21EUR%21%E2%82%AC%20264%2C07%21%E2%82%AC%20203%2C33%21%21%21%21%21%402101f49a16936392187478334ea022%2112000030061281026%21sh%21LU%21839344662)           |    60      |     48      | 150 | 270 |
+| [SNRE MC4870N15](https://fr.aliexpress.com/item/1005004674334241.html?spm=a2g0o.store_pc_groupList.8148356.10.2fdbc85b74K4uY&pdp_npi=3%40dis%21EUR%21%E2%82%AC%20264%2C07%21%E2%82%AC%20203%2C33%21%21%21%21%21%402101f49a16936392187478334ea022%2112000030061281026%21sh%21LU%21839344662) | 70 | 48 | 150 | 293 |
+| [SNRE MC4860N25](https://fr.aliexpress.com/item/1005004674334241.html?spm=a2g0o.store_pc_groupList.8148356.10.2fdbc85b74K4uY&pdp_npi=3%40dis%21EUR%21%E2%82%AC%20264%2C07%21%E2%82%AC%20203%2C33%21%21%21%21%21%402101f49a16936392187478334ea022%2112000030061281026%21sh%21LU%21839344662) | 60 | 48 | 250 | 284.3 |
+| [SNRE MC4860N25](https://fr.aliexpress.com/item/1005004674334241.html?spm=a2g0o.store_pc_groupList.8148356.10.2fdbc85b74K4uY&pdp_npi=3%40dis%21EUR%21%E2%82%AC%20264%2C07%21%E2%82%AC%20203%2C33%21%21%21%21%21%402101f49a16936392187478334ea022%2112000030061281026%21sh%21LU%21839344662) | 60 | 48 | 250 |  316 | 
+
+
+Most of the time the first limiting factor is th PV input with 150 V and 250 V for such MPPT controllers, then of course the number of current that can be used to reload the battery.
+For the cheap 385 W PV Array, I performed a few check with the Victron MPPT calculator, to check the limits at -30 C, 40 C and 80 C for the currents and voltage assuming 6 mm^2 and 10 m cable. Battery Voltage 48V, Floating voltage at 54V (may be a bit too much for 48V system, 52.5V may be more realistic)
+
+Core configurations from where to derive all parallel configurations. Min temperature: max voltage and max current output, and of course Max Temperature: min voltage and min current output.
+| Configuration | Array Peak Power (W) | Max/Medium/Min Current (A) | Max/Medium/Min Voltage (V) |
+|---------------|----------------------|----------------------------|----------------------------|
+|  2S/1P        |  770                 | 18.1 / 15.1 / 13.2         | 97.4 / 66.2 /  56.7        | 
+|  3S/1P        | 1155                 | 27.7 / 22.6 / 19.8         | 146.1 / 99.6 / 85.4        | 
+|  4S/1P        | 1540                 | 36.5 / 30.4 / 26.7         | 194.8 / 133.1 / 114.1      | 
+|  5S/1P        | 1925                 | 45.7 / 38.0 / 33.3         | 243.5 / 166.5 / 142.8      | 
+
+| Configuration | Array Peak Power (W) | MPPT Controller | Max/Medium/Min Current (A) | 
+|---------------|----------------------|-----------------|----------------------------|
+|  4S/2P        | 3080      | 250V/60A        | 60 / 60 / 53.3 (limited by temp) |
+|  5S/2P        | 3850      | 250V/60A        | 60 / 60 / 60 (limited, a bit oversized array)       |
+|  5S/2P        | 3850      | 250V/70A        | 70 / 70 / 66.6 (limited by temp)  |
+|  2S/2P        | 1540      | 150V/60A        | 36.2 / 30.2 / 26.4 |
+|  2S/3P        | 2310      | 150V/60A        | 54.3 / 45.3 / 39.6 |
+|  3S/2P        | 2310      | 150V/60A        | 55.4 / 45.2 / 39.6 |
+|  2S/4P        | 3080      | 150V/60A        | 60 / 60 / 52.8 ( limited by temp) |
+|  2S/4P        | 3080      | 150V/70A        | 70 / 60.4 / 52.8 ( limited by cold temp) |
+|  3S/3P        | 3465      | 150V/60A        | 60 / 60 / 59.4 ( limited, a bit oversized array) | 
+|  3S/3P        | 3465      | 150V/70A        | 70 / 67.8 / 59.4 ( limited by cold temp) |
+
+
+Investigating section of the cable and the cable length from the PV Array to the Controller, I am just checking the lowest voltage configuration.
+
+| Configuration | Section (mm^2) | Length (m) | Min Voltage (V) |
+|---------------|----------------|------------|-----------------|
+| 2S/1P         | 4              | 5          |  56.9           |
+| 2S/1P         | 4              | 10         |  56.4           |
+| 2S/1P         | 4              | 15         |  55.9           |
+| 2S/1P         | 4              | 20         |  55.4           |
+| 2S/1P         | 4              | 25         |  54.9           |
+| 2S/1P         | 6              | 5          |  57.1           |
+| 2S/1P         | 6              | 10         |  56.7           |
+| 2S/1P         | 6              | 15         |  56.4           |
+| 2S/1P         | 6              | 20         |  56.1           |
+| 2S/1P         | 6              | 25         |  55.7           |
+
+Higher voltage is better to reduce voltage drop on the wiring.
+For a 4 mm^2 there is too much voltage drop above 10 m for such 2S configuration and max 20 A per string, but it will work fine with at least 3S configuration and above.
+For a 6 mm^2 it is better suited for 2S configuration, it will handles at most 30 A per string.
+For short connection you can use 4mm^2 and for long connection use 6mm^2 or bigger.
+Given the price of cables and connections, if you have long cables it is cheaper to go to high voltage, less cables, less connection. 
+Anyway, you need to compute and to check what it is worth and possible for your cases.
+For my own perspective, it is possible to connect with 4 mm^2 PV panels and for anything longer than 5 meters put at least a 6 mm^2 and if possible use high voltage configuration.
+
+
+Of course, it is important to have the shortest cable length from the MPPT controller to the battery due to the low voltage of the battery (48V).
+
+## Concerns Regarding Micro Inverters
+
+### Efficiency Considerations
+Most of the time there is no curve about the efficiency of the Micro Inverters with respect to the PV array power input, why so ?
+My gut feeling is that it is not good, otherwise all producers will talk about such performances with respect to 'regular' MPPT controllers.
+
+### Aging Challenges
+Putting an electronic device outdoor is not something to do lightly, in direct sun light the metal case will go slightly above 60 C, and behind a PV panel it will be similar  what to expect ? Even if the device is protected and having a cast resin for protection, the resin will age. Also, since there are several cycles of expansion/contraction such barrier will fail for sure relatively quickly. Most concerning for me is the passive electronic components such as capacitors and resistors that will age very quickly in such harsh environment, also note that for cost purpose no premium components able to cope with high temperature are used in such micro inverters. Also, the plastic around the case will fail quickly even if premium plastic material having UV protection is used, such components become brittle and it fails within 10 years.
+
+
+
+### Streamlining Battery Storage for Efficiency
+
+Efficiency considerations suggest that the current chain of electricity conversion may not be the most sensible approach: PV DC -> Grid AC -> Battery DC -> Grid AC.
+
+The Micro Inverter first converts DC to AC, with a specific efficiency ratio. Subsequently, a Battery Charger reverts the AC back to DC. Finally, an Inverter transforms the Battery DC back into Grid AC. Each added step in this process results in energy loss due to conversions.
+
+Given that the primary goal is to store energy efficiently, it would make more sense to directly route energy from PV DC to Battery DC using a Battery Charger. For the conversion from Battery DC to Grid AC, an inverter is the necessary choice.
+
+
 
 ## Slope of wall mounted array
  Even a few degrees can improve your yearly production as shown after, assuming a 2KW PV Array/MicroInverter in the following tab
@@ -534,9 +624,10 @@ Configurations:
 
 | Cfg | Panels             | Inverter                      | MPPT Controller         | Cost without Battery (€) *      | €/W       |
 |-----|--------------------|-------------------------------|-------------------------|---------------------------------|-----------|
-| 1   |  3850 (10 * 385)   |  Victron Multiplus II/48/5000 | SNRE 250/70A            | 990+1500+350 + 700 = 3540       | 0.9194    |
-| 2   |  4360  (8 * 545)   |  Victron Multiplus II/48/5000 | SNRE 250/85A            | 1151.2+1500+485 + 700 = 3836.2  | 0.8798    |
-| 3   |  4620  (12 * 385)  |  Victron Multiplus II/48/5000 | SNRE 250/85A            | 1188+1500+485 + 700 = 3873      | 0.8383    |
+| 1   |  3850 (10 * 385)   |  Victron Multiplus II/48/5000 | SNRE 250/70A  (5S/2P)   | 990+1500+350 + 700 = 3540       | 0.9194    |
+| 2   |  4360  (8 * 545)   |  Victron Multiplus II/48/5000 | SNRE 250/85A  (4S/2P)   | 1151.2+1500+485 + 700 = 3836.2  | 0.8798    |
+| 3   |  4620  (12 * 385)  |  Victron Multiplus II/48/5000 | SNRE 250/85A  (4S/3P)   | 1188+1500+485 + 700 = 3873      | 0.8383    |
+| 4   |  3465 (9 * 385)    |  Victron Multiplus II/48/5000 | SNRE 150/60A  (3S/3P)   | 891+1500+265 + 700 = 3356       | 0.9685    |
 
 
 * Added 700 € of fixed cost for cables, switch, fuses, electric panel and protections...
@@ -550,6 +641,7 @@ Now let's explore the figures with the addition of the DIY battery:
 | 1             | 6540                  | 1.6987 |
 | 2             | 6836.2                | 1.5679 |
 | 3             | 6873                  | 1.4876 |
+| 4             | 6356                  | 1.8343 |
 
 Observing the results, it becomes evident that having a slightly larger panel configuration is more beneficial in the long run. The cost difference of around 10% between the low-cost 3.85 KW configuration and the 4.62 KW configuration justifies opting for the latter. The decision mainly hinges on the feasibility of accommodating larger panels within your setup. Additionally, a slight oversizing of panels can enhance performance, even accounting for some 'clipping'; this leads to increased energy production during periods of lower sunlight.
 
