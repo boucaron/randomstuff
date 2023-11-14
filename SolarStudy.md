@@ -174,6 +174,19 @@ As referenced from [Battery University](https://batteryuniversity.com/article/bu
 - Discharging to 80% Depth of Discharge (DoD) results in around 900 cycles.
 - Discharging to 40% DoD allows for approximately 3000 cycles.
 
+## Setting for Battery Settings
+
+- Absorption Voltage: 55.2 V, 3.45V/cell
+- Absorption Time: 1h
+- Float Voltage: 53.6 V, 3.35V/cell
+
+
+PV Array evaluation for Various MPPT Controllers @ 55.2 V:
+- 60 A -> 3.3 KW (8 @ 415W, 9 @ 385W)
+- 70 A -> 3.86 KW (10 @ 415W, 10 @ 385W)
+- 85 A -> 4.69 KW (12 @ 415W, 13 @ 385W)
+- 100 A -> 5.52 KW (14 @ 415W, 15 @ 385W)
+
 
 # Enhancing Energy-Saving Habits
 
@@ -482,6 +495,59 @@ Please note that since it's a grid-tied inverter, power should be consumed when 
 It is also possible to make the same interesting configuration with 4 * PV Panel 550W, which is in my opinion more interesting because you need less cables, and it takes less area.
 
 
+
+#### November 2023 Price Update
+
+There are a few price changes for November.
+The interesting part is that there are affordable bifacial panels at 99 €: https://www.chocdiscount.com/panneaux-solaires/35301-panneau-solaire-jolywood-415w-full-black-ntype-bifacial-jw-hd108n.html (415W @ 1000W/m², 315W @ 800W/m²).
+The price of few Victron inverters is lower too: less than 1300 € for Victron Multiplus 2/5000VA (https://allo.solar/convertisseur-chargeur-5000va-48v-70a-multiplus-ii-victron-energy.html) and less than 800 € for Victron Multiplus 2/3000VA (https://allo.solar/convertisseur-chargeur-3000va-48v-35a-multiplus-ii-victron-energy.html).
+There is also a new 'middle' size panel of 460W (190 9mm * 1134 mm * 30 mm): https://www.chocdiscount.com/panneaux-solaires/49346-panneau-solaire-leapton-460w-cadre-noir-lp182182-m60-mh.html for 99 €, it is really interesting.
+
+
+
+Various Configurations : for the 415W Bifacial panel (Yearly Evaluation removing from October to February)
+- 8 * 415 W : 3320 W peak. 
+  About 60A @ 55.2V for charging the battery.
+  4S/2P: 175.7V / 118.3V.
+  3287 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 2700 kWh/Yearly.
+  3435 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 2800 kWh/Yearly.
+- 9 * 415 W : 3735 W peak. 
+  About 67A @ 55.2V for charging the battery.
+  3S/3P: 131.8V / 88V.
+  3698 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3067 kWh/Yearly.
+  3865 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3142 kWh/Yearly.
+- 10 * 415 W : 4150 W peak. 
+  About 83A @ 55.2 V for charging the battery.
+  5S/2P: 219.6V / 148.3V.
+  4109 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3408 kWh/Yearly.
+  4294 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3493 kWh/Yearly.
+- 12 * 415 W : 4980 W peak. 
+  About 90A @ 55.2 V for charging the battery. Split in 2 arrays of 6 panels, less than 60 A for each.
+  3S/2P (*2): 131.8V / 86.6V.
+  4931 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 4089 kWh/Yearly.
+  5153 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 4191 kWh/Yearly.
+  
+Various Configurations : for the 460W panel   (Yearly Evaluation removing from October to February)
+- 8 * 460 W : 3680 W peak
+  About 66.7A @ 55.2V for charging the baterry. Taking in account cables, most likely about 73A.
+  4S/2P: 192.9V / 132.2V
+  3643 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3020 kWh/Yearly.
+  3808 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3097 kWh/Yearly.
+- 10 * 460 W : 4600 W peak
+  About 83 A @ 55.2 V for charging the battery. Taking in account cables and low temperature, most likely about 91A.
+  5S/2P: 241.2V / 165.7V
+  4554 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3777 kWh/Yearly.
+  4760 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3871 kWh/Yearly.
+- 12 * 460 W : 5520 W peak
+  About 50A @ 55.2V, 2 arrays of 6 panels for charging the battery.  Taking in account cables and low temperature, most likely about 54 A.
+  3S / 4P (*2): 144.7V / 98.8V.
+  5465 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 4532 kWh/Yearly.
+  5712 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 4645 kWh/Yearly.
+  
+  
+  
+	
+  
 
 #### Battery tied Configuration
 
