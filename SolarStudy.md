@@ -547,7 +547,18 @@ Various Configurations : for the 460W panel   (Yearly Evaluation removing from O
   
   
 	
-  
+#### December 2023 Price Update
+
+There are a few price changes for December, more specifically 24/12.
+The most interesting one is the for the Victron inverters that are finally in the 1000 € (tax included) for the Victron Multiplus 2/5000VA (https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50).
+Regarding the panels there is not a major change on the pricing.
+The interesting panel from November 2003 is at 95 € instead of 99 € https://www.chocdiscount.com/panneaux-solaires/35301-panneau-solaire-jolywood-415w-full-black-ntype-bifacial-jw-hd108n.html (415W @ 1000W/m², 315W @ 800W/m²). The 'middle' size panel of 460 however increased from 99 € to 139 €  https://www.chocdiscount.com/panneaux-solaires/49346-panneau-solaire-leapton-460w-cadre-noir-lp182182-m60-mh.html.
+
+The affordability of the Victron inverter is a huge change, it drops from nearly 2000 € to 1000 € within a year.
+Basically, it means you can buy the inverter with a 4 KW PV array for 2000 € (not including shipping and all other accessories needed, especially the battery and the MPPT controller). 
+
+
+
 
 #### Battery tied Configuration
 
