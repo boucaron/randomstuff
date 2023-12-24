@@ -557,6 +557,7 @@ The interesting panel from November 2003 is at 95 € instead of 99 € https://
 The affordability of the Victron inverter is a huge change, it drops from nearly 2000 € to 1000 € within a year.
 Basically, it means you can buy the inverter with a 4 KW PV array for 2000 € (not including shipping and all other accessories needed, especially the battery and the MPPT controller). 
 
+Regarding the MPPT controller, there is a small change on the price, for the SNRE 250/70A from 350 € to 290 €, the SNRE 250/85A from 430 € to 392 €, the SNRE 250/100A from 475 € to 450 €.
 
 
 
