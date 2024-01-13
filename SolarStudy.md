@@ -835,6 +835,13 @@ The small 3KW will switch down the other inverters during the night to not have 
 Of course, it will be very interesting to have an efficient power on demand device able to detect the need for lot of current and switch automatically on the inverters as needed and shut them down very quickly (actually it is possible and already implemented in all CPUs, that are pumping a lot of current...)
 
 
+# Tips
+
+## Identifying phase
+
+Small trick to quickly find which plug in on which phase, I used my Devolo Power line adaptors.
+If the home icon is not green and red, then you are not on the same phase.
+Otherwise, if it is green,  you are on the same phase.
 
 
 
