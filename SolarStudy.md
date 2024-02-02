@@ -564,6 +564,19 @@ Basically, it means you can buy the inverter with a 4 KW PV array for 2000 € (
 Regarding the MPPT controller, there is a small change on the price, for the SNRE 250/70A from 350 € to 290 €, the SNRE 250/85A from 430 € to 392 €, the SNRE 250/100A from 475 € to 450 €.
 
 
+#### February 2024 Price Update
+
+Following the issues in the Red Sea impacting the sea traffic: I think there will be an increase in price in the forthcoming months even if the stock is accumulating.
+There is a small increase on the price of the Victron Multiplus 2/5000VA around 950 to 1100 € (https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50)
+Regarding the panels, there are opportunities in the 375W range going down to 74 € (https://www.chocdiscount.com/panneaux-solaires/35512-panneau-solaire-dmegc-375w-dm375m6-60hsw-.html) and 78 € (https://www.chocdiscount.com/panneaux-solaires/55233-panneau-solaire-dmegc-375w-dm375m6-60hbb-full-black.html), with respectively 5.06 W per € and 4.68 W per €. Those are the most cost effective solutions on the market. 10 panels delivered are less than 1000 € (including VAT). Prices are crazy in Germany, the removal of the VAT tax has just increase the marging of the reseller and not reduced the price. Panels are cheaper in France and in Spain even if you include the VAT.
+
+The efficient 'middle' size panel with 500 W is still at 119.79 € https://autosolar.es/panel-solar-24-voltios/panel-solar-500w-tensite-monocristalino-perc
+which is less cost effective with about 4.17 W per €, than the small 375W panels.
+
+For the grid-tied inverters, there is a good deal on the 1.5KW SOLAX X1 Mini around 278 € (https://www.chocdiscount.com/onduleur-reseau/127-onduleur-solaire-reseau-solax-x1-mini-15-1500-watts-garantie-10-ans.html). Personnaly, I think it is a better deal than any micro-inverter, also you can do zero injection on the grid with this inverter if you add a sensor. If you put the previous cheapest panels at 74€ a piece: you can build a small 4 panels system for about 1000 € (with all cables, required protections,the structure for the panels and the shipping).
+
+
+
 
 #### Battery tied Configuration
 
