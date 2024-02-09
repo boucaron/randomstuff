@@ -569,11 +569,47 @@ Regarding the MPPT controller, there is a small change on the price, for the SNR
 Following the issues in the Red Sea impacting the sea traffic: I think there will be an increase in price in the forthcoming months even if the stock is accumulating.
 There is a small increase on the price of the Victron Multiplus 2/5000VA around 950 to 1100 € (https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50)
 Regarding the panels, there are opportunities in the 375W range going down to 74 € (https://www.chocdiscount.com/panneaux-solaires/35512-panneau-solaire-dmegc-375w-dm375m6-60hsw-.html) and 78 € (https://www.chocdiscount.com/panneaux-solaires/55233-panneau-solaire-dmegc-375w-dm375m6-60hbb-full-black.html), with respectively 5.06 W per € and 4.68 W per €. Those are the most cost effective solutions on the market. 10 panels delivered are less than 1000 € (including VAT). Prices are crazy in Germany, the removal of the VAT tax has just increase the marging of the reseller and not reduced the price. Panels are cheaper in France and in Spain even if you include the VAT.
+Another 460W panel may be worth with 119 € (https://www.chocdiscount.com/panneaux-solaires/82249-panneau-solaire-jolywood-460w-hd144n-460w-bifacial.html).
 
-The efficient 'middle' size panel with 500 W is still at 119.79 € https://autosolar.es/panel-solar-24-voltios/panel-solar-500w-tensite-monocristalino-perc
+The efficient 'middle' size panel with 500 W is still at 119.79 € and now down to 113.14 € https://autosolar.es/panel-solar-24-voltios/panel-solar-500w-tensite-monocristalino-perc
 which is less cost effective with about 4.17 W per €, than the small 375W panels.
 
 For the grid-tied inverters, there is a good deal on the 1.5KW SOLAX X1 Mini around 278 € (https://www.chocdiscount.com/onduleur-reseau/127-onduleur-solaire-reseau-solax-x1-mini-15-1500-watts-garantie-10-ans.html). Personnaly, I think it is a better deal than any micro-inverter, also you can do zero injection on the grid with this inverter if you add a sensor. If you put the previous cheapest panels at 74€ a piece: you can build a small 4 panels system for about 1000 € (with all cables, required protections,the structure for the panels and the shipping).
+
+460W Panel (https://www.chocdiscount.com/panneaux-solaires/82249-panneau-solaire-jolywood-460w-hd144n-460w-bifacial.html) study. This panel has nice dimensions : 2108 mm * 1042 mm * 30 mm. The height is a bit larger and the width is narrower, allowing me to put more panels and harvesting more power with less panels.
+2S/3P, 20m cable 6 mm², PV max voltage @ min temperature -30C 118.5V, PV min voltage @ max temperature 40C 75.2V , Battery Inverter 150V/60A or 150V/70A: 2760 W peak. Cost more on the cables and the inverter a bit less, not really sure it is worth it. 30 € more on a 250V inverter with the same amps.
+3S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 177.8V, PV min voltage @ max temperature 40C 116.1V, Battery Inverter 250V/60A or 250V/70A: 2760 W peak. 
+4S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 237.1V, PV min voltage @ max temperature 40C 155.7V, Battery Inverter 250V/85A or 250V/100A: 3680 W peak. (70A is undersized a bit)
+3S/3P,  20m cable 6 mm², PV max voltage @ min temperature -30C 177.8V, PV min voltage @ max temperature 40C 114.8V, Battery Inverter 250V/85A or 250V/100A: 4140 W peak. (70A is undersized a bit)
+4S/3P, 20m cable 6 mm², PV max voltage @ min temperature -30C 237.1V, PV min voltage @ max temperature 40C 154.4V, Battery Inverter 250V/100A (clipping): 5520 W peak. Or change it in 2 * 3S/2P.
+
+
+415W Panel (https://www.chocdiscount.com/panneaux-solaires/35301-panneau-solaire-jolywood-415w-full-black-ntype-bifacial-jw-hd108n.html) study. This is a good bang for the buck panel.
+3S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 131.8V, PV min voltage @ max temperature 40C 86.9V , Battery Inverter 150V/60A (or under): 2490 W peak. 
+4S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 175.7V, PV min voltage @ max temperature 40C 116.9V , Battery Inverter 250V/60A or 250V/70A: 3320 W peak. 
+3S/3P,  20m cable 6 mm², PV max voltage @ min temperature -30C 131.8V, PV min voltage @ max temperature 40C 85.3V , Battery Inverter 150V/60A (clipping), 150V/70A (less clipping) or 250V/85A: 3735 W peak.
+5S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 175.7V, PV min voltage @ max temperature 40C 116.9V , Battery Inverter 250V/60A (clipping), 250V/70A (less clipping) or 250V/85A: 4150 W peak.
+4S/3P,  20m cable 6 mm², PV max voltage @ min temperature -30C 175.7V, PV min voltage @ max temperature 40C 115.3V , Battery Inverter 250V/85A (clipping), 250V/100A (less clipping): 4980 W peak.
+
+Length in portrait mode, to make a fence.
+
+| 460W Panels | Length (mm) | Power Peak (W) | 
+|-------------|-------------|----------------|
+|   6         |  6252       |  2760          |
+|   8         |  8336       |  3680          |
+|   9         |  9378       |  4140          |
+|  12         | 12504       |  5520          |
+
+| 415W Panels | Length (mm) | Power Peak (W) |
+|-------------|-------------|----------------|
+|   6         |  6804       |  2490          |
+|   8         |  9072       |  3320          |
+|   9         |  10206      |  3735          |
+|  10         |  11340      |  4150          |
+|  12         |  13608      |  4980          |
+
+
+
 
 
 
