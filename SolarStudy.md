@@ -609,9 +609,72 @@ Length in portrait mode, to make a fence.
 |  12         |  13608      |  4980          |
 
 
+Batteries price is down by a fair amount. 
+16 280Ah with Shipping from China 1672.48 € (Shipping 367.50 €) -> https://offer.alibaba.com/cps/i0ern68u?bm=cps&src=saf&url=https%3A%2F%2Fwww.alibaba.com%2Fproduct-detail%2FNew-Prismatic-304ah-lifepo4-304ah-evelifepo4_1600251092337.html
+The 302Ah are about the same price.
+From GobelPower this is about the same price, for the timebeing there is no stock in Europe otherwise the price is 1633.92 € for 16 EVE 280Ah plus (about 305Ah capacity). From China it costs 1155.20 € without shipping and with shipping 1473.79 €. 
+At GobelPower there is a 'cheap' alternative with Battero Tech 16 cells 280Ah for 836 € without shipping and with shipping 1140.55 €.
+Since I plan to put at most a 100A BMS on each, the charge and discharge will be under 0.5C.
+
+BMS Side. It seems the bugs in the firmware for the new JKBMS have been fixed.
+The 100A with 1A active balancer is 147.26 € (https://fr.aliexpress.com/item/1005006020100013.html?spm=a2g0o.cart.0.0.6e46378d2nksTQ&mp=1&gatewayAdapt=glo2fra)
+The 150A with 1A active balancer is 157.41 € (https://fr.aliexpress.com/item/1005006020100013.html?spm=a2g0o.cart.0.0.6e46378d2nksTQ&mp=1&gatewayAdapt=glo2fra)
+The 150A with 2A active balancer is 175.19 € (same link)
+The 200A with 2A active balancer is 223.42 € (same link)
+Personnaly I think the 150A with 1A balancer is enough. I plan to setup it to 100A only, to keep a large margin on the current going through and keep it a longtime.
+I think it is worth the money due also to the integration with Victron products.
+
+Regarding the MPPT battery controllers, more or less same price.
+The SNRE MC48N25 are about the same price: 60A for 227.81 € + Shipping 43.41 €, the 70A for 259.83 € + Shipping 43.41 €, the 85A for 343.22 € + Shipping 60.60 €, the 100A for 398.18 € + Shipping 60.60 €.
+The Victron SmartSolar MPPT 250/60 is about 356.24 € without shipping, the 250/70 is about 412.57 € without shipping (https://verkauf-bochum.de/products/smartsolar-mppt-250-70-tr-12-24-48v-70a?variant=41786240401569), the 250/85 is about 472.11 € without shipping (same link) and the 250/100 is about 532.43€ without shipping (same link).
+Given the price being down on the Victron and the easy integration, I am not sure it is worth spending less on the SNRE.
+
+
+Basic Victron Configuration:
+- Victron SmartSolar MPPT 250/60: 356.24 € (107% oversize)
+- Victron Multiplus-II 48/5000/70-50: 935.44 €
+- 8 460W Panels: 952 € + 128 € shipping (4S/2P)
+- JK BMS 150A: 157.41 €
+- GobelPower 16 EVE 280A plus: 1473.79 €
+- Cables and electronic protections and other stuff: 1000 € (https://verkauf-bochum.de/products/interface-mk3-usb-ve-bus-to-usb)
+Peak Power: 3680 W PV array, 3814 kWh potential (my estimation: 3103 kWh - removing October to February included)
+Total: 4875 €
+
+Upgraded Victron Configration:
+- Victron SmartSolar MPPT 250/70: 412.57 € (115% oversize)
+- Victron Multiplus-II 48/5000/70-50: 935.44 €
+- 10 460W Panels: 1190 € + 128 € shipping (5S/2P)
+- JK BMS 150A: 157.41 €
+- GobelPower 16 EVE 280A plus: 1473.79 €
+- Cables and electronic protections and other stuff: 1000 € (https://verkauf-bochum.de/products/interface-mk3-usb-ve-bus-to-usb)
+Peak Power: 4600 W PV array, 4767 kWh potential (my estimation: 3877 kWh - removing October to February included)
+Total: 5298 €
+
+
+| Configuration          | Electricity Price ct/kWh | Yearly Production Save € | Breakeven Years |
+|------------------------|--------------------------|--------------------------|-----------------|
+| Basic Victron 3.6KW    | 20                       | 620.6                    | 7.85            |
+| Basic Victron 3.6KW    | 25                       | 775.7                    | 6.28            |
+| Basic Victron 3.6KW    | 30                       | 930.9                    | 5.23            |
+| Basic Victron 3.6KW    | 35                       | 1086.05                  | 4.48            |
+| Basic Victron 3.6KW    | 40                       | 1241.20                  | 3.92            |
+| Basic Victron 3.6KW    | 45                       | 1396.63                  | 3.49            |
+| Basic Victron 3.6KW    | 50                       | 1551.50                  | 3.14            |
+| Basic Victron 3.6KW    | 60                       | 1861.80                  | 2.61            |
+| Basic Victron 3.6KW    | 70                       | 2172.10                  | 2.24            |
+|------------------------|--------------------------|--------------------------|-----------------|
+| Upgraded Victron 4.6KW | 20                       | 775.4                    | 6.83            |
+| Upgraded Victron 4.6KW | 30                       | 1163.1                   | 4.55            |
+| Upgraded Victron 4.6KW | 40                       | 1550.8                   | 3.41            |
+| Upgraded Victron 4.6KW | 60                       | 2326.2                   | 2.27            |
+| Upgraded Victron 4.6KW | 70                       | 2713.9                   | 1.95            |
 
 
 
+Overall on a year to year basis, it went down from about 8000 € to 5500 €, so about 2500 € less a good 30% decrease.
+The battery is a good 30% less, the Victron Multiplus II about 40% to 50% less, panels about 20% less.
+Just the battery and the Victron Multiplus II we are talking about 2000 € less.
+This is a huge improvement, it means your investment is breakeven much much faster. Also I think the price of the electricity will ramp-up in most of Europe due to the lack of investment first, and second due to the higher demand.
 
 
 #### Battery tied Configuration
