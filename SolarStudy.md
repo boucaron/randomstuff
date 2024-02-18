@@ -496,187 +496,6 @@ It is also possible to make the same interesting configuration with 4 * PV Panel
 
 
 
-#### November 2023 Price Update
-
-There are a few price changes for November.
-The interesting part is that there are affordable bifacial panels at 99 €: https://www.chocdiscount.com/panneaux-solaires/35301-panneau-solaire-jolywood-415w-full-black-ntype-bifacial-jw-hd108n.html (415W @ 1000W/m², 315W @ 800W/m²).
-The price of few Victron inverters is lower too: less than 1300 € for Victron Multiplus 2/5000VA (https://allo.solar/convertisseur-chargeur-5000va-48v-70a-multiplus-ii-victron-energy.html) and less than 800 € for Victron Multiplus 2/3000VA (https://allo.solar/convertisseur-chargeur-3000va-48v-35a-multiplus-ii-victron-energy.html).
-There is also a new 'middle' size panel of 460W (190 9mm * 1134 mm * 30 mm): https://www.chocdiscount.com/panneaux-solaires/49346-panneau-solaire-leapton-460w-cadre-noir-lp182182-m60-mh.html for 99 €, it is really interesting.
-
-
-
-Various Configurations : for the 415W Bifacial panel (Yearly Evaluation removing from October to February)
-- 8 * 415 W : 3320 W peak. 
-  About 60A @ 55.2V for charging the battery.
-  4S/2P: 175.7V / 118.3V.
-  3287 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 2700 kWh/Yearly.
-  3435 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 2800 kWh/Yearly.
-- 9 * 415 W : 3735 W peak. 
-  About 67A @ 55.2V for charging the battery.
-  3S/3P: 131.8V / 88V.
-  3698 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3067 kWh/Yearly.
-  3865 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3142 kWh/Yearly.
-- 10 * 415 W : 4150 W peak. 
-  About 83A @ 55.2 V for charging the battery.
-  5S/2P: 219.6V / 148.3V.
-  4109 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3408 kWh/Yearly.
-  4294 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3493 kWh/Yearly.
-- 12 * 415 W : 4980 W peak. 
-  About 90A @ 55.2 V for charging the battery. Split in 2 arrays of 6 panels, less than 60 A for each.
-  3S/2P (*2): 131.8V / 86.6V.
-  4931 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 4089 kWh/Yearly.
-  5153 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 4191 kWh/Yearly.
-  
-Various Configurations : for the 460W panel   (Yearly Evaluation removing from October to February)
-- 8 * 460 W : 3680 W peak
-  About 66.7A @ 55.2V for charging the baterry. Taking in account cables, most likely about 73A.
-  4S/2P: 192.9V / 132.2V
-  3643 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3020 kWh/Yearly.
-  3808 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3097 kWh/Yearly.
-- 10 * 460 W : 4600 W peak
-  About 83 A @ 55.2 V for charging the battery. Taking in account cables and low temperature, most likely about 91A.
-  5S/2P: 241.2V / 165.7V
-  4554 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3777 kWh/Yearly.
-  4760 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3871 kWh/Yearly.
-- 12 * 460 W : 5520 W peak
-  About 50A @ 55.2V, 2 arrays of 6 panels for charging the battery.  Taking in account cables and low temperature, most likely about 54 A.
-  3S / 4P (*2): 144.7V / 98.8V.
-  5465 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 4532 kWh/Yearly.
-  5712 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 4645 kWh/Yearly.
-  
-  
-  
-	
-#### December 2023 Price Update
-
-There are a few price changes for December, more specifically 24/12.
-The most interesting one is the for the Victron inverters that are finally in the 1000 € (tax included) for the Victron Multiplus 2/5000VA (https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50).
-Regarding the panels there is not a major change on the pricing.
-The interesting panel from November 2003 is at 95 € instead of 99 € https://www.chocdiscount.com/panneaux-solaires/35301-panneau-solaire-jolywood-415w-full-black-ntype-bifacial-jw-hd108n.html (415W @ 1000W/m², 315W @ 800W/m²). The 'middle' size panel of 460 W however increased from 99 € to 139 €  https://www.chocdiscount.com/panneaux-solaires/49346-panneau-solaire-leapton-460w-cadre-noir-lp182182-m60-mh.html.
-There is an interesting more efficient 'middle' size panel  with 500 W for 119 € https://autosolar.es/panel-solar-24-voltios/panel-solar-500w-tensite-monocristalino-perc, meaning with only 8 panels you have 4KW peak, if you can put longer panels it is an advantage with respect to the 400 W panels, you use less width. Sizing for the MPPT 250V/70A or 250V/85A to prevent a bit the clipping (4S/2P configuration, 90A at the lowest temperature and 72.2A at the max temperature, voltage  199.4V @ min temperature and 130.1V @ max temperature).  Actually a 70A is enough if you consider the aging of the panels.  You can add another panel in serie and go in 5S/2P, in this case you need more a MPPT 250V/85A or 250V/100A you really push the enveloppe on both the voltage at 249V @ min temperature and more than 100 A at the lowest temperature).
-Another configuration in such case would be to run 2 MPPTs in 2S/2P with super-oversized 150V/60A (242€ each, that would be able to cope without any issue with 2S/3P, or 3S/2P), it adds a few more wires but less peak voltage and peak amps overall instead of putting a single 250V/100A MPPT controller. It is may be more versatile, you can start with 8 panels and update to 10 and 12 panels without majors changes on the installation.
-Meaning starting from 4KW and ramp-up to 5KW then to 6KW, without change on the wires and the MPPT controllers (100V to 150V from 2S to 3S).
-If you consider aging 4KW goes down to 3.4 KW, 5KW goes down to 4.25 KW and 5KW goes down to 5.1 KW after 20/25 years.
-
-The affordability of the Victron inverter is a huge change, it drops from nearly 2000 € to 1000 € within a year.
-Basically, it means you can buy the inverter with a 4 KW PV array for 2000 € (not including shipping and all other accessories needed, especially the battery and the MPPT controller). 
-
-Regarding the MPPT controller, there is a small change on the price, for the SNRE 250/70A from 350 € to 290 €, the SNRE 250/85A from 430 € to 392 €, the SNRE 250/100A from 475 € to 450 €.
-
-
-#### February 2024 Price Update
-
-Following the issues in the Red Sea impacting the sea traffic: I think there will be an increase in price in the forthcoming months even if the stock is accumulating.
-There is a small increase on the price of the Victron Multiplus 2/5000VA around 950 to 1100 € (https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50)
-Regarding the panels, there are opportunities in the 375W range going down to 74 € (https://www.chocdiscount.com/panneaux-solaires/35512-panneau-solaire-dmegc-375w-dm375m6-60hsw-.html) and 78 € (https://www.chocdiscount.com/panneaux-solaires/55233-panneau-solaire-dmegc-375w-dm375m6-60hbb-full-black.html), with respectively 5.06 W per € and 4.68 W per €. Those are the most cost effective solutions on the market. 10 panels delivered are less than 1000 € (including VAT). Prices are crazy in Germany, the removal of the VAT tax has just increase the marging of the reseller and not reduced the price. Panels are cheaper in France and in Spain even if you include the VAT.
-Another 460W panel may be worth with 119 € (https://www.chocdiscount.com/panneaux-solaires/82249-panneau-solaire-jolywood-460w-hd144n-460w-bifacial.html).
-
-The efficient 'middle' size panel with 500 W is still at 119.79 € and now down to 113.14 € https://autosolar.es/panel-solar-24-voltios/panel-solar-500w-tensite-monocristalino-perc
-which is less cost effective with about 4.17 W per €, than the small 375W panels.
-
-For the grid-tied inverters, there is a good deal on the 1.5KW SOLAX X1 Mini around 278 € (https://www.chocdiscount.com/onduleur-reseau/127-onduleur-solaire-reseau-solax-x1-mini-15-1500-watts-garantie-10-ans.html). Personnaly, I think it is a better deal than any micro-inverter, also you can do zero injection on the grid with this inverter if you add a sensor. If you put the previous cheapest panels at 74€ a piece: you can build a small 4 panels system for about 1000 € (with all cables, required protections,the structure for the panels and the shipping).
-
-460W Panel (https://www.chocdiscount.com/panneaux-solaires/82249-panneau-solaire-jolywood-460w-hd144n-460w-bifacial.html) study. This panel has nice dimensions : 2108 mm * 1042 mm * 30 mm. The height is a bit larger and the width is narrower, allowing me to put more panels and harvesting more power with less panels.
-2S/3P, 20m cable 6 mm², PV max voltage @ min temperature -30C 118.5V, PV min voltage @ max temperature 40C 75.2V , Battery Inverter 150V/60A or 150V/70A: 2760 W peak. Cost more on the cables and the inverter a bit less, not really sure it is worth it. 30 € more on a 250V inverter with the same amps.
-3S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 177.8V, PV min voltage @ max temperature 40C 116.1V, Battery Inverter 250V/60A or 250V/70A: 2760 W peak. 
-4S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 237.1V, PV min voltage @ max temperature 40C 155.7V, Battery Inverter 250V/85A or 250V/100A: 3680 W peak. (70A is undersized a bit)
-3S/3P,  20m cable 6 mm², PV max voltage @ min temperature -30C 177.8V, PV min voltage @ max temperature 40C 114.8V, Battery Inverter 250V/85A or 250V/100A: 4140 W peak. (70A is undersized a bit)
-4S/3P, 20m cable 6 mm², PV max voltage @ min temperature -30C 237.1V, PV min voltage @ max temperature 40C 154.4V, Battery Inverter 250V/100A (clipping): 5520 W peak. Or change it in 2 * 3S/2P.
-
-
-415W Panel (https://www.chocdiscount.com/panneaux-solaires/35301-panneau-solaire-jolywood-415w-full-black-ntype-bifacial-jw-hd108n.html) study. This is a good bang for the buck panel.
-3S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 131.8V, PV min voltage @ max temperature 40C 86.9V , Battery Inverter 150V/60A (or under): 2490 W peak. 
-4S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 175.7V, PV min voltage @ max temperature 40C 116.9V , Battery Inverter 250V/60A or 250V/70A: 3320 W peak. 
-3S/3P,  20m cable 6 mm², PV max voltage @ min temperature -30C 131.8V, PV min voltage @ max temperature 40C 85.3V , Battery Inverter 150V/60A (clipping), 150V/70A (less clipping) or 250V/85A: 3735 W peak.
-5S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 175.7V, PV min voltage @ max temperature 40C 116.9V , Battery Inverter 250V/60A (clipping), 250V/70A (less clipping) or 250V/85A: 4150 W peak.
-4S/3P,  20m cable 6 mm², PV max voltage @ min temperature -30C 175.7V, PV min voltage @ max temperature 40C 115.3V , Battery Inverter 250V/85A (clipping), 250V/100A (less clipping): 4980 W peak.
-
-Length in portrait mode, to make a fence.
-
-| 460W Panels | Length (mm) | Power Peak (W) | 
-|-------------|-------------|----------------|
-|   6         |  6252       |  2760          |
-|   8         |  8336       |  3680          |
-|   9         |  9378       |  4140          |
-|  12         | 12504       |  5520          |
-
-| 415W Panels | Length (mm) | Power Peak (W) |
-|-------------|-------------|----------------|
-|   6         |  6804       |  2490          |
-|   8         |  9072       |  3320          |
-|   9         |  10206      |  3735          |
-|  10         |  11340      |  4150          |
-|  12         |  13608      |  4980          |
-
-
-Batteries price is down by a fair amount. 
-16 280Ah with Shipping from China 1672.48 € (Shipping 367.50 €) -> https://offer.alibaba.com/cps/i0ern68u?bm=cps&src=saf&url=https%3A%2F%2Fwww.alibaba.com%2Fproduct-detail%2FNew-Prismatic-304ah-lifepo4-304ah-evelifepo4_1600251092337.html
-The 302Ah are about the same price.
-From GobelPower this is about the same price, for the timebeing there is no stock in Europe otherwise the price is 1633.92 € for 16 EVE 280Ah plus (about 305Ah capacity). From China it costs 1155.20 € without shipping and with shipping 1473.79 €. 
-At GobelPower there is a 'cheap' alternative with Battero Tech 16 cells 280Ah for 836 € without shipping and with shipping 1140.55 €.
-Since I plan to put at most a 100A BMS on each, the charge and discharge will be under 0.5C.
-
-BMS Side. It seems the bugs in the firmware for the new JKBMS have been fixed.
-The 100A with 1A active balancer is 147.26 € (https://fr.aliexpress.com/item/1005006020100013.html?spm=a2g0o.cart.0.0.6e46378d2nksTQ&mp=1&gatewayAdapt=glo2fra)
-The 150A with 1A active balancer is 157.41 € (https://fr.aliexpress.com/item/1005006020100013.html?spm=a2g0o.cart.0.0.6e46378d2nksTQ&mp=1&gatewayAdapt=glo2fra)
-The 150A with 2A active balancer is 175.19 € (same link)
-The 200A with 2A active balancer is 223.42 € (same link)
-Personnaly I think the 150A with 1A balancer is enough. I plan to setup it to 100A only, to keep a large margin on the current going through and keep it a longtime.
-I think it is worth the money due also to the integration with Victron products.
-
-Regarding the MPPT battery controllers, more or less same price.
-The SNRE MC48N25 are about the same price: 60A for 227.81 € + Shipping 43.41 €, the 70A for 259.83 € + Shipping 43.41 €, the 85A for 343.22 € + Shipping 60.60 €, the 100A for 398.18 € + Shipping 60.60 €.
-The Victron SmartSolar MPPT 250/60 is about 356.24 € without shipping, the 250/70 is about 412.57 € without shipping (https://verkauf-bochum.de/products/smartsolar-mppt-250-70-tr-12-24-48v-70a?variant=41786240401569), the 250/85 is about 472.11 € without shipping (same link) and the 250/100 is about 532.43€ without shipping (same link).
-Given the price being down on the Victron and the easy integration, I am not sure it is worth spending less on the SNRE.
-
-
-Basic Victron Configuration:
-- Victron SmartSolar MPPT 250/60: 356.24 € (107% oversize)
-- Victron Multiplus-II 48/5000/70-50: 935.44 €
-- 8 460W Panels: 952 € + 128 € shipping (4S/2P)
-- JK BMS 150A: 157.41 €
-- GobelPower 16 EVE 280A plus: 1473.79 €
-- Cables and electronic protections and other stuff: 1000 € (https://verkauf-bochum.de/products/interface-mk3-usb-ve-bus-to-usb)
-Peak Power: 3680 W PV array, 3814 kWh potential (my estimation: 3103 kWh - removing October to February included)
-Total: 4875 €
-
-Upgraded Victron Configration:
-- Victron SmartSolar MPPT 250/70: 412.57 € (115% oversize)
-- Victron Multiplus-II 48/5000/70-50: 935.44 €
-- 10 460W Panels: 1190 € + 128 € shipping (5S/2P)
-- JK BMS 150A: 157.41 €
-- GobelPower 16 EVE 280A plus: 1473.79 €
-- Cables and electronic protections and other stuff: 1000 € (https://verkauf-bochum.de/products/interface-mk3-usb-ve-bus-to-usb)
-Peak Power: 4600 W PV array, 4767 kWh potential (my estimation: 3877 kWh - removing October to February included)
-Total: 5298 €
-
-
-| Configuration          | Electricity Price ct/kWh | Yearly Production Save € | Breakeven Years |
-|------------------------|--------------------------|--------------------------|-----------------|
-| Basic Victron 3.6KW    | 20                       | 620.6                    | 7.85            |
-| Basic Victron 3.6KW    | 25                       | 775.7                    | 6.28            |
-| Basic Victron 3.6KW    | 30                       | 930.9                    | 5.23            |
-| Basic Victron 3.6KW    | 35                       | 1086.05                  | 4.48            |
-| Basic Victron 3.6KW    | 40                       | 1241.20                  | 3.92            |
-| Basic Victron 3.6KW    | 45                       | 1396.63                  | 3.49            |
-| Basic Victron 3.6KW    | 50                       | 1551.50                  | 3.14            |
-| Basic Victron 3.6KW    | 60                       | 1861.80                  | 2.61            |
-| Basic Victron 3.6KW    | 70                       | 2172.10                  | 2.24            |
-|------------------------|--------------------------|--------------------------|-----------------|
-| Upgraded Victron 4.6KW | 20                       | 775.4                    | 6.83            |
-| Upgraded Victron 4.6KW | 30                       | 1163.1                   | 4.55            |
-| Upgraded Victron 4.6KW | 40                       | 1550.8                   | 3.41            |
-| Upgraded Victron 4.6KW | 60                       | 2326.2                   | 2.27            |
-| Upgraded Victron 4.6KW | 70                       | 2713.9                   | 1.95            |
-
-
-
-Overall on a year to year basis, it went down from about 8000 € to 5500 €, so about 2500 € less a good 30% decrease.
-The battery is a good 30% less, the Victron Multiplus II about 40% to 50% less, panels about 20% less.
-Just the battery and the Victron Multiplus II we are talking about 2000 € less.
-This is a huge improvement, it means your investment is breakeven much much faster. Also I think the price of the electricity will ramp-up in most of Europe due to the lack of investment first, and second due to the higher demand.
-
-
 #### Battery tied Configuration
 
 I am interested also in battery based solutions and most of MPPT battery chargers are known for being effective from a conversion point of view.
@@ -972,6 +791,227 @@ If the home icon is not green and red, then you are not on the same phase.
 Otherwise, if it is green,  you are on the same phase.
 
 
+
+
+
+
+
+#### November 2023 Price Update
+
+There are a few price changes for November.
+The interesting part is that there are affordable bifacial panels at 99 €: https://www.chocdiscount.com/panneaux-solaires/35301-panneau-solaire-jolywood-415w-full-black-ntype-bifacial-jw-hd108n.html (415W @ 1000W/m², 315W @ 800W/m²).
+The price of few Victron inverters is lower too: less than 1300 € for Victron Multiplus 2/5000VA (https://allo.solar/convertisseur-chargeur-5000va-48v-70a-multiplus-ii-victron-energy.html) and less than 800 € for Victron Multiplus 2/3000VA (https://allo.solar/convertisseur-chargeur-3000va-48v-35a-multiplus-ii-victron-energy.html).
+There is also a new 'middle' size panel of 460W (190 9mm * 1134 mm * 30 mm): https://www.chocdiscount.com/panneaux-solaires/49346-panneau-solaire-leapton-460w-cadre-noir-lp182182-m60-mh.html for 99 €, it is really interesting.
+
+
+
+Various Configurations : for the 415W Bifacial panel (Yearly Evaluation removing from October to February)
+- 8 * 415 W : 3320 W peak. 
+  About 60A @ 55.2V for charging the battery.
+  4S/2P: 175.7V / 118.3V.
+  3287 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 2700 kWh/Yearly.
+  3435 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 2800 kWh/Yearly.
+- 9 * 415 W : 3735 W peak. 
+  About 67A @ 55.2V for charging the battery.
+  3S/3P: 131.8V / 88V.
+  3698 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3067 kWh/Yearly.
+  3865 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3142 kWh/Yearly.
+- 10 * 415 W : 4150 W peak. 
+  About 83A @ 55.2 V for charging the battery.
+  5S/2P: 219.6V / 148.3V.
+  4109 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3408 kWh/Yearly.
+  4294 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3493 kWh/Yearly.
+- 12 * 415 W : 4980 W peak. 
+  About 90A @ 55.2 V for charging the battery. Split in 2 arrays of 6 panels, less than 60 A for each.
+  3S/2P (*2): 131.8V / 86.6V.
+  4931 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 4089 kWh/Yearly.
+  5153 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 4191 kWh/Yearly.
+  
+Various Configurations : for the 460W panel   (Yearly Evaluation removing from October to February)
+- 8 * 460 W : 3680 W peak
+  About 66.7A @ 55.2V for charging the baterry. Taking in account cables, most likely about 73A.
+  4S/2P: 192.9V / 132.2V
+  3643 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3020 kWh/Yearly.
+  3808 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3097 kWh/Yearly.
+- 10 * 460 W : 4600 W peak
+  About 83 A @ 55.2 V for charging the battery. Taking in account cables and low temperature, most likely about 91A.
+  5S/2P: 241.2V / 165.7V
+  4554 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 3777 kWh/Yearly.
+  4760 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 3871 kWh/Yearly.
+- 12 * 460 W : 5520 W peak
+  About 50A @ 55.2V, 2 arrays of 6 panels for charging the battery.  Taking in account cables and low temperature, most likely about 54 A.
+  3S / 4P (*2): 144.7V / 98.8V.
+  5465 kWh/Yearly @ Slope 10 deg/Azimuth 20 deg, eval 4532 kWh/Yearly.
+  5712 kWh/Yearly @ Slope 20 deg/Azimuth 20 deg, eval 4645 kWh/Yearly.
+  
+  
+  
+	
+#### December 2023 Price Update
+
+There are a few price changes for December, more specifically 24/12.
+The most interesting one is the for the Victron inverters that are finally in the 1000 € (tax included) for the Victron Multiplus 2/5000VA (https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50).
+Regarding the panels there is not a major change on the pricing.
+The interesting panel from November 2003 is at 95 € instead of 99 € https://www.chocdiscount.com/panneaux-solaires/35301-panneau-solaire-jolywood-415w-full-black-ntype-bifacial-jw-hd108n.html (415W @ 1000W/m², 315W @ 800W/m²). The 'middle' size panel of 460 W however increased from 99 € to 139 €  https://www.chocdiscount.com/panneaux-solaires/49346-panneau-solaire-leapton-460w-cadre-noir-lp182182-m60-mh.html.
+There is an interesting more efficient 'middle' size panel  with 500 W for 119 € https://autosolar.es/panel-solar-24-voltios/panel-solar-500w-tensite-monocristalino-perc, meaning with only 8 panels you have 4KW peak, if you can put longer panels it is an advantage with respect to the 400 W panels, you use less width. Sizing for the MPPT 250V/70A or 250V/85A to prevent a bit the clipping (4S/2P configuration, 90A at the lowest temperature and 72.2A at the max temperature, voltage  199.4V @ min temperature and 130.1V @ max temperature).  Actually a 70A is enough if you consider the aging of the panels.  You can add another panel in serie and go in 5S/2P, in this case you need more a MPPT 250V/85A or 250V/100A you really push the enveloppe on both the voltage at 249V @ min temperature and more than 100 A at the lowest temperature).
+Another configuration in such case would be to run 2 MPPTs in 2S/2P with super-oversized 150V/60A (242€ each, that would be able to cope without any issue with 2S/3P, or 3S/2P), it adds a few more wires but less peak voltage and peak amps overall instead of putting a single 250V/100A MPPT controller. It is may be more versatile, you can start with 8 panels and update to 10 and 12 panels without majors changes on the installation.
+Meaning starting from 4KW and ramp-up to 5KW then to 6KW, without change on the wires and the MPPT controllers (100V to 150V from 2S to 3S).
+If you consider aging 4KW goes down to 3.4 KW, 5KW goes down to 4.25 KW and 5KW goes down to 5.1 KW after 20/25 years.
+
+The affordability of the Victron inverter is a huge change, it drops from nearly 2000 € to 1000 € within a year.
+Basically, it means you can buy the inverter with a 4 KW PV array for 2000 € (not including shipping and all other accessories needed, especially the battery and the MPPT controller). 
+
+Regarding the MPPT controller, there is a small change on the price, for the SNRE 250/70A from 350 € to 290 €, the SNRE 250/85A from 430 € to 392 €, the SNRE 250/100A from 475 € to 450 €.
+
+
+#### February 2024 Price Update
+
+Following the issues in the Red Sea impacting the sea traffic: I think there will be an increase in price in the forthcoming months even if the stock is accumulating.
+There is a small increase on the price of the Victron Multiplus 2/5000VA around 950 to 1100 € (https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50)
+Regarding the panels, there are opportunities in the 375W range going down to 74 € (https://www.chocdiscount.com/panneaux-solaires/35512-panneau-solaire-dmegc-375w-dm375m6-60hsw-.html) and 78 € (https://www.chocdiscount.com/panneaux-solaires/55233-panneau-solaire-dmegc-375w-dm375m6-60hbb-full-black.html), with respectively 5.06 W per € and 4.68 W per €. Those are the most cost effective solutions on the market. 10 panels delivered are less than 1000 € (including VAT). Prices are crazy in Germany, the removal of the VAT tax has just increase the marging of the reseller and not reduced the price. Panels are cheaper in France and in Spain even if you include the VAT.
+Another 460W panel may be worth with 119 € (https://www.chocdiscount.com/panneaux-solaires/82249-panneau-solaire-jolywood-460w-hd144n-460w-bifacial.html).
+
+The efficient 'middle' size panel with 500 W is still at 119.79 € and now down to 113.14 € https://autosolar.es/panel-solar-24-voltios/panel-solar-500w-tensite-monocristalino-perc
+which is less cost effective with about 4.17 W per €, than the small 375W panels.
+
+For the grid-tied inverters, there is a good deal on the 1.5KW SOLAX X1 Mini around 278 € (https://www.chocdiscount.com/onduleur-reseau/127-onduleur-solaire-reseau-solax-x1-mini-15-1500-watts-garantie-10-ans.html). Personnaly, I think it is a better deal than any micro-inverter, also you can do zero injection on the grid with this inverter if you add a sensor. If you put the previous cheapest panels at 74€ a piece: you can build a small 4 panels system for about 1000 € (with all cables, required protections,the structure for the panels and the shipping).
+
+460W Panel (https://www.chocdiscount.com/panneaux-solaires/82249-panneau-solaire-jolywood-460w-hd144n-460w-bifacial.html) study. This panel has nice dimensions : 2108 mm * 1042 mm * 30 mm. The height is a bit larger and the width is narrower, allowing me to put more panels and harvesting more power with less panels.
+2S/3P, 20m cable 6 mm², PV max voltage @ min temperature -30C 118.5V, PV min voltage @ max temperature 40C 75.2V , Battery Inverter 150V/60A or 150V/70A: 2760 W peak. Cost more on the cables and the inverter a bit less, not really sure it is worth it. 30 € more on a 250V inverter with the same amps.
+3S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 177.8V, PV min voltage @ max temperature 40C 116.1V, Battery Inverter 250V/60A or 250V/70A: 2760 W peak. 
+4S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 237.1V, PV min voltage @ max temperature 40C 155.7V, Battery Inverter 250V/85A or 250V/100A: 3680 W peak. (70A is undersized a bit)
+3S/3P,  20m cable 6 mm², PV max voltage @ min temperature -30C 177.8V, PV min voltage @ max temperature 40C 114.8V, Battery Inverter 250V/85A or 250V/100A: 4140 W peak. (70A is undersized a bit)
+4S/3P, 20m cable 6 mm², PV max voltage @ min temperature -30C 237.1V, PV min voltage @ max temperature 40C 154.4V, Battery Inverter 250V/100A (clipping): 5520 W peak. Or change it in 2 * 3S/2P.
+
+
+415W Panel (https://www.chocdiscount.com/panneaux-solaires/35301-panneau-solaire-jolywood-415w-full-black-ntype-bifacial-jw-hd108n.html) study. This is a good bang for the buck panel.
+3S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 131.8V, PV min voltage @ max temperature 40C 86.9V , Battery Inverter 150V/60A (or under): 2490 W peak. 
+4S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 175.7V, PV min voltage @ max temperature 40C 116.9V , Battery Inverter 250V/60A or 250V/70A: 3320 W peak. 
+3S/3P,  20m cable 6 mm², PV max voltage @ min temperature -30C 131.8V, PV min voltage @ max temperature 40C 85.3V , Battery Inverter 150V/60A (clipping), 150V/70A (less clipping) or 250V/85A: 3735 W peak.
+5S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 175.7V, PV min voltage @ max temperature 40C 116.9V , Battery Inverter 250V/60A (clipping), 250V/70A (less clipping) or 250V/85A: 4150 W peak.
+4S/3P,  20m cable 6 mm², PV max voltage @ min temperature -30C 175.7V, PV min voltage @ max temperature 40C 115.3V , Battery Inverter 250V/85A (clipping), 250V/100A (less clipping): 4980 W peak.
+
+Length in portrait mode, to make a fence.
+
+| 460W Panels | Length (mm) | Power Peak (W) | 
+|-------------|-------------|----------------|
+|   6         |  6252       |  2760          |
+|   8         |  8336       |  3680          |
+|   9         |  9378       |  4140          |
+|  12         | 12504       |  5520          |
+
+| 415W Panels | Length (mm) | Power Peak (W) |
+|-------------|-------------|----------------|
+|   6         |  6804       |  2490          |
+|   8         |  9072       |  3320          |
+|   9         |  10206      |  3735          |
+|  10         |  11340      |  4150          |
+|  12         |  13608      |  4980          |
+
+
+Batteries price is down by a fair amount. 
+16 280Ah with Shipping from China 1672.48 € (Shipping 367.50 €) -> https://offer.alibaba.com/cps/i0ern68u?bm=cps&src=saf&url=https%3A%2F%2Fwww.alibaba.com%2Fproduct-detail%2FNew-Prismatic-304ah-lifepo4-304ah-evelifepo4_1600251092337.html
+The 302Ah are about the same price.
+From GobelPower this is about the same price, for the timebeing there is no stock in Europe otherwise the price is 1633.92 € for 16 EVE 280Ah plus (about 305Ah capacity). From China it costs 1155.20 € without shipping and with shipping 1473.79 €. 
+At GobelPower there is a 'cheap' alternative with Battero Tech 16 cells 280Ah for 836 € without shipping and with shipping 1140.55 €.
+Since I plan to put at most a 100A BMS on each, the charge and discharge will be under 0.5C.
+
+BMS Side. It seems the bugs in the firmware for the new JKBMS have been fixed.
+The 100A with 1A active balancer is 147.26 € (https://fr.aliexpress.com/item/1005006020100013.html?spm=a2g0o.cart.0.0.6e46378d2nksTQ&mp=1&gatewayAdapt=glo2fra)
+The 150A with 1A active balancer is 157.41 € (https://fr.aliexpress.com/item/1005006020100013.html?spm=a2g0o.cart.0.0.6e46378d2nksTQ&mp=1&gatewayAdapt=glo2fra)
+The 150A with 2A active balancer is 175.19 € (same link)
+The 200A with 2A active balancer is 223.42 € (same link)
+Personnaly I think the 150A with 1A balancer is enough. I plan to setup it to 100A only, to keep a large margin on the current going through and keep it a longtime.
+I think it is worth the money due also to the integration with Victron products.
+
+Regarding the MPPT battery controllers, more or less same price.
+The SNRE MC48N25 are about the same price: 60A for 227.81 € + Shipping 43.41 €, the 70A for 259.83 € + Shipping 43.41 €, the 85A for 343.22 € + Shipping 60.60 €, the 100A for 398.18 € + Shipping 60.60 €.
+The Victron SmartSolar MPPT 250/60 is about 356.24 € without shipping, the 250/70 is about 412.57 € without shipping (https://verkauf-bochum.de/products/smartsolar-mppt-250-70-tr-12-24-48v-70a?variant=41786240401569), the 250/85 is about 472.11 € without shipping (same link) and the 250/100 is about 532.43€ without shipping (same link).
+Given the price being down on the Victron and the easy integration, I am not sure it is worth spending less on the SNRE.
+
+
+Basic Victron Configuration:
+- Victron SmartSolar MPPT 250/60: 356.24 € (107% oversize)
+- Victron Multiplus-II 48/5000/70-50: 935.44 €
+- 8 460W Panels: 952 € + 128 € shipping (4S/2P)
+- JK BMS 150A: 157.41 €
+- GobelPower 16 EVE 280A plus: 1473.79 €
+- Cables and electronic protections and other stuff: 1000 € (https://verkauf-bochum.de/products/interface-mk3-usb-ve-bus-to-usb)
+Peak Power: 3680 W PV array, 3814 kWh potential (my estimation: 3103 kWh - removing October to February included)
+Total: 4875 €
+
+Upgraded Victron Configration:
+- Victron SmartSolar MPPT 250/70: 412.57 € (115% oversize)
+- Victron Multiplus-II 48/5000/70-50: 935.44 €
+- 10 460W Panels: 1190 € + 128 € shipping (5S/2P)
+- JK BMS 150A: 157.41 €
+- GobelPower 16 EVE 280A plus: 1473.79 €
+- Cables and electronic protections and other stuff: 1000 € (https://verkauf-bochum.de/products/interface-mk3-usb-ve-bus-to-usb)
+Peak Power: 4600 W PV array, 4767 kWh potential (my estimation: 3877 kWh - removing October to February included)
+Total: 5298 €
+
+
+| Configuration          | Electricity Price ct/kWh | Yearly Production Save € | Breakeven Years |
+|------------------------|--------------------------|--------------------------|-----------------|
+| Basic Victron 3.6KW    | 20                       | 620.6                    | 7.85            |
+| Basic Victron 3.6KW    | 25                       | 775.7                    | 6.28            |
+| Basic Victron 3.6KW    | 30                       | 930.9                    | 5.23            |
+| Basic Victron 3.6KW    | 35                       | 1086.05                  | 4.48            |
+| Basic Victron 3.6KW    | 40                       | 1241.20                  | 3.92            |
+| Basic Victron 3.6KW    | 45                       | 1396.63                  | 3.49            |
+| Basic Victron 3.6KW    | 50                       | 1551.50                  | 3.14            |
+| Basic Victron 3.6KW    | 60                       | 1861.80                  | 2.61            |
+| Basic Victron 3.6KW    | 70                       | 2172.10                  | 2.24            |
+|------------------------|--------------------------|--------------------------|-----------------|
+| Upgraded Victron 4.6KW | 20                       | 775.4                    | 6.83            |
+| Upgraded Victron 4.6KW | 30                       | 1163.1                   | 4.55            |
+| Upgraded Victron 4.6KW | 40                       | 1550.8                   | 3.41            |
+| Upgraded Victron 4.6KW | 60                       | 2326.2                   | 2.27            |
+| Upgraded Victron 4.6KW | 70                       | 2713.9                   | 1.95            |
+
+
+
+Overall on a year to year basis, it went down from about 8000 € to 5500 €, so about 2500 € less a good 30% decrease.
+The battery is a good 30% less, the Victron Multiplus II about 40% to 50% less, panels about 20% less.
+Just the battery and the Victron Multiplus II we are talking about 2000 € less.
+This is a huge improvement, it means your investment is breakeven much much faster. Also I think the price of the electricity will ramp-up in most of Europe due to the lack of investment first, and second due to the higher demand.
+
+
+
+# Current Configuration Setup
+
+See February 2024.
+4.6 KW - Slope 20 deg Azimuth 20 deg 
+
+Daily Mean 12.3 kWh. (~ 4500 kWh yearly)
+
+| Month          | Daily Mean kWh - 80% | 12kWh battery Overproduction |
+|----------------|----------------|----------------|
+| March          | 12.9 - 10.3    | N              |
+| April          | 18.7 - 15      | Y              |
+| May            | 19.5 - 15.6    | Y              |
+| June           | 21.0 - 16.8    | Y              |
+| July           | 20.6 - 16.4    | Y              |
+| August         | 18.0 - 14.49   | Y              |
+| September      | 15.6 - 12.48   | Y              |
+
+For the record, in the Sahara desert it could go up to 25.8 kWh daily for this configuration: like 5.6 hours at full-blast.
+It means we can have a large spread on a day to day basis that is not represented on the daily mean data.
+
+Downgrading to 3.68 KW - 8 panels - (same orientation)
+
+| Month          | Daily Mean kWh - 80% | 12kWh battery Overproduction |
+|----------------|----------------|----------------|
+| March          |  10.3 -  8.1   | N             |
+| April          |  15 - 11.8     | Y             |
+| May            |  15.6 - 12.3   | Y             |
+| June           |  16.8 -  13.2  | Y             |
+| July           |  16.4 - 12.9   | Y             |
+| August         |  14.49 - 11.42 | Y             |
+| September      |  12.48 -  9.84 | N             |
+
+2 panels cost 240 €... so it not the point. But it is interesting taking in consideration the aging of panels.
+As said earlier a single battery is too small, but the system can be easily upgraded from the baterry point of view.
 
 
 
