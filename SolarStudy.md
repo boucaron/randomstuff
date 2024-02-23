@@ -795,8 +795,8 @@ Otherwise, if it is green,  you are on the same phase.
 
 
 
-
-#### November 2023 Price Update
+# Price Updates 
+## November 2023 Price Update
 
 There are a few price changes for November.
 The interesting part is that there are affordable bifacial panels at 99 €: https://www.chocdiscount.com/panneaux-solaires/35301-panneau-solaire-jolywood-415w-full-black-ntype-bifacial-jw-hd108n.html (415W @ 1000W/m², 315W @ 800W/m²).
@@ -847,7 +847,7 @@ Various Configurations : for the 460W panel   (Yearly Evaluation removing from O
   
   
 	
-#### December 2023 Price Update
+## December 2023 Price Update
 
 There are a few price changes for December, more specifically 24/12.
 The most interesting one is the for the Victron inverters that are finally in the 1000 € (tax included) for the Victron Multiplus 2/5000VA (https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50).
@@ -864,7 +864,7 @@ Basically, it means you can buy the inverter with a 4 KW PV array for 2000 € (
 Regarding the MPPT controller, there is a small change on the price, for the SNRE 250/70A from 350 € to 290 €, the SNRE 250/85A from 430 € to 392 €, the SNRE 250/100A from 475 € to 450 €.
 
 
-#### February 2024 Price Update
+## February 2024 Price Update
 
 Following the issues in the Red Sea impacting the sea traffic: I think there will be an increase in price in the forthcoming months even if the stock is accumulating.
 There is a small increase on the price of the Victron Multiplus 2/5000VA around 950 to 1100 € (https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50)
@@ -981,8 +981,8 @@ Just the battery and the Victron Multiplus II we are talking about 2000 € less
 This is a huge improvement, it means your investment is breakeven much much faster. Also I think the price of the electricity will ramp-up in most of Europe due to the lack of investment first, and second due to the higher demand.
 
 End of February 2024, Price Update on Large Panels in Spain
-There are few panels about 550 to 600W, in the format 2278 x 1134 x 35mm around 100 to 120 €
-For instance, https://elalmacenfotovoltaico.com/paneles-solares/1103-panel-fotovoltaico-tw-solar-580w-typen-30-anos-garantia.html for 108 € VAT included.
+There are few panels about 550 to 600W, in the format 2278 x 1134 x 35mm around 100 to 130 €
+For instance, https://elalmacenfotovoltaico.com/paneles-solares/1103-panel-fotovoltaico-tw-solar-580w-typen-30-anos-garantia.html for 108 € VAT included, 600W for this one for https://autosolar.es/panel-solar-24-voltios/placa-solar-600w-monocristalina-aiko-n-type for 125.36 €, 575W for  https://autosolar.es/panel-solar-24-voltios/panel-solar-tcl-575w-bifacial-n-type for 111.14 € (and bifacial)
 
 Configuration V0:
 - 4S/2P, 4640W Peak, PV max voltage @ min temp 243.7 V, PV min voltage @ max temp 169.7 V, 20 m 6 mm² Cables, 250V/85 A, 250V/100 A (about 91.6A at max temp), 250V/70 A (a bit undersized)
