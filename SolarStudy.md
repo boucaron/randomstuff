@@ -881,7 +881,8 @@ For the grid-tied inverters, there is a good deal on the 1.5KW SOLAX X1 Mini aro
 3S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 177.8V, PV min voltage @ max temperature 40C 116.1V, Battery Inverter 250V/60A or 250V/70A: 2760 W peak. 
 4S/2P, 20m cable 6 mm², PV max voltage @ min temperature -30C 237.1V, PV min voltage @ max temperature 40C 155.7V, Battery Inverter 250V/85A or 250V/100A: 3680 W peak. (70A is undersized a bit)
 3S/3P,  20m cable 6 mm², PV max voltage @ min temperature -30C 177.8V, PV min voltage @ max temperature 40C 114.8V, Battery Inverter 250V/85A or 250V/100A: 4140 W peak. (70A is undersized a bit)
-4S/3P, 20m cable 6 mm², PV max voltage @ min temperature -30C 237.1V, PV min voltage @ max temperature 40C 154.4V, Battery Inverter 250V/100A (clipping): 5520 W peak. Or change it in 2 * 3S/2P.
+4S/3P, 20m cable 6 mm², PV max voltage @ min temperature -30C 237.1V, PV min voltage @ max temperature 40C 154.4V, Battery Inverter 250V/100A (clipping): 5520 W peak. Or change it in 2 * 3S/2P with no clipping. 
+
 
 
 415W Panel (https://www.chocdiscount.com/panneaux-solaires/35301-panneau-solaire-jolywood-415w-full-black-ntype-bifacial-jw-hd108n.html) study. This is a good bang for the buck panel.
@@ -899,6 +900,9 @@ Length in portrait mode, to make a fence.
 |   8         |  8336       |  3680          |
 |   9         |  9378       |  4140          |
 |  12         | 12504       |  5520          |
+
+Height @ 20 deg: 2081mm and 337mm of offset.
+
 
 | 415W Panels | Length (mm) | Power Peak (W) |
 |-------------|-------------|----------------|
@@ -975,6 +979,46 @@ Overall on a year to year basis, it went down from about 8000 € to 5500 €, s
 The battery is a good 30% less, the Victron Multiplus II about 40% to 50% less, panels about 20% less.
 Just the battery and the Victron Multiplus II we are talking about 2000 € less.
 This is a huge improvement, it means your investment is breakeven much much faster. Also I think the price of the electricity will ramp-up in most of Europe due to the lack of investment first, and second due to the higher demand.
+
+End of February 2024, Price Update on Large Panels in Spain
+There are few panels about 550 to 600W, in the format 2278 x 1134 x 35mm around 100 to 120 €
+For instance, https://elalmacenfotovoltaico.com/paneles-solares/1103-panel-fotovoltaico-tw-solar-580w-typen-30-anos-garantia.html for 108 € VAT included.
+
+Configuration V0:
+- 4S/2P, 4640W Peak, PV max voltage @ min temp 243.7 V, PV min voltage @ max temp 169.7 V, 20 m 6 mm² Cables, 250V/85 A, 250V/100 A (about 91.6A at max temp), 250V/70 A (a bit undersized)
+- 4S/1P, 2320W Peak, Same voltages, 250V/60 A (55A -> 45.8 A @ max temp) oversized
+- 2S/3P, 3480W Peak, PV max voltage @ min temp 121.9 V, PV min voltage @ max temp 81 V, 20 m 6 mm² Cables, 150V/85 A (81.7 A -> 68 A at max temp), 150V/70 A a bit undersized
+- 3S/3P, 5220W Peak, 250V/85 A slightly undersized,  250V/100 A undersized
+- 3S/2P, 3480W Peak, 250V/85 A (82.5 A -> 68.7 A at max temp), 250V/70 A undersized
+- 3S/1P, 1740W Peak, 250V/60 A (41.2 A -> 34.4 A at maxs temp) oversized
+
+Advantages:
+- the panel is a bit longer and larger.
+- less panels, less cables, less mechanical connectors, less width used. 10 panels in 460W and 8 panels in 580W -> 10 meters versus 9 meters
+- a bit more efficient
+- a bit cheaper 
+Cons: 
+- difficult to move alone
+- constraints due to the size
+
+Height @ 20 deg: 2250mm and 361mm of offset.
+
+# Buy back program
+
+Guaranteed feed-in tariff model
+0 - 10 kWc: 14.17 ct/kWh (2024), 13.74 ct/kWh (2025). It is supposed to be 'guaranteed' by the State.
+
+Installation : 4.6 kWc -> 4000 kWh: 566,8 € (2024), 549.6 € (2025), estimations 533.30 € (2026), 517.30 € (2027), 501.78 € (2028), 486.73 € (2029)
+10 Panels (1200+138 €), HYPONTECH HPS6000D (600 €) + 600 € for full installation including cables and safety. Total cost: 2538 €.
+Break-even years: around 6 years (2028).
+
+Variant 1 : 5.520 kWh -> 4800 kWh: 680,1 € (2024), 659.5 € (2025), estimations 639.7 € (2026), 620,5 € (2027), 601,9 € (2028), 583.85 € (2029)
+12 Panels (1440+138 €), HYPONTECH HPS6000D (600 €) + 600 € for full installation including cables and safety. Total cost: 2778 €.
+A bit better from a break-even years.
+
+Variant 2 : 6.440 kWh -> 5600 kWh: 793.5 € (2024), 769.4 € (2023), estimations 746.3 € (2026), 723.9 € (2027), 702.2 € (2028), 681.1 € (2029)
+14 Panels (1440+138 €), HYPONTECH HPS6000D (600 €) + 600 € for full installation including cables and safety. Total cost: 3018 €.
+Pushed a bit further from a break-even years.
 
 
 
