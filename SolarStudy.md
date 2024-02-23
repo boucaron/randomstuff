@@ -997,6 +997,8 @@ Advantages:
 - less panels, less cables, less mechanical connectors, less width used. 10 panels in 460W and 8 panels in 580W -> 10 meters versus 9 meters
 - a bit more efficient
 - a bit cheaper 
+
+
 Cons: 
 - difficult to move alone
 - constraints due to the size
