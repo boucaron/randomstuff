@@ -36,10 +36,9 @@ By refining these techniques and observations, deeper insights into aerodynamics
 ### NACA Wings
 As first step, I would suggest to check some NACA wings designs, then you go in your favorite CAD import the profile and extrude it. After, you can put some plates on the sides and see the effects of such elements, this is far from obvious, how such plates interacts with the wing.
 
-### Diffusor
-I created a small diffuser with basically a cube, on which is put two small end plate to prevent the diffuser to be on the ground and create the diffuser with a very simple line about 3 to 5 degrees max. It is very sensitive.
-Then, you can create a spline with a smaller angle, but with a exit of the diffuser a bit more steep, of course you have to iterate to see how the flows goes. 
-
+### Diffuser
+I created a small diffuser with basically a boxe with rounded fillets on the front, on which is put two small end plate one side to prevent the diffuser to be on the ground. The diffuser with a very simple line about a few degrees. It is very sensitive.
+Then, you can create a spline with a smaller angle at the front, moving to the angle of the previous 'working' straight diffuser, but with a exit of the diffuser a bit more steep angle, of course you have to iterate to see how the flows goes.
 
 
 
