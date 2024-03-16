@@ -16,9 +16,9 @@ The key component you'll be working with is the 'workbench', where you can creat
 
 To expedite experiments, I often adjust the following parameters:
 
-- **lxsurf**: Set to 2 (default is 4). While this creates coarse meshes, it suffices for basic experiments.
+- **lxsurf**: Set to 2 (or the default 4). While this creates coarse meshes, it suffices for basic experiments.
 - **np**: Utilize all available CPU cores (e.g., 8 in my case), it does make the system lags.
-- **v**: Default is 1 m/s; I set it to 83.3 m/s (roughly 300 km/h).
+- **v**: Default is 1 m/s; I set it to 50 m/s (roughly 180 km/h).
 
 Though sacrificing some precision, this setup significantly reduces simulation time. Later, refine the mesh for more accurate results.
 
