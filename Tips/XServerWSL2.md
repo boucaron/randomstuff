@@ -1,34 +1,47 @@
-# X11 Server on WSL2
+# Setting Up X11 Server on WSL2
 
-This is kind of annoying when you want to display something in the VM, or you do not have an equivalent software on Windows
+Encountering difficulties when attempting to display content in the virtual machine or lacking equivalent software on Windows can be frustrating.
 
-This tip is taken from : 
-https://askubuntu.com/questions/1252007/opening-ubuntu-20-04-desktop-on-wsl2/1365455#1365455
+This helpful tip is sourced from: [askubuntu.com](https://askubuntu.com/questions/1252007/opening-ubuntu-20-04-desktop-on-wsl2/1365455#1365455)
 
+```bash
 sudo apt install xrdp xfce4
+During installation, ensure to match the keyboard layout with that of Windows.
 
-You will be asked to set the keyboard layout, put the same as in Windows
-
-
-# Optionally, back up the default config
+Optionally, Backup Default Configuration
+bash
+Copy code
 sudo cp /etc/xrdp/xrdp.ini /etc/xrdp/xrdp.ini.bak
+To prevent conflicts, especially with Windows often utilizing RDP on port 3389, adjust the port:
 
-# Windows are often already running RDP on 3389
-# Prevent conflicts:
+bash
+Copy code
 sudo sed -i 's/3389/3390/g' /etc/xrdp/xrdp.ini
+Prevent Wayland from being utilized in Xrdp:
 
-# Prevent Wayland from being used in Xrdp
+bash
+Copy code
 echo "export WAYLAND_DISPLAY=" > ~/.xsessionrc
+If only one desktop environment is installed, set it as the default:
 
-# Optional, if you only have one desktop environment installed
+bash
+Copy code
 echo startxfce4 > ~/.xsession 
+Start the xrdp service:
 
+bash
+Copy code
 sudo service xrdp start
-# Or, if running Systemd
+Alternatively, if using Systemd:
+
+bash
+Copy code
 sudo systemctl restart xrdp
+If encountering login issues, set a password for your user:
 
-If you cannot login with your user, set a password
+bash
+Copy code
 sudo passwd myLogin
+Finally, on the Windows host, launch 'Remote Desktop' and connect to 'localhost:3390' to begin using the setup.
 
-After under the windows host, you launch the 'remote desktop' 
-on 'localhost:3390' and enjoy ;)
+Enjoy the seamless experience!
