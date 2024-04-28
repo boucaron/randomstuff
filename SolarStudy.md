@@ -1005,6 +1005,16 @@ Cons:
 
 Height @ 20 deg: 2250mm and 361mm of offset.
 
+
+## April 2024 Price Update
+
+Stable prices for the PV Panels ranging from 69€ for 370W to around 100 € for 420 to 440 W, more N-Type and Bifacial panels are available.
+Spain still a bit cheaper: https://elalmacenfotovoltaico.com/paneles-solares/917-tongwei-solar-panel-de-440w-th440pmb7-46scs.html  440W for 80 €,  https://elalmacenfotovoltaico.com/paneles-solares/1103-panel-fotovoltaico-tw-solar-580w-typen-30-anos-garantia.html 580W for 101 €,  https://elalmacenfotovoltaico.com/paneles-solares/1097-panel-fotovoltaico-tw-solar-485w-typen-30-anos-garantia-60HS485W.html 485W for 84 €, https://autosolar.es/panel-solar-24-voltios/placa-solar-600w-monocristalina-aiko-n-type for 103 €, bifacial https://autosolar.es/panel-solar-24-voltios/placa-solar-bifacial-580w-ja-solar-mono for 100 €:  all prices VAT included.
+
+Interesting price for the  Hoymiles HM-1600 1600 W MicroInverter https://www.reichelt.de/lu/en/microinverter-hoymiles-hm-1600-ho-hms-1600-p347967.html?&nbc=1 with 232 € including VAT. There is also now a small DIY device to retrieve the data directly from the MicroInverter with an ESP32 : https://github.com/tbnobody/OpenDTU. If you include with the MicroInverter  a 15 m cable, the end cap and the tool to disconnect, it is less about 288 € including VAT (+ 7 € for shipping).
+
+
+
 # Buy back program
 
 Guaranteed feed-in tariff model
