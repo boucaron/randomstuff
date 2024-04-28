@@ -74,6 +74,11 @@ sudo usermod -aG docker $USER
 
 **Important:** Then logout and relogin to have the group for your user.
 
+## Add docker compose
+```bash
+sudo apt install docker-compose
+```
+
 ## Oracle 23 Free Version
 
 ### Basic Test
