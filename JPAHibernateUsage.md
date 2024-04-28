@@ -1,44 +1,52 @@
 # JPA Hibernate Usage
 
-I started recently to work on a project with pretty poor DB Backend Implementation, to avoid to say a failed DB Backend Implementation.
-As a software developper it is your job and your concern to understand the difference there is between having a DB schema and implementing a DB Mapping for your backend. 
-What I mean by that is that you have to understand the DB schema you are using, you are not mimicking or copying this schema to the DB mapping your need for your backend. 
-You are creating a DB Mapping to perform some tasks/queries for your business case. 
-Also, most of the time, you can add things in the DB Schema to suit your need. 
 
-Motivating example, you have a table with several foreign keys to other tables. The question is do you really need to have those foreign keys being resolved as Join when you map this table. The quick and good answer is No ! Why ? Simply forcing the foreign keys may force JPA/Hibernate to fetch additional data you do not need. Also, the fetch of those data may be very inefficient, and can litteraly kills both the DB server and your Backend. Now, I let you imagine what happens when you have strongly connected components in the foreign key chains. It means you are sending burst of queries and retrieving data that are not meaningful at all for your concern. Also, the mapping is static, even if you have Lazy loading features, if the data is mapped even indirectly... it will be fetched.
+I recently began working on a project with a suboptimal database (DB) backend implementation, to put it lightly — perhaps even a failed one. As a software developer, it's imperative to discern the disparity between having a DB schema and implementing a DB mapping for your backend.
+
+What I mean by this is that you must comprehend the DB schema you're utilizing; you're not merely mimicking or replicating this schema for the DB mapping required by your backend. Instead, you're creating a DB mapping to execute specific tasks/queries pertinent to your business case. Additionally, most of the time, you can augment the DB schema to align with your needs.
+
+For instance, consider a table with multiple foreign keys to other tables. Do you truly need these foreign keys to be resolved as joins when mapping this table? The succinct and correct answer is: No! Why? Because enforcing the foreign keys may compel JPA/Hibernate to retrieve additional data that you don't require. Moreover, fetching this data could be highly inefficient, potentially overburdening both the DB server and your backend. Now, envision the repercussions when dealing with strongly connected components in the foreign key chains. This scenario results in bursts of queries being sent and irrelevant data being retrieved, which adds no value to your concerns. Furthermore, despite the availability of Lazy loading features, if the data is even indirectly mapped, it will be fetched.
+
+# Understanding Latency in Database Queries
+Let's delve into the latency issue. Imagine there's a 1 ms latency between your application server and your DB server. Consider a scenario where you have a table A mapped with a foreign key joined to another table B.
+
+When you fetch 1000 records from table A with a single query, an additional challenge arises: retrieving the foreign keys. For each of the 1000 records, a separate query is sent to the DB to fetch the associated foreign keys from table B.
+
+In essence, while you have 1 SQL query to fetch the records from table A, you now have 1000 SQL queries to fetch the foreign keys. This translates to a round-trip latency of 1 ms each way for every single SQL query sent to retrieve the foreign keys. Therefore, the total latency becomes (1 + 1) * 1000 = 2000 ms, resulting in at least 2 seconds solely due to latency.
+
+Moreover, this spike in latency also escalates the CPU load on both the application and DB servers. The increased number of context switches at the OS level, necessary to handle numerous single and short requests, adds to the computational overhead.
 
 
-# Latency ! 
-Let me explain the latency issue. Let say you have a 1 ms latency between your application server and your DB server. 
-Example, you have a mapped table A with a foreign key mapped as a Join to another table B. 
-You retrieve 1000 records from a single query, but what happens you have another 1000 queries that are sent to the DB to retrieve the foreign keys. In other words, you have 1 sql query to fetch the records for the mapped table A, BUT you have also 1000 sql queries to fetch those foreign keys.
-This means you have 1 ms in one way and 1 ms in the other way for each single sql query sent to fetch the foreign keys: so (1 + 1) * 1000 = 2000 ms, so you have at least 2 s just due to the latency and of course increased CPU load on both the application and the DB server due to amount of context switches at the OS level to handle all those single and short requests.
 
-# Static Mapping/Various Queries 
-What is really important to undestand is the DB mapping is static (you map a table to a class). If I asked to retrieve a foreign key, it will be done for each query (actually you can use lazy loading to prevent, but it needs a lot discipline, and it is pretty easy to forget about it, especially it is hidden deeply in a call-stack). 
-In the general case, we do not know all the queries that will be performed during the life of project. So asking all the time the foreign key is most of the time a mistake.
+# Static Mapping and Query Complexity
+It's crucial to grasp that database mapping is static; each table is mapped to a class. When requesting a foreign key, it's retrieved for each query. Although lazy loading can mitigate this, it requires discipline, and oversight is common, especially buried deep within a call stack.
 
-Let us extend to the context of having multiple foreign-keys, it will make even less sense to fetch those systematically: it depends on the query, sometimes you need no foreign key, sometimes a specific one, sometimes both of them and so on. From this perspective, the nature and the style of the query is very different. So it is very dangerous from a performance perspective to use a Join there.
+In most cases, we don't anticipate all queries throughout a project's lifespan. Therefore, requesting the foreign key every time is often a mistake.
 
-Let think about the insert/update case. Let say you have a person mapped table with multiple addresses that are fetched as a Join. Each time you update the person, you can potentially update the addresses. Even if the query is not sent: you will have JPA/Hibernate under the hood performing several checks on various data fields that are not concerned, before sending the queries to the DB server.
+Consider the complexity introduced by multiple foreign keys. Fetching them systematically becomes nonsensical; the necessity varies based on the query. Sometimes none are needed, other times specific ones, or perhaps all. Consequently, the query nature and style differ significantly. Using a join here poses a substantial performance risk.
 
-So keep things simple and stupid: if you want performance, simplify the maintenance and the testing: do not map a table with its foreign keys.
+Now, contemplate the insert/update scenario. Suppose a person's table is mapped with multiple addresses fetched via a join. Each time you update the person, you may potentially update the addresses. Even if the query isn't sent, JPA/Hibernate undertakes numerous checks on various data fields before contacting the DB server.
 
-# Handling Join
+To optimize performance, simplify maintenance, and facilitate testing, adhere to the principle of simplicity: avoid mapping a table with its foreign keys.
 
-So you will tell, ok I need to handle the join. Yes, no problem you can handle it at the Query level. 
-It means you are going to create specific calls in your DAO, your service and your controller to handle those cases.
-In some case, it makes totally sense to create DB views and having different mapped objects to address your specific needs and to prevent having burst of calls being sent to the DB as we discussed earlier.
-Yes, it takes a bit more time to create, but on the long run, it wins.
+# Customizing Join Handling
+You might wonder how to handle joins effectively. The solution lies in managing them at the query level. This entails creating tailored calls in your DAO, service, and controller to address specific cases.
 
-# Control and Maintenance
-Having specific apis  mean you will have more control on how the things are structured in your backend, your needs and intentions are more exposed.
-So, if you have someone doing the maintenance on the project, the person will understand that she/he can introduce custom queries to manage the need and to ensure good performance.
-You will not have a simpler backend but something adapted on your needs where you have control.
-This means you can have different business objects, controllers, services that are really linked to the nature of the query, and you can modify and optimise those without causing anything harm to other parts of the project. The mapped tables are simple and systematically free from any performance bottleneck by construction.
+In certain scenarios, creating database views and employing different mapped objects to cater to your specific requirements can be advantageous. This approach helps prevent the influx of calls sent to the DB, as previously discussed.
 
-So, do not use Join tables in your mapping if you are not really sure you need them all the time along the life of your project !
+While it may require more time to set up initially, the long-term benefits are significant. By investing effort upfront in crafting these solutions, you ultimately streamline operations and enhance efficiency over time.
+
+
+# Enhanced Control and Maintenance
+Utilizing specific APIs offers increased control over the structure of your backend, making your needs and intentions more transparent. This level of specificity empowers maintenance personnel to introduce custom queries to manage requirements and ensure optimal performance.
+
+By eschewing join tables in mapping, you create a backend that is tailored to your needs, fostering a deeper understanding of the system's architecture. This approach facilitates the introduction of custom queries without compromising the integrity of other project components.
+
+Furthermore, having distinct business objects, controllers, and services closely aligned with the nature of the query enables seamless modification and optimization. This flexibility ensures that adjustments can be made without adverse effects on other project areas.
+
+In essence, refrain from using join tables in mapping unless their necessity is unequivocal throughout the project's lifecycle. By doing so, you construct a backend that is both adaptable and resilient, free from performance bottlenecks inherent in unnecessary mapping complexities.
+
+As a developer, it's essential to possess the capability to write SQL queries and comprehend your database schema rather than solely depending on the database mappings created by others.
 
 
 
