@@ -21,6 +21,7 @@ To expedite experiments, I often adjust the following parameters:
 - **v**: Default is 1 m/s; I set it to 50 m/s (roughly 180 km/h).
 
 Though sacrificing some precision, this setup significantly reduces simulation time. Later, refine the mesh for more accurate results.
+Be very careful with any complex geometry the results will be pointless.
 
 ## Conducting Basic Experiments
 
@@ -40,6 +41,25 @@ As first step, I would suggest to check some NACA wings designs, then you go in 
 I created a small diffuser with basically a boxe with rounded fillets on the front, on which is put two small end plate one side to prevent the diffuser to be on the ground. The diffuser with a very simple line about a few degrees. It is very sensitive.
 Then, you can create a spline with a smaller angle at the front, moving to the angle of the previous 'working' straight diffuser, but with a exit of the diffuser a bit more steep angle, of course you have to iterate to see how the flows goes.
 
+## Refining Experiments
+
+Using very coarse mesh it ok for small experiments, but it will not work on any complex geometry (car, bike...) especially where there is an important size difference between features.
+
+For medium sized experiments (car with some details), I use the following settings:
+
+- **lmsurf**: Set to 4 (instead of the default 2)
+- **lxsurf**: Set to the default 4.
+- **np**: Utilize all available CPU cores (e.g., 8 in my case), it does make the system lags.
+- **v**: Default is 1 m/s; I set it to 50 m/s (roughly 180 km/h).
+With this setup it takes about 20/25 minutes for a run.
+
+Check the amount of memory needed, typically I have 32 GB allocated to the VM, and the input mesh in STL fileformat is about 50 MB.
+This is still a coarse mesh.
+
+If you have really small features, on your mesh you need to refine further
+- **lxsurf**: Set to 5 or 6 (exponential increase)
+- **np**: Set to 4 or 2 (exponential decrease). 
+As said before, you will need a lot of memory to run in parallel. Typically, if you do not have enough memory, the VM will gets an out of memory at the meshing phase in few minutes.
 
 
 # Tips
