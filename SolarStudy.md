@@ -1014,6 +1014,46 @@ Spain still a bit cheaper: https://elalmacenfotovoltaico.com/paneles-solares/917
 Interesting price for the  Hoymiles HM-1600 1600 W MicroInverter https://www.reichelt.de/lu/en/microinverter-hoymiles-hm-1600-ho-hms-1600-p347967.html?&nbc=1 with 232 € including VAT. There is also now a small DIY device to retrieve the data directly from the MicroInverter with an ESP32 : https://github.com/tbnobody/OpenDTU. If you include with the MicroInverter  a 15 m cable, the end cap and the tool to disconnect, it is less about 288 € including VAT (+ 7 € for shipping).
 
 
+## July 2024 Price Update
+All prices are VAT included
+Larger glass to glass panels are more available as Bifacial.
+500W panel for 109 € https://www.chocdiscount.com/panneaux-solaires/102924-panneau-solaire-jolywood-500w-cadre-noir-transparent-bifacial-n-type-hd120n-r3.html
+420W panel for 79€ https://www.chocdiscount.com/panneaux-solaires/82247-panneau-solaire-jolywood-420w-ht108n-420.html
+440W panel for 80€  https://elalmacenfotovoltaico.com/es/paneles-solares/917-tongwei-solar-panel-de-440w-th440pmb7-46scs.html
+580W panel for 101 € https://elalmacenfotovoltaico.com/es/paneles-solares/1103-panel-fotovoltaico-tw-solar-580w-typen-30-anos-garantia.html
+
+Price of  wifi enables Hoymiles 800 & 1000W is down a bit: 
+https://www.chocdiscount.com/onduleurs-solaires/127974-micro-onduleur-hoymiles-hms800w-2t-wifi-integre-.html 169 € - 14 A limit, not really ok for large panels
+https://www.chocdiscount.com/onduleurs-solaires/127975-micro-onduleur-hoymiles-hms1000w-2t-wifi-integre-.html 199 € - 16 A limit ok for large panels
+
+48 V Victron: Similar prices or just a tiny bit lower for the inverters Multiplus II, similar prices also on the MPPTs
+Victron Multiplus II 48/3000 https://verkauf-bochum.de/en/products/multiplus-ii-48-3000-35-32?variant=41741092651169 496 € 
+Victron Multiplus II 48/3000 GX https://verkauf-bochum.de/en/products/multiplus-ii-48-3000-35-32-gx 573.19 €
+Victron Multiplus II 48/5000 https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50-gx 807.28 €
+Victron Multiplus II 48/5000 GX https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50-gx 895.18 €
+EasySolar-II 48/3000/35-32 MPPT 250/70 GX  https://verkauf-bochum.de/en/products/easysolar-ii-48-3000-35-32-mppt-250-70-gx?variant=44544561119499 1132.49 €
+EasySolar-II 48/5000/70-50 MPPT 250/100 GX https://verkauf-bochum.de/en/products/easysolar-ii-48-5000-70-50-mppt-250-100-gx?variant=44544571703563 1624.15 €
+SmartSolar MPPT 250/70-Tr (12/24/48V-70A) https://verkauf-bochum.de/en/products/smartsolar-mppt-250-70-tr-12-24-48v-70a 409.40 €
+SmartSolar MPPT 250/70-Tr VE.CAN (12/24/48V-70A) https://verkauf-bochum.de/en/products/smartsolar-mppt-250-70-tr-ve-can-12-24-48v-70a 421.18 €
+
+Bad surprise: 
+There is about 200 € difference on the EasySolar and the Multiplus with the 70A solar charger for the 3000 GX
+There is about 300 € difference on the EasySolar and the Multiplus with the 70A solar charger for the 5000 GX
+
+Batteries:
+GobelPower 280Ah with BusBars in EVE from Europe Stock, with Card fee 4.4% and Shipping: 1385,35 €, and 1326,96 € without card fee Bank Transfer
+GobelPower 280Ah with BusBars in HThium from Europe Stock, with Card fee 4.4% and Shipping: 1223.32 €, and 1171.76 € without card fee Bank Transfer
+
+BMS:
+JK BMS 150A 1A Balancer - : JK-PB1A16S15P -  https://fr.aliexpress.com/item/1005006655777598.html?pdp_npi=4%40dis%21EUR%21%E2%82%AC%20137%2C62%21%E2%82%AC%2096%2C33%21%21%211059.46%21741.62%21%40210307c017203491926833594ea3db%2112000037936459816%21sh%21LU%21839344662%21&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2007603329146.1005006655777598&gatewayAdapt=glo2fra 96.33 €
+JK BMS 100 A 1A Balancer - https://fr.aliexpress.com/item/1005006649011774.html?pdp_npi=4%40dis%21EUR%21%E2%82%AC%2031%2C28%21%E2%82%AC%2021%2C90%21%21%21240.79%21168.55%21%40210307c017203491926833594ea3db%2112000037922071679%21sh%21LU%21839344662%21&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2007603329146.1005006649011774&gatewayAdapt=glo2fra 83.20 €
+JK BMS 150 A 2A Balancer - : 118.23 €
+JK BMS 200 A 2A Balancer - : 151.07 €
+
+SRNE MPPT Battery:
+MC4870N25 https://fr.aliexpress.com/item/1005004674334241.html?spm=a2g0o.cart.0.0.4e41378dK81b76&mp=1&gatewayAdapt=glo2fra 258.84 € + 43.24 € Shipping -> 302.08 €
+It is about 110 € difference with the Integrated Victron product, not worth the money difference in my point of view
+
 
 # Buy back program
 
