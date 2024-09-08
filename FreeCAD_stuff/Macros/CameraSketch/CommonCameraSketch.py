@@ -29,12 +29,14 @@ def SetOrGetCameraSketch(sketch, getAction):
             # Get from Hashtable Camera -  if not found write an error
             getValue = FreeCAD.SketchesCamera.get(keyToSearch)
             if getValue is not None:
-                FreeCAD.Console.PrintMessage("Camera found, restoring")
+                FreeCAD.Console.PrintMessage("Camera found, restoring\n")
+                FreeCAD.Console.PrintMessage(f"KeyToSearch: {keyToSearch}\n")
                 active_view.setCamera(getValue)
             else:
-                FreeCAD.Console.PrintMessage("Camera not found")
+                FreeCAD.Console.PrintMessage("Camera not found\n")
         else:
             FreeCAD.Console.PrintMessage("Save the current camera for the sketch\n")
+            FreeCAD.Console.PrintMessage(f"KeyToSearch: {keyToSearch}\n")
             # Set in Hashtable the Camera
             FreeCAD.SketchesCamera[keyToSearch] = currentCamera
         
