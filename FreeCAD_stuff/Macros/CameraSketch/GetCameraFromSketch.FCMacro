@@ -1,0 +1,6 @@
+import CommonCameraSketch
+
+try:
+   CommonCameraSketch.SetOrGetCameraSketch(sketch = ActiveSketch, getAction = True)
+except NameError:
+    FreeCAD.Console.PrintMessage("Macros must be called inside a sketch\n")
