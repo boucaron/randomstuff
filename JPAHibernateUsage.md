@@ -1,4 +1,4 @@
-# JPA Hibernate Usage
+# JPA Hibernate Usage & N+1 Problem
 
 
 I recently began working on a project with a suboptimal database (DB) backend implementation, to put it lightly — perhaps even a failed one. As a software developer, it's imperative to discern the disparity between having a DB schema and implementing a DB mapping for your backend.
@@ -10,7 +10,7 @@ For instance, consider a table with multiple foreign keys to other tables. Do yo
 # Understanding Latency in Database Queries
 Let's delve into the latency issue. Imagine there's a 1 ms latency between your application server and your DB server. Consider a scenario where you have a table A mapped with a foreign key joined to another table B.
 
-When you fetch 1000 records from table A with a single query, an additional challenge arises: retrieving the foreign keys. For each of the 1000 records, a separate query is sent to the DB to fetch the associated foreign keys from table B.
+When you fetch 1000 records from table A with a single query, an additional challenge arises: retrieving the foreign keys. For each of the 1000 records, a separate query is sent to the DB to fetch the associated foreign keys from table B. This problem is the so-called 'N+1 Query Problem'.
 
 In essence, while you have 1 SQL query to fetch the records from table A, you now have 1000 SQL queries to fetch the foreign keys. This translates to a round-trip latency of 1 ms each way for every single SQL query sent to retrieve the foreign keys. Therefore, the total latency becomes (1 + 1) * 1000 = 2000 ms, resulting in at least 2 seconds solely due to latency.
 
@@ -47,6 +47,7 @@ Furthermore, having distinct business objects, controllers, and services closely
 In essence, refrain from using join tables in mapping unless their necessity is unequivocal throughout the project's lifecycle. By doing so, you construct a backend that is both adaptable and resilient, free from performance bottlenecks inherent in unnecessary mapping complexities.
 
 As a developer, it's essential to possess the capability to write SQL queries and comprehend your database schema rather than solely depending on the database mappings created by others.
+
 
 
 
