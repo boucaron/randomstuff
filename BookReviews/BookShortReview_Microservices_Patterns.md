@@ -45,5 +45,62 @@ With a microservices-based application, business logic is distributed across mul
 
 Now, let’s talk about the API-only scheme that microservices rely on. While this decoupling offers many advantages, it also introduces challenges. First, the communication between services often relies heavily on APIs, and this can lead to data duplication and consistency issues. In a distributed system, ensuring data consistency across services becomes a complex task, especially as the number of services grows. This risk of inconsistency can arise even if teams are not actively thinking about it, making it a key concern in the maintenance and scalability of microservices-based systems.
 
+### Defining an application’s microservice architecture
+
+So we start from the fundamentals:
+
+From the author:
+'An application exists to handle requests, so the first step in defining its architecture is
+to distill the application’s requirements into the key requests'
+'A system operation is an abstraction of a
+request that the application must handle. It’s either a command, which updates data,
+or a query, which retrieves data. The behavior of each command is defined in terms
+of an abstract domain model, which is also derived from the requirements. The system
+operations become the architectural scenarios that illustrate how the services
+collaborate.'
+'The second step in the process is to determine the decomposition into services.
+There are several strategies to choose from. One strategy, which has its origins in the
+discipline of business architecture, is to define services corresponding to business
+capabilities. Another strategy is to organize services around domain-driven design subdomains.
+The end result is services that are organized around business concepts
+rather than technical concepts.'
+'The third step in defining the application’s architecture is to determine each service’s
+API. To do that, you assign each system operation identified in the first step to a
+service. A service might implement an operation entirely by itself. Alternatively, it
+might need to collaborate with other services. In that case, you determine how the services
+collaborate, which typically requires services to support additional operations.'
+
+At least we can start to talk about potential issues:
+
+'There are several obstacles to decomposition. The first is network latency. You
+might discover that a particular decomposition would be impractical due to too many
+round-trips between services. Another obstacle to decomposition is that synchronous
+communication between services reduces availability.'
+'The third obstacle is the
+requirement to maintain data consistency across services.'
+'The fourth and final obstacle to decomposition is socalled
+god classes, which are used throughout an application. Fortunately, you can use
+concepts from domain-driven design to eliminate god classes.'
+
+
+First step 'CREATING A HIGH-LEVEL DOMAIN MODEL'
+
+'The application won’t even have a
+single domain model because, as you’ll soon learn, each service has its own domain
+model. Despite being a drastic simplification, a high-level domain model is useful at
+this stage because it defines the vocabulary for describing the behavior of the system
+operations.'
+
+Second step 'DEFINING SYSTEM OPERATIONS'
+
+'There are two types of system operations:
+- Commands—System operations that create, update, and delete data
+-  Queries—System operations that read (query) data'
+
+#### Defining services by applying the Decompose by business capability pattern
+
+'An organization’s business capabilities capture what an organization’s business is.
+They’re generally stable, as opposed to how an organization conducts its business, which
+changes over time, sometimes dramatically.'
 
 
