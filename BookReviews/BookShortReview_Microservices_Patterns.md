@@ -1,5 +1,7 @@
 # Microservices Patterns with examples in Java - Chris Richardson
 
+## Intro 
+
 Microservices have been a trending topic for a few years, often discussed alongside Agile. In the introduction, the author acknowledges that microservices are not a ‘silver bullet.’ However, in the list of cons, he does not fully address the real costs in terms of both infrastructure and communication overhead. A true microservices architecture demands more computational resources and introduces additional communication complexity—not just in system interactions but also in coordination between teams.
 
 For smaller applications with fewer than a thousand peak concurrent users, a monolithic approach is often the better choice. Alternatively, a hybrid architecture can provide a middle ground, where specific functionalities—such as email notifications—are offloaded to independent services like a queue-based microservice, preventing the monolith from being slowed down by non-critical tasks.
@@ -21,4 +23,27 @@ These optimizations can make future redesigns either prohibitively expensive or 
 The author references the classic Mythical Man-Month issue, emphasizing that teams should remain small—ideally under ten people. Following this, he suggests that each microservice should typically be managed by a team of two to three people.
 
 However, I would argue that the number of microservices is just as critical as team size. As the number of microservices increases, system complexity grows exponentially, much like how a larger team becomes harder to manage. To avoid unnecessary overhead, it's essential to take a lean approach when designing and scaling microservices.
+
+## Decomposition Strategies
+
+The chapter begins with a brief introduction to software architecture and its variations.
+
+Following that, the author presents the following definitions:
+
+ 'A service is a standalone, independently deployable software component that implements some useful functionality'
+'There are two types of operations: commands and queries. The API consists of commands, queries, and events.'
+'A service’s API encapsulates its internal implementation. Unlike in a monolith, a developer can’t write code that bypasses its API. As a result, the microservice architecture enforces the application’s modularity.
+'Each service in a microservice architecture has its own architecture and, potentially, technology stack. But a typical service has a hexagonal architecture. Its API is implemented by adapters that interact with the service’s business logic. The operations adapter invokes the business logic, and the events adapter publishes events emitted by the business logic.'
+'All interaction with a service happens via its API, which encapsulates its implementation details. This enables the implementation of the service to change without impacting its clients. Loosely coupled services are key to improving an application’s development time attributes, including its maintainability and testability. They are much easier to understand, change,and test.'
+'The requirement for services to be loosely coupled and to collaborate only via APIs prohibits services from communicating via a database'
+
+This section presents an important aspect of microservices architecture: modularity. Services are designed to be independent, with each one exposing a clear API that acts as the only point of interaction. This decoupling encourages flexibility and scalability, enabling teams to work on different services without affecting each other’s work.
+
+However, let’s shift the focus to the practical implications of this modular approach, particularly in terms of maintenance.
+
+With a microservices-based application, business logic is distributed across multiple services. This means that instead of one centralized codebase, the knowledge about how the system works is diffused across various services. Consequently, if you need to replace a developer, there is a longer learning curve, as they must understand multiple services. Additionally, debugging can become more difficult, as the interaction between services may not always be straightforward.
+
+Now, let’s talk about the API-only scheme that microservices rely on. While this decoupling offers many advantages, it also introduces challenges. First, the communication between services often relies heavily on APIs, and this can lead to data duplication and consistency issues. In a distributed system, ensuring data consistency across services becomes a complex task, especially as the number of services grows. This risk of inconsistency can arise even if teams are not actively thinking about it, making it a key concern in the maintenance and scalability of microservices-based systems.
+
+
 
