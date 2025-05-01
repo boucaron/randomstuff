@@ -1,5 +1,6 @@
-# AMD Laptop Ryzen 9 CPU Based Workstation
+# Ryzen 9 7945HX Mini Workstation Build & Thermal Optimization Report
 
+Tuning Guide, Thermals, Benchmarks, and Lessons Learned from a Compact High-Performance Build.
 This is a tiny powerful tower that I built in March 2025.  
 
 **Document last update date:** 01/05/2025
