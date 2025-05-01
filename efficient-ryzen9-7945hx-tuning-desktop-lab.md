@@ -168,66 +168,69 @@ Sometimes, **it’s not about pushing harder — it’s about pushing smarter.**
 
 # Cooling Fan Optimization
 
-I am running a 360mm watercooled AIO, which is overkill. But surprisingly, there is not such big difference in money if you move from a 120mm to 360mm.
-
+I'm running a **360mm AIO water cooler**, which is admittedly overkill — but the price difference compared to a 120mm unit is surprisingly small, so it made sense for thermal overhead.
 
 ## Original Setup
-It is very noisy in the original setting to say the list.
-I already tuned the CPU TDP/Currents when doing this.
 
-Go on the CPU Fan settings in the BIOS
-CPU Fan -> Original
-- Fan Off: 0
-- Fan Start: 25
-- Full Speed: 94
-- Start PWM: 40
-- Automatic Mode Control: 2
+Out of the box, the fan behavior was **very noisy**, to say the least — especially for a water-cooled system.  
+At this point, I'd already tuned CPU TDP and current limits.
+
+**BIOS CPU Fan Settings (Original):**
+- Fan Off: 0  
+- Fan Start: 25  
+- Full Speed: 94  
+- Start PWM: 40  
+- Automatic Mode Control: 2  
 - Delta Temperature: 2
 
 ## First Iteration
-- Fan Off: 0
-- Fan Start: 45
-- Full Speed: 94
-- Start PWM: 20
-- Automatic Mode Control: 2
+
+To reduce noise, I slightly increased the fan start temperature and lowered the starting PWM.
+
+**Modified Settings:**
+- Fan Off: 0  
+- Fan Start: 45  
+- Full Speed: 94  
+- Start PWM: 20  
+- Automatic Mode Control: 2  
 - Delta Temperature: 2
 
-I reduced both the PWM and slightly raised the Fan Start temperature to check if I can reduce the fan pwm.
-This is less noisy at least than the original one, but still a bit too noisy for me.
-The RPM according to HWInfo is running at max 713 RPM under full load.
+This was noticeably quieter than the original configuration, but still **a bit too noisy** for my taste.  
+According to HWInfo, the fan RPM peaked at around **713 RPM** under full load.
 
 ## Second Iteration
 
-Set the Fan Off at 35 and Start PWM at 10 to see if the noise can be further reduced.
+Tried to push noise even lower by setting a higher Fan Off temperature and reducing the start PWM even further.
 
-- Fan Off: 35
-- Fan Start: 45
-- Full Speed: 94
-- Start PWM: 10
-- Automatic Mode Control: 2
+**Modified Settings:**
+- Fan Off: 35  
+- Fan Start: 45  
+- Full Speed: 94  
+- Start PWM: 10  
+- Automatic Mode Control: 2  
 - Delta Temperature: 2
 
-No change, Same noise
-May be a kind of protection on the PWM level ?
-
+**Result:** No noticeable change — **same noise level**. Possibly some kind of **minimum PWM or RPM protection** is enforced by the motherboard or AIO.
 
 ## Third Iteration
 
-Increase Fan Off to 40, Fan Start to 50
+Pushed the thresholds a bit higher again:
 
-- Fan Off: 40
-- Fan Start: 50
-- Full Speed: 94
-- Start PWM: 10
-- Automatic Mode Control: 2
+**Modified Settings:**
+- Fan Off: 40  
+- Fan Start: 50  
+- Full Speed: 94  
+- Start PWM: 10  
+- Automatic Mode Control: 2  
 - Delta Temperature: 2
 
-No change, Same noise
-I was expecting to have the noise stopping from time to time but not the case despite the temperature
+**Result:** Still no change — the fan remains constantly on. I was expecting it to shut off occasionally when the temperature dropped, but that never happened.
 
-## X Iteration
+## Final Conclusion
 
-It seems there is a safety feature somewhere I cannot go down from 700 rpm and I cannot disable the fan at all.
-Even in manual mode setting the PWM down to 0 does not work and it does stop the fans.
-So I kept like the first iteration.
+There appears to be a **safety feature or minimum threshold** that prevents the fan from spinning below ~700 RPM, regardless of PWM settings.  
+Even when setting the fan to manual mode and lowering PWM to 0, the fan **does not stop**.
+
+So for now, I’ve reverted to the **first iteration**, which offered a good compromise between thermal stability and reduced noise.
+
 
