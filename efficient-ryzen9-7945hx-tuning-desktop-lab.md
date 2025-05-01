@@ -111,19 +111,20 @@ This setup keeps performance tight, while improving acoustics and extending syst
 
 ## Benchmark Table
 
-| Profile                     | PassMark Benchmark Score | **Requested TDP** | **Requested Current (TDC/EDC)** | **Throttling Temp Limit** | **Peak CPU Temp** | **Peak TDP** | **Peak CPU Current** | Notes                                       |
-|-----------------------------|--------------------------|-------------------|---------------------------------|---------------------------|-------------------|--------------|----------------------|---------------------------------------------|
-| **Stock Performance Boost** | 59,000                   | 100W              | ? / 160A                        | 97°C (default)            | 97°C              | 100W         | ~160A                | High thermal load, high fan noise, max perf |
-| **No Performance Boost**    | 30,000                   | 45W               | ? / ?A                          | 97°C (default)            | 46°C              | 46W          | ~69A                 | Super quiet, low power, lower performance   |
-| **Custom (60W, 55°C)**      | 51,000                   | 60W               | 80A                             | 55°C                      | 63°C              | 73.6W        | ~89A                 | Quiet, cool, ~85% performance               |
-| **Custom (60W, 75°C)**      | 52,000                   | 60W               | 80A                             | 75°C                      | 83°C              | 73.6W        | ~89A                 | Not so Quiet, higher temp, noisy, ~85% perf |
+| Profile                     | PassMark Benchmark Score | **Requested TDP** | **Requested Current (TDC/EDC)** | **Throttling Temp Limit** | **Peak CPU Temp** | **Peak TDP** | **Peak CPU Current** | Notes                                         |
+|-----------------------------|--------------------------|-------------------|---------------------------------|---------------------------|-------------------|--------------|----------------------|-----------------------------------------------|
+| **Stock Performance Boost** | 59,000                   | 100W              | ? / 160A                        | 97°C (default)            | 97.1°C            | 100W         | ~160A                | High thermal load, high fan noise, max perf   |
+| **No Performance Boost**    | 30,000                   | 45W               | ? / ?A                          | 97°C (default)            | 46.5°C            | 46W          | ~69A                 | Super quiet, low power, lower performance     |
+| **Custom (60W, 55°C)**      | 51,000                   | 60W               | 80A                             | 55°C                      | 62.1°C            | 73W          | ~89A                 | Quiet, cool, ~85% performance                 |
+| **Custom (60W, 75°C)**      | 52,000                   | 60W               | 80A                             | 75°C                      | 73.6°C            | 73W          | ~89A                 | Not so Quiet, higher temp, noisy, ~85% perf   |
 
+For each test a short CFD bench was run for about 30 minutes for the performance cases and about 1 hour for the No Performance Boost. Typically, this one puts more strain on the temperature.
 
 ---
 
 ## Fan Behavior & Hidden Issues
 
-The **fan curve is driven by the hottest core**, not average CPU temp. Even during **single-core workloads**, if the core spikes above 75°C, the fans go full tilt. This results in:
+The **fan curve is driven by the hottest core**, not average CPU temp. Even during **single-core workloads**, if the core spikes above 65°C, the fans go full tilt. This results in:
 
 - Annoying fan ramp-ups,
 - Noisy operation even under low load,
