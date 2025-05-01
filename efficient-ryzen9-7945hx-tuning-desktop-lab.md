@@ -116,11 +116,12 @@ This setup keeps performance tight, while improving acoustics and extending syst
 |-----------------------------|--------------------------|-------------------|---------------------------------|---------------------------|-------------------|--------------|----------------------|-----------------------------------------------|
 | **Stock Performance Boost** | 59,000                   | 100W              | ? / 160A                        | 97°C (default)            | 97.1°C            | 100W         | ~160A                | High thermal load, high fan noise, max perf   |
 | **No Performance Boost**    | 30,000                   | 45W               | ? / ?A                          | 97°C (default)            | 46.5°C            | 46W          | ~69A                 | Super quiet, low power, lower performance     |
-| **Custom (60W, 55°C)**      | 51,000                   | 60W               | 80A                             | 55°C                      | 62.1°C            | 73W          | ~89A                 | Quiet, cool, ~85% performance                 |
-| **Custom (60W, 75°C)**      | 52,000                   | 60W               | 80A                             | 75°C                      | 73.6°C            | 73W          | ~89A                 | Not so Quiet, higher temp, noisy, ~85% perf   |
+| **Custom (60W, 55°C)**      | 51,000                   | 60W               | 80A                             | 55°C                      | 62.1°C            | 73W          | ~93A                 | Quiet, cool, ~85% performance                 |
+| **Custom (60W, 75°C)**      | 52,000                   | 60W               | 80A                             | 75°C                      | 73.6°C            | 73W          | ~93A                 | Not so Quiet, higher temp, noisy, ~85% perf   |
 
 For each test a short CFD bench was run for about 30 minutes for the performance cases and about 1 hour for the No Performance Boost. Typically, this one puts more strain on the temperature.
 
+Update 01/05/2025: Run 3 times the PassMark Benchmark, Peak CPU Current came from 89A to 93A.
 ---
 
 ## Fan Behavior & Hidden Issues
@@ -165,7 +166,68 @@ Sometimes, **it’s not about pushing harder — it’s about pushing smarter.**
 
 *Feel free to contact me or contribute feedback if you’re building a similar setup.*
 
+# Cooling Fan Optimization
+
+I am running a 360mm watercooled AIO, which is overkill. But surprisingly, there is not such big difference in money if you move from a 120mm to 360mm.
 
 
+## Original Setup
+It is very noisy in the original setting to say the list.
+I already tuned the CPU TDP/Currents when doing this.
 
+Go on the CPU Fan settings in the BIOS
+CPU Fan -> Original
+- Fan Off: 0
+- Fan Start: 25
+- Full Speed: 94
+- Start PWM: 40
+- Automatic Mode Control: 2
+- Delta Temperature: 2
+
+## First Iteration
+- Fan Off: 0
+- Fan Start: 45
+- Full Speed: 94
+- Start PWM: 20
+- Automatic Mode Control: 2
+- Delta Temperature: 2
+
+I reduced both the PWM and slightly raised the Fan Start temperature to check if I can reduce the fan pwm.
+This is less noisy at least than the original one, but still a bit too noisy for me.
+The RPM according to HWInfo is running at max 713 RPM under full load.
+
+## Second Iteration
+
+Set the Fan Off at 35 and Start PWM at 10 to see if the noise can be further reduced.
+
+- Fan Off: 35
+- Fan Start: 45
+- Full Speed: 94
+- Start PWM: 10
+- Automatic Mode Control: 2
+- Delta Temperature: 2
+
+No change, Same noise
+May be a kind of protection on the PWM level ?
+
+
+## Third Iteration
+
+Increase Fan Off to 40, Fan Start to 50
+
+- Fan Off: 40
+- Fan Start: 50
+- Full Speed: 94
+- Start PWM: 10
+- Automatic Mode Control: 2
+- Delta Temperature: 2
+
+No change, Same noise
+I was expecting to have the noise stopping from time to time but not the case despite the temperature
+
+## X Iteration
+
+It seems there is a safety feature somewhere I cannot go down from 700 rpm and I cannot disable the fan at all.
+Even in manual mode setting the PWM down to 0 does not work and it does stop the fans.
+So I kept like the first iteration.
 
