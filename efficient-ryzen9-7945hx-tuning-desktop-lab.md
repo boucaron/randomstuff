@@ -93,10 +93,18 @@ Out-of-the-box, the CPU was:
 ## My BIOS-Level Fixes
  MinisForum AMD Ryzen 9 7945HX BD795M 
 - **Enable Performance Boost**
-- **Go in the Overclocking Menu**
-- **TDP (PPT):** 60W  
-- **TDC/EDC (current limits):** 80A  
-- **Thermal Throttling limit:** 55°C  
+- **Go in the Advanced/ AMD Overclocking** --> Don't worry, this is not an overclocking
+- **Go in Precision Boost Overdrive**
+- **Precision Boost Overdrive:** Advanced
+- **PBO Limits:** Manual
+- **TDP (PPT Limit):** 60W, 60000mW
+- **TDC Limit:** 80A, 80000mA
+- **EDC Limit:** 80A, 80000mA
+- **Precision Boost Overdrive Scalar Ctrl:** Auto
+- **CPU Boost Clock Override:** Disabled
+- **Platform Thermal Throttle Ctrl:** Manual
+- **Platform Thermal Throttle Limit:** 55°C
+- I did not touch the Curve Optimizer things
 
 
 This setup keeps performance tight, while improving acoustics and extending system life.
