@@ -1,4 +1,4 @@
-# AMD Laptop Ryzen 9 Stuff
+# AMD Laptop Ryzen 9 CPU Based Workstation
 
 This is a tiny powerful tower that I built in March 2025.  
 
@@ -31,7 +31,7 @@ This is a tiny powerful tower that I built in March 2025.
 
 This testing was done on the second motherboard.
 
-This isn't a short benchmark run. I run **real workloads** — specifically, **CFD simulations** — for several hours at a time. These tasks are memory-intensive and heavily multithreaded.
+These are not synthetic short-term benchmarks. I run **real workloads** — specifically, **CFD simulations** — for several hours at a time. These tasks are memory-intensive and heavily multithreaded.
 
 I use **HWinfo** for monitoring, which provides deep sensor visibility.
 
@@ -49,7 +49,7 @@ I use **HWinfo** for monitoring, which provides deep sensor visibility.
 ## Tuning
 
 After the first day's high temps, I found out this short article written by Brandon Lee [https://www.virtualizationhowto.com/2025/03/core-performance-boost-setting-speed-vs-power-consumption-in-home-lab/](https://www.virtualizationhowto.com/2025/03/core-performance-boost-setting-speed-vs-power-consumption-in-home-lab/)
-So I went into BIOS and perform the following modifications:
+Make the following BIOS changes:
 
 - **Disabled Core Performance Boost**
 - **Enabled Global C-state Control**
@@ -95,7 +95,7 @@ Out-of-the-box, the CPU was:
 ## My BIOS-Level Fixes
  MinisForum AMD Ryzen 9 7945HX BD795M 
 - **Enable Performance Boost**
-- **Go in the Advanced/ AMD Overclocking** --> Don't worry, this is not an overclocking
+- **Go in the Advanced/ AMD Overclocking** --> ..this is not overclocking.
 - **Go in Precision Boost Overdrive**
 - **Precision Boost Overdrive:** Advanced
 - **PBO Limits:** Manual
