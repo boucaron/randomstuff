@@ -86,7 +86,7 @@ The stock 7945HX profile is designed for maximum benchmark wins — not longevit
 Out-of-the-box, the CPU was:
 
 - Drawing **up to 160A** (peak),
-- Running at **90–97°C** under load,
+- Peaking at **90–97°C** under load,
 - **Kicking fans on full** based on short-term thermal spikes,
 - Causing potential **VRM stress** and even early hardware failure (as I experienced firsthand).
 
@@ -103,12 +103,12 @@ This setup keeps performance tight, while improving acoustics and extending syst
 
 ## Benchmark Table
 
-| Profile                     | Benchmark Score | **Requested TDP** | **Requested Current (TDC/EDC)** | **Throttling Temp Limit** | **Peak CPU Temp** | **Peak TDP** | **Peak CPU Current** | Notes                                       |
-|-----------------------------|-----------------|-------------------|---------------------------------|---------------------------|-------------------|--------------|----------------------|---------------------------------------------|
-| **Stock Performance Boost** | 59,000          | 100W              | ? / 160A                        | 97°C (default)            | 97°C              | 100W         | ~160A                | High thermal load, high fan noise, max perf |
-| **No Performance Boost**    | 30,000          | 45W               | ? / ?A                          | 97°C (default)            | 46°C              | 46W          | ~69A                 | Super quiet, low power, lower performance   |
-| **Custom (60W, 55°C)**      | 51,000          | 60W               | 80A                             | 55°C                      | 63°C              | 73.6W        | ~89A                 | Quiet, cool, ~85% performance               |
-| **Custom (60W, 75°C)**      | 52,000          | 60W               | 80A                             | 75°C                      | 83°C              | 73.6W        | ~89A                 | Not so Quiet, higher temp, noisy, ~85% perf |
+| Profile                     | PassMark Benchmark Score | **Requested TDP** | **Requested Current (TDC/EDC)** | **Throttling Temp Limit** | **Peak CPU Temp** | **Peak TDP** | **Peak CPU Current** | Notes                                       |
+|-----------------------------|--------------------------|-------------------|---------------------------------|---------------------------|-------------------|--------------|----------------------|---------------------------------------------|
+| **Stock Performance Boost** | 59,000                   | 100W              | ? / 160A                        | 97°C (default)            | 97°C              | 100W         | ~160A                | High thermal load, high fan noise, max perf |
+| **No Performance Boost**    | 30,000                   | 45W               | ? / ?A                          | 97°C (default)            | 46°C              | 46W          | ~69A                 | Super quiet, low power, lower performance   |
+| **Custom (60W, 55°C)**      | 51,000                   | 60W               | 80A                             | 55°C                      | 63°C              | 73.6W        | ~89A                 | Quiet, cool, ~85% performance               |
+| **Custom (60W, 75°C)**      | 52,000                   | 60W               | 80A                             | 75°C                      | 83°C              | 73.6W        | ~89A                 | Not so Quiet, higher temp, noisy, ~85% perf |
 
 
 ---
@@ -125,11 +125,12 @@ By applying a **lower temp cap (55°C)** and restricting amps, you can prevent t
 
 ---
 
-## Performance Boost Behaviour
+## Performance Boost Behavior
 
-The **Performance Boost** feature is very very agressive, to tame it, I put a very tight Throttling Temperature Limit. Large spikes in temperature, means large voltage and current spikes which I don't want to extend the life span of the unit.
-Despite the slightly tighter thermal throttling and the requested current limits, we keep most of the Performance while putting a large safety net around the temperature and the peak current.
-It is just like a motorbike that accelerates like crazy, we allow that for performance, but we brake it also like crazy too.
+The **Performance Boost** feature is extremely aggressive. To control it, I set a very tight throttling temperature limit. Large temperature spikes typically lead to large voltage and current spikes, which I want to avoid to help extend the system’s lifespan.
+Despite the tighter thermal throttling and imposed current limits, most of the performance is retained — while placing a solid safety margin around both temperature and peak current.
+It's a bit like riding a high-performance motorbike: we allow rapid acceleration for performance, but we also apply strong braking when necessary to stay in control.
+
 
 ## Conclusion
 
@@ -144,6 +145,9 @@ If you’re using this chip in a:
 …then tuning for **power efficiency and thermal sanity** is a must.
 
 You’ll still retain **85% of peak performance**, with **quieter operation**, **longer hardware lifespan**, and **fewer surprises**.
+Peak measured temperature was down from 97C to 63C (-35%).
+Peak measured current was down from 160A to 89A (-44%).
+Peak measured TDP was down from 100W to 73.6W (-26%).
 
 Sometimes, **it’s not about pushing harder — it’s about pushing smarter.**
 
