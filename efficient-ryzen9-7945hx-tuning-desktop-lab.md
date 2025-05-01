@@ -1,7 +1,8 @@
 # AMD Laptop Ryzen 9 Stuff
 
 This is a tiny powerful tower that I built in March 2025.  
-**Document date:** 27/04/2025
+
+**Document last update date:** 01/05/2025
 
 ---
 
