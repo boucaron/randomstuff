@@ -159,7 +159,7 @@ If you’re using this chip in a:
 
 - You’ll still retain **85% of peak performance**, with **quieter operation**, **longer hardware lifespan**, and **fewer surprises**.
 - Peak measured temperature was down from 97C to 63C (-35%).
-- Peak measured current was down from 160A to 89A (-44%).
+- Peak measured current was down from 160A to 93A (-41%).
 - Peak measured TDP was down from 100W to 73.6W (-26%).
 
 Sometimes, **it’s not about pushing harder — it’s about pushing smarter.**
