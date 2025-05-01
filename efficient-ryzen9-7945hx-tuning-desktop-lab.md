@@ -23,6 +23,7 @@ This is a tiny powerful tower that I built in March 2025.
 - **Watercooling compatibility**: I returned the ARCTIC Liquid Freezer III Pro 360 due to mounting issues. Switched to Cooler Master kit that came with a backplate.
 - **Cooler Master watercooling support screw issue**: The screws provided had excess tolerance; I had to file down the step to ensure proper clamping and alignment with the mounting holes.
 - **Dead motherboard**: After just over a week of use, the first motherboard failed unexpectedly. No burn smell or visible damage. It was returned and replaced after significant back and forth.
+- **ASUS Case Fan ultra super noisy**: I simply disabled it, I have 3 120mm fans on the watercooling on the top of the case. It is running constantly at low speed.
 
 ---
 
