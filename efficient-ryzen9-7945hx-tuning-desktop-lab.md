@@ -121,7 +121,8 @@ This setup keeps performance tight, while improving acoustics and extending syst
 
 For each test a short CFD bench was run for about 30 minutes for the performance cases and about 1 hour for the No Performance Boost. Typically, this one puts more strain on the temperature.
 
-Update 01/05/2025: Run 3 times the PassMark Benchmark, Peak CPU Current came from 89A to 93A.
+**Update 01/05/2025**: Run 3 times the PassMark Benchmark, Peak CPU Current came from 89A to 93A.
+
 ---
 
 ## Fan Behavior & Hidden Issues
