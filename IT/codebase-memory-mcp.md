@@ -1,69 +1,241 @@
-Tool: https://github.com/DeusData/codebase-memory-mcp/tree/main
+**Tool:** [https://github.com/DeusData/codebase-memory-mcp/tree/main](https://github.com/DeusData/codebase-memory-mcp/tree/main)
 
-Github description:
-High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.
+### GitHub description
 
+High-performance code intelligence MCP server. It indexes codebases into a persistent knowledge graph — handling an average repository in milliseconds. Supports 158 languages, sub-millisecond queries, and 99% fewer tokens. Single static binary, zero dependencies.
 
-Quick good impression:
-- I really like this idea, even useful in cmd line without using it as MCP
-- It is using tree sitter to kind of do the indexing job of an IDE : index files/directories/functions/classes...
-  With also: calls/references
-- Quick overview of the arch with the hotspots, find the entry points of a project
-- Enable to search quickly some stuff
-- And I miss probably several features
+---
 
+### Quick impression
 
-Quick test:
+* I really like this idea. It’s even useful from the command line without using it as an MCP tool.
+* It uses Tree-sitter to perform indexing similar to an IDE: parsing files, directories, functions, and classes.
 
-Cmd Windows
-Installation:
+  * It also tracks calls and references.
+* It provides a quick overview of the architecture, highlighting hotspots and helping identify entry points in a project.
+* It enables very fast searching across the codebase.
+* I’m probably still missing several features.
+
+---
+
+### Quick test
+
+#### Windows command line
+
+**Installation:**
+
 ```cmd
 codebase-memory-mcp install --dry-run
 ```
---> then remove the --dry-run
 
+→ then remove the `--dry-run` flag.
 
-Indexing a project:
+---
+
+**Indexing a project:**
+
 ```cmd
 codebase-memory-mcp cli index_repository "{\"repo_path\":\"C:\\msys64\\home\\admin\\github\\boucaron\\fsp-push\"}"
 ```
 
-List projects:
+---
+
+**List projects:**
+
 ```cmd
 codebase-memory-mcp cli list_projects
 ```
 
-Output:
-{"projects":[{"name":"C-msys64-home-admin-github-boucaron-fsp-push","root_path":"C:/msys64/home/admin/github/boucaron/fsp-push","nodes":4482,"edges":4797,"size_bytes":10027008}]}
+---
+
+### Output
+
+```json
+{
+  "projects": [
+    {
+      "name": "C-msys64-home-admin-github-boucaron-fsp-push",
+      "root_path": "C:/msys64/home/admin/github/boucaron/fsp-push",
+      "nodes": 4482,
+      "edges": 4797,
+      "size_bytes": 10027008
+    }
+  ]
+}
+```
 
 
-Get Architecture:
+
+Here’s a cleaned-up version with improved grammar, structure, and readability while keeping your original tone and “quick test” style:
+
+---
+
+## Get Architecture
+
 ```cmd
 codebase-memory-mcp cli get_architecture "{\"project\":\"C-msys64-home-admin-github-boucaron-fsp-push\"}"
 ```
 
-Output:
-{"project":"C-msys64-home-admin-github-boucaron-fsp-push","total_nodes":4482,"total_edges":4797,"node_labels":[{"label":"Variable","count":2179},{"label":"Class","count":771},{"label":"File","count":482},{"label":"Module","count":482},{"label":"Folder","count":300},{"label":"Function","count":96},{"label":"Section","count":70},{"label":"Field","count":54},{"label":"Method","count":47},{"label":"Project","count":1}],"edge_types":[{"type":"DEFINES","count":3699},{"type":"CONTAINS_FILE","count":482},{"type":"CONTAINS_FOLDER","count":236},{"type":"CALLS","count":193},{"type":"USAGE","count":111},{"type":"DEFINES_METHOD","count":47},{"type":"IMPORTS","count":11},{"type":"SEMANTICALLY_RELATED","count":8},{"type":"SIMILAR_TO","count":8},{"type":"INHERITS","count":2}],"languages":[{"language":"Kotlin","file_count":30},{"language":"C","file_count":22},{"language":"YAML","file_count":3},{"language":"TOML","file_count":1}],"packages":[{"name":"app","node_count":812,"fan_in":0,"fan_out":0},{"name":"fsp_rx","node_count":24,"fan_in":0,"fan_out":0},{"name":"fsp_walk","node_count":15,"fan_in":0,"fan_out":0},{"name":"Makefile","node_count":11,"fan_in":0,"fan_out":0},{"name":"fsp_dry_run","node_count":11,"fan_in":0,"fan_out":0},{"name":"fsp_io","node_count":8,"fan_in":0,"fan_out":0},{"name":"tests","node_count":7,"fan_in":0,"fan_out":0},{"name":"fsp_file_processor","node_count":7,"fan_in":0,"fan_out":0},{"name":"fsp_buf_writer","node_count":5,"fan_in":0,"fan_out":0},{"name":"fsp-recv","node_count":4,"fan_in":0,"fan_out":0},{"name":"fsp-send","node_count":4,"fan_in":0,"fan_out":0},{"name":"gradle","node_count":3,"fan_in":0,"fan_out":0},{"name":"fsp_opt","node_count":2,"fan_in":0,"fan_out":0},{"name":"fsp_progress","node_count":1,"fan_in":0,"fan_out":0}],"entry_points":[{"name":"main","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.src.fsp-recv.main","file":"src/fsp-recv.c"},{"name":"main","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.src.fsp-send.main","file":"src/fsp-send.c"}],"hotspots":[{"name":"flush","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.SshSender.SshSender.flush","fan_in":6},{"name":"connect","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.SshSender.SshSender.connect","fan_in":6},{"name":"fsp_bw_flush","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.include.fsp_buf_writer.fsp_bw_flush","fan_in":5},{"name":"disconnect","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.SshSender.SshSender.disconnect","fan_in":5},{"name":"fsp_bw_push","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.include.fsp_buf_writer.fsp_bw_push","fan_in":4},{"name":"fsp_dry_run_report","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.include.fsp_dry_run.fsp_dry_run_report","fan_in":4},{"name":"sendCommand","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.protocol.FSPSendFiles.FSPSendFiles.sendCommand","fan_in":3},{"name":"fsp_dir_entries_free","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.include.fsp_walk.fsp_dir_entries_free","fan_in":3},{"name":"fsp_walk","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.src.fsp_walk.fsp_walk","fan_in":3},{"name":"sendBinary","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.SshSender.SshSender.sendBinary","fan_in":3}],"layers":[{"name":"fsp-recv","layer":"internal","reason":"fan-in=0, fan-out=0"},{"name":"fsp-send","layer":"internal","reason":"fan-in=0, fan-out=0"},{"name":"tests","layer":"internal","reason":"fan-in=0, fan-out=0"}],"file_tree":[{"path":"README.md","type":"file","children":0},{"path":"android","type":"dir","children":5},{"path":"android/app","type":"dir","children":3},{"path":"android/app/build","type":"dir","children":3},{"path":"android/app/build.gradle.kts","type":"file","children":0},{"path":"android/app/build/intermediates","type":"dir","children":0},{"path":"android/app/build/kotlin","type":"dir","children":0},{"path":"android/app/build/outputs","type":"dir","children":0},{"path":"android/app/src","type":"dir","children":3},{"path":"android/app/src/androidTest","type":"dir","children":0},{"path":"android/app/src/main","type":"dir","children":0},{"path":"android/app/src/test","type":"dir","children":0},{"path":"android/build.gradle.kts","type":"file","children":0},{"path":"android/gradle","type":"dir","children":3},{"path":"android/gradle.properties","type":"file","children":0},{"path":"android/gradle/gradle-daemon-jvm.properties","type":"file","children":0},{"path":"android/gradle/libs.versions.toml","type":"file","children":0},{"path":"android/gradle/wrapper","type":"dir","children":1},{"path":"android/gradle/wrapper/gradle-wrapper.properties","type":"file","children":0},{"path":"android/settings.gradle.kts","type":"file","children":0},{"path":"doc","type":"dir","children":5},{"path":"doc/android.md","type":"file","children":0},{"path":"doc/benchmark.md","type":"file","children":0},{"path":"doc/design.md","type":"file","children":0},{"path":"doc/performance.md","type":"file","children":0},{"path":"doc/transports.md","type":"file","children":0},{"path":"include","type":"dir","children":10},{"path":"include/fsp.h","type":"file","children":0},{"path":"include/fsp_buf_writer.h","type":"file","children":0},{"path":"include/fsp_compat.h","type":"file","children":0},{"path":"include/fsp_dry_run.h","type":"file","children":0},{"path":"include/fsp_file_processor.h","type":"file","children":0},{"path":"include/fsp_io.h","type":"file","children":0},{"path":"include/fsp_opt.h","type":"file","children":0},{"path":"include/fsp_progress.h","type":"file","children":0},{"path":"include/fsp_rx.h","type":"file","children":0},{"path":"include/fsp_walk.h","type":"file","children":0},{"path":"src","type":"dir","children":10},{"path":"src/Makefile","type":"file","children":0},{"path":"src/fsp-recv.c","type":"file","children":0},{"path":"src/fsp-send.c","type":"file","children":0},{"path":"src/fsp_file_processor.c","type":"file","children":0},{"path":"src/fsp_io.c","type":"file","children":0},{"path":"src/fsp_opt.c","type":"file","children":0},{"path":"src/fsp_rx.c","type":"file","children":0},{"path":"src/fsp_walk.c","type":"file","children":0},{"path":"src/test_tgt","type":"dir","children":1},{"path":"src/test_tgt/.github","type":"dir","children":3},{"path":"src/test_tgt/.github/FUNDING.yml","type":"file","children":0},{"path":"src/test_tgt/.github/ISSUE_TEMPLATE","type":"dir","children":0},{"path":"src/test_tgt/.github/workflows","type":"dir","children":0},{"path":"src/tests","type":"dir","children":5},{"path":"src/tests/demo_fsp_dry_run.c","type":"file","children":0},{"path":"src/tests/demo_fsp_hash.c","type":"file","children":0},{"path":"src/tests/demo_fsp_recv.c","type":"file","children":0},{"path":"src/tests/demo_fsp_walk.c","type":"file","children":0},{"path":"src/tests/test_fsp_dry_run.c","type":"file","children":0}]}
+---
 
-LLM Query: give a short and good description from the project => attach json
+### Output
 
-LLM Output:
-C-msys64-home-admin-github-boucaron-fsp-push is a fairly large multi-language file transfer and processing system built around an FSP (File Sync/Send Protocol) architecture.
-
-It combines a C core (notably `fsp-send`, `fsp-recv`, `fsp_walk`, `fsp_io`, buffering, and dry-run/progress utilities) with an Android application layer that handles SSH-based sending operations and command execution. The system is structured around a modular pipeline: walking file trees, processing files, buffering data, and transmitting it through different transports.
-
-The codebase shows a strong focus on performance and reliability, with hotspots in buffering (`fsp_bw_flush`, `fsp_bw_push`), SSH connection handling, and file traversal logic. Overall, it looks like a robust cross-platform file synchronization tool with both CLI/low-level C components and a higher-level Android client for remote file transfer operations.
-
---> Not bad frankly
-
-
-LLM Query: Great now give me an overview without inventing stuff, just stick to what you have, generate me a comprehensive list and overview of it
-
-LLM Output: 
-Here is a **strict, data-grounded overview** of the project C-msys64-home-admin-github-boucaron-fsp-push based only on the provided graph and repository structure.
+```json
+{
+  "project": "C-msys64-home-admin-github-boucaron-fsp-push",
+  "total_nodes": 4482,
+  "total_edges": 4797,
+  "node_labels": [
+    { "label": "Variable", "count": 2179 },
+    { "label": "Class", "count": 771 },
+    { "label": "File", "count": 482 },
+    { "label": "Module", "count": 482 },
+    { "label": "Folder", "count": 300 },
+    { "label": "Function", "count": 96 },
+    { "label": "Section", "count": 70 },
+    { "label": "Field", "count": 54 },
+    { "label": "Method", "count": 47 },
+    { "label": "Project", "count": 1 }
+  ],
+  "edge_types": [
+    { "type": "DEFINES", "count": 3699 },
+    { "type": "CONTAINS_FILE", "count": 482 },
+    { "type": "CONTAINS_FOLDER", "count": 236 },
+    { "type": "CALLS", "count": 193 },
+    { "type": "USAGE", "count": 111 },
+    { "type": "DEFINES_METHOD", "count": 47 },
+    { "type": "IMPORTS", "count": 11 },
+    { "type": "SEMANTICALLY_RELATED", "count": 8 },
+    { "type": "SIMILAR_TO", "count": 8 },
+    { "type": "INHERITS", "count": 2 }
+  ],
+  "languages": [
+    { "language": "Kotlin", "file_count": 30 },
+    { "language": "C", "file_count": 22 },
+    { "language": "YAML", "file_count": 3 },
+    { "language": "TOML", "file_count": 1 }
+  ],
+  "packages": [
+    { "name": "app", "node_count": 812, "fan_in": 0, "fan_out": 0 },
+    { "name": "fsp_rx", "node_count": 24, "fan_in": 0, "fan_out": 0 },
+    { "name": "fsp_walk", "node_count": 15, "fan_in": 0, "fan_out": 0 },
+    { "name": "Makefile", "node_count": 11, "fan_in": 0, "fan_out": 0 },
+    { "name": "fsp_dry_run", "node_count": 11, "fan_in": 0, "fan_out": 0 },
+    { "name": "fsp_io", "node_count": 8, "fan_in": 0, "fan_out": 0 },
+    { "name": "tests", "node_count": 7, "fan_in": 0, "fan_out": 0 },
+    { "name": "fsp_file_processor", "node_count": 7, "fan_in": 0, "fan_out": 0 },
+    { "name": "fsp_buf_writer", "node_count": 5, "fan_in": 0, "fan_out": 0 },
+    { "name": "fsp-recv", "node_count": 4, "fan_in": 0, "fan_out": 0 },
+    { "name": "fsp-send", "node_count": 4, "fan_in": 0, "fan_out": 0 },
+    { "name": "gradle", "node_count": 3, "fan_in": 0, "fan_out": 0 },
+    { "name": "fsp_opt", "node_count": 2, "fan_in": 0, "fan_out": 0 },
+    { "name": "fsp_progress", "node_count": 1, "fan_in": 0, "fan_out": 0 }
+  ],
+  "entry_points": [
+    {
+      "name": "main",
+      "qualified_name": "C-msys64-home-admin-github-boucaron-fsp-push.src.fsp-recv.main",
+      "file": "src/fsp-recv.c"
+    },
+    {
+      "name": "main",
+      "qualified_name": "C-msys64-home-admin-github-boucaron-fsp-push.src.fsp-send.main",
+      "file": "src/fsp-send.c"
+    }
+  ],
+  "hotspots": [
+    {
+      "name": "flush",
+      "fan_in": 6
+    },
+    {
+      "name": "connect",
+      "fan_in": 6
+    },
+    {
+      "name": "fsp_bw_flush",
+      "fan_in": 5
+    },
+    {
+      "name": "disconnect",
+      "fan_in": 5
+    },
+    {
+      "name": "fsp_bw_push",
+      "fan_in": 4
+    },
+    {
+      "name": "fsp_dry_run_report",
+      "fan_in": 4
+    },
+    {
+      "name": "sendCommand",
+      "fan_in": 3
+    },
+    {
+      "name": "fsp_dir_entries_free",
+      "fan_in": 3
+    },
+    {
+      "name": "fsp_walk",
+      "fan_in": 3
+    },
+    {
+      "name": "sendBinary",
+      "fan_in": 3
+    }
+  ],
+  "layers": [
+    { "name": "fsp-recv", "layer": "internal", "reason": "fan-in=0, fan-out=0" },
+    { "name": "fsp-send", "layer": "internal", "reason": "fan-in=0, fan-out=0" },
+    { "name": "tests", "layer": "internal", "reason": "fan-in=0, fan-out=0" }
+  ],
+  "file_tree": [
+    { "path": "README.md", "type": "file" },
+    { "path": "android", "type": "dir" },
+    { "path": "android/app", "type": "dir" },
+    { "path": "android/app/build.gradle.kts", "type": "file" },
+    { "path": "android/app/src", "type": "dir" },
+    { "path": "include", "type": "dir" },
+    { "path": "include/fsp.h", "type": "file" },
+    { "path": "src", "type": "dir" },
+    { "path": "src/fsp-recv.c", "type": "file" },
+    { "path": "src/fsp-send.c", "type": "file" },
+    { "path": "src/tests", "type": "dir" }
+  ]
+}
+```
 
 ---
 
+### LLM Query
+
+Give a short and good description of the project ⇒ attach JSON
+
+---
+
+### LLM Output
+
+`C-msys64-home-admin-github-boucaron-fsp-push` is a fairly large, multi-language file transfer and processing system built around an FSP (File Sync/Send Protocol) architecture.
+
+It combines a C core (notably `fsp-send`, `fsp-recv`, `fsp_walk`, `fsp_io`, buffering, and dry-run/progress utilities) with an Android application layer that handles SSH-based sending operations and command execution. The system is structured around a modular pipeline: walking file trees, processing files, buffering data, and transmitting them through different transports.
+
+The codebase shows a strong focus on performance and reliability, with hotspots in buffering (`fsp_bw_flush`, `fsp_bw_push`), SSH connection handling, and file traversal logic. Overall, it looks like a robust cross-platform file synchronization tool with both CLI/low-level C components and a higher-level Android client for remote file transfer operations.
+
+---
+
+→ Not bad frankly
+
+
+
+
+### LLM Query: Great now give me an overview without inventing stuff, just stick to what you have, generate me a comprehensive list and overview of it
+
+### LLM Output: 
+Here is a **strict, data-grounded overview** of the project C-msys64-home-admin-github-boucaron-fsp-push based only on the provided graph and repository structure.
+
+---
+```markdown
 # 1. High-level structure
 
 This is a **multi-language file transfer / file processing system** organized around an FSP-based architecture with both:
@@ -291,29 +463,71 @@ This indicates:
   * performance and design documentation
 
 ---
-
-If you want, I can also:
-
-* map the **architecture as a diagram**
-* or explain **how data flows from fsp-send → fsp-recv step by step**
-
+```
 --> It is surprisingly accurate
 
 
+
+
+Here’s a cleaned-up version with improved structure, readability, and separation between command, logs, and result:
+
+---
+
+## Graph Search Command
+
 ```cmd
 codebase-memory-mcp cli search_graph "{\"project\":\"C-msys64-home-admin-github-boucaron-fsp-push\",\"query\":\"FSPSendFileList\"}"
-level=info msg=mem.init budget_mb=32739 total_ram_mb=65479
-{"total":1,"search_mode":"bm25","results":[{"name":"FSPSendFileList","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.protocol.FSPSendFileList.FSPSendFileList","label":"Class","file_path":"android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt","start_line":5,"end_line":18,"rank":-17.44242214839889}],"has_more":false}
 ```
 
-Interesting bits are there :
-https://github.com/DeusData/codebase-memory-mcp/blob/main/src/mcp/mcp.c
-==> search for 'static const tool_def_t TOOLS[]'
-==> it contains all descriptions
+---
 
-LLM Query : generate me a comprehensive doc for that '...'and generate me for each case a small windows cmd snippet also
-LLM Answer:
+## System Log
 
+```text
+level=info msg=mem.init budget_mb=32739 total_ram_mb=65479
+```
+
+---
+
+## Search Result
+
+```json
+{
+  "total": 1,
+  "search_mode": "bm25",
+  "results": [
+    {
+      "name": "FSPSendFileList",
+      "qualified_name": "C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.protocol.FSPSendFileList.FSPSendFileList",
+      "label": "Class",
+      "file_path": "android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt",
+      "start_line": 5,
+      "end_line": 18,
+      "rank": -17.44242214839889
+    }
+  ],
+  "has_more": false
+}
+```
+
+---
+
+## Notes
+
+Interesting bits are here:
+[https://github.com/DeusData/codebase-memory-mcp/blob/main/src/mcp/mcp.c](https://github.com/DeusData/codebase-memory-mcp/blob/main/src/mcp/mcp.c)
+
+→ Look for: `static const tool_def_t TOOLS[]`
+→ It contains all tool descriptions
+
+---
+
+
+
+
+### LLM Query : generate me a comprehensive doc for that '...'and generate me for each case a small windows cmd snippet also
+### LLM Answer:
+```markdown
 
 Great — this is now a **full MCP-style code intelligence API surface**, and you’re basically at the point where you can turn this into a “one-command repo brain”.
 
@@ -646,24 +860,100 @@ And your CMD layer is just:
 * not the real product
 
 ---
+```
 
 
-```cmd
+
+Here’s your content cleaned and consistently formatted, with clearer separation between commands, outputs, and structure—without changing meaning or adding interpretation:
+
+---
+
+## Get Code Snippet (ambiguous query)
+
+```cmd id="x9k2ab"
 codebase-memory-mcp cli get_code_snippet "{\"project\":\"C-msys64-home-admin-github-boucaron-fsp-push\",\"qualified_name\":\"FSPSendFileList\"}"
 ```
 
+---
 
-Output: {"status":"ambiguous","message":"2 matches for \"FSPSendFileList\". Pick a qualified_name from suggestions below, or use search_graph(name_pattern=\"...\") to narrow results.","suggestions":[{"qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.protocol.FSPSendFileList","name":"android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt","label":"Module","file_path":"android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt"},{"qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.protocol.FSPSendFileList.FSPSendFileList","name":"FSPSendFileList","label":"Class","file_path":"android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt"}]}
+### Output
 
-```cmd
+```json id="m3p7qz"
+{
+  "status": "ambiguous",
+  "message": "2 matches for \"FSPSendFileList\". Pick a qualified_name from suggestions below, or use search_graph(name_pattern=\"...\") to narrow results.",
+  "suggestions": [
+    {
+      "qualified_name": "C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.protocol.FSPSendFileList",
+      "name": "android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt",
+      "label": "Module",
+      "file_path": "android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt"
+    },
+    {
+      "qualified_name": "C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.protocol.FSPSendFileList.FSPSendFileList",
+      "name": "FSPSendFileList",
+      "label": "Class",
+      "file_path": "android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt"
+    }
+  ]
+}
+```
+
+---
+
+## Get Code Snippet (resolved module query)
+
+```cmd id="c4n8wd"
 codebase-memory-mcp cli get_code_snippet "{\"project\":\"C-msys64-home-admin-github-boucaron-fsp-push\",\"qualified_name\":\"protocol.FSPSendFileList\"}"
 ```
 
-Output: {"name":"android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.protocol.FSPSendFileList","label":"Module","file_path":"C:/msys64/home/admin/github/boucaron/fsp-push/android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt","start_line":1,"end_line":18,"source":"package com.chopchop3d.fspsender.protocol\n\nimport android.util.Log\n\nclass FSPSendFileList {\n\n    companion object {\n        private const val TAG = \"FSPSendFileList\"\n\n        fun sendCommand(): String {\n            val command = \"FILE_LIST\\n\"\n\n            Log.d(TAG, \"Sending command: $command\")\n\n            return command\n        }\n    }\n}","match_method":"suffix","complexity":0,"lines":0,"is_exported":true,"is_test":false,"is_entry_point":false,"callers":0,"callees":0}
+---
 
+### Output
 
-```cmd
+```json id="t7v2lm"
+{
+  "name": "android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt",
+  "qualified_name": "C-msys64-home-admin-github-boucaron-fsp-push.android.app.src.main.java.com.chopchop3d.fspsender.protocol.FSPSendFileList",
+  "label": "Module",
+  "file_path": "C:/msys64/home/admin/github/boucaron/fsp-push/android/app/src/main/java/com/chopchop3d/fspsender/protocol/FSPSendFileList.kt",
+  "start_line": 1,
+  "end_line": 18,
+  "source": "package com.chopchop3d.fspsender.protocol\n\nimport android.util.Log\n\nclass FSPSendFileList {\n\n    companion object {\n        private const val TAG = \"FSPSendFileList\"\n\n        fun sendCommand(): String {\n            val command = \"FILE_LIST\\n\"\n\n            Log.d(TAG, \"Sending command: $command\")\n\n            return command\n        }\n    }\n}"
+}
+```
+
+---
+
+## Trace Path
+
+```cmd id="v1x9re"
 codebase-memory-mcp cli trace_path "{\"project\":\"C-msys64-home-admin-github-boucaron-fsp-push\",\"function_name\":\"fsp_path_join\"}"
 ```
 
-Output: {"function":"fsp_path_join","direction":"both","callees":[],"callers":[{"name":"src/fsp_file_processor.c","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.src.fsp_file_processor","hop":1},{"name":"src/fsp_walk.c","qualified_name":"C-msys64-home-admin-github-boucaron-fsp-push.src.fsp_walk","hop":1}]}
+---
+
+### Output
+
+```json id="q8n5sk"
+{
+  "function": "fsp_path_join",
+  "direction": "both",
+  "callees": [],
+  "callers": [
+    {
+      "name": "src/fsp_file_processor.c",
+      "qualified_name": "C-msys64-home-admin-github-boucaron-fsp-push.src.fsp_file_processor",
+      "hop": 1
+    },
+    {
+      "name": "src/fsp_walk.c",
+      "qualified_name": "C-msys64-home-admin-github-boucaron-fsp-push.src.fsp_walk",
+      "hop": 1
+    }
+  ]
+}
+```
+
+---
+
