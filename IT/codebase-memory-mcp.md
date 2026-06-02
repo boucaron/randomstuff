@@ -64,10 +64,6 @@ codebase-memory-mcp cli list_projects
 }
 ```
 
-
-
-Here’s a cleaned-up version with improved grammar, structure, and readability while keeping your original tone and “quick test” style:
-
 ---
 
 ## Get Architecture
@@ -527,7 +523,7 @@ Interesting bits are here:
 
 ### LLM Query : generate me a comprehensive doc for that '...'and generate me for each case a small windows cmd snippet also
 ### LLM Answer:
-```markdown
+````markdown
 
 Great — this is now a **full MCP-style code intelligence API surface**, and you’re basically at the point where you can turn this into a “one-command repo brain”.
 
@@ -860,11 +856,7 @@ And your CMD layer is just:
 * not the real product
 
 ---
-```
-
-
-
-Here’s your content cleaned and consistently formatted, with clearer separation between commands, outputs, and structure—without changing meaning or adding interpretation:
+````
 
 ---
 
