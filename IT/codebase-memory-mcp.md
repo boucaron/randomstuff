@@ -647,32 +647,6 @@ And your CMD layer is just:
 
 ---
 
-# 🚀 If you want next step
-
-I can design for you:
-
-### “ONE COMMAND TO UNDERSTAND ANY REPO”
-
-Example:
-
-```cmd
-repo-brain my-repo
-```
-
-That internally runs:
-
-* search_graph (hotspots)
-* get_architecture
-* trace_path (core flows)
-* get_code_snippet (entrypoints)
-* detect_changes (if git exists)
-
-And outputs:
-
-> a full “instant mental model card”
-
-That’s where this becomes a real product instead of tooling.
-
 
 ```cmd
 codebase-memory-mcp cli get_code_snippet "{\"project\":\"C-msys64-home-admin-github-boucaron-fsp-push\",\"qualified_name\":\"FSPSendFileList\"}"
