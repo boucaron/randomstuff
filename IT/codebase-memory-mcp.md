@@ -464,11 +464,6 @@ This indicates:
 ```
 --> It is surprisingly accurate
 
-
-
-
-Here’s a cleaned-up version with improved structure, readability, and separation between command, logs, and result:
-
 ---
 
 ## Graph Search Command
