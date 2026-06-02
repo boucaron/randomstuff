@@ -1,5 +1,7 @@
 **Tool:** [https://github.com/DeusData/codebase-memory-mcp/tree/main](https://github.com/DeusData/codebase-memory-mcp/tree/main)
 
+Last Update: 02/06/2026
+
 ### GitHub description
 
 High-performance code intelligence MCP server. It indexes codebases into a persistent knowledge graph — handling an average repository in milliseconds. Supports 158 languages, sub-millisecond queries, and 99% fewer tokens. Single static binary, zero dependencies.
