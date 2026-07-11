@@ -1055,6 +1055,40 @@ MC4870N25 https://fr.aliexpress.com/item/1005004674334241.html?spm=a2g0o.cart.0.
 It is about 110 € difference with the Integrated Victron product, not worth the money difference in my point of view
 
 
+## January 2026 Price 
+
+### Battery
+Gobel Eve 314Ah 16S delivered 1104 €
+So there is nearly a good 30% decrease in 2 years, which is good for the ROI
+
+### Victron
+Similar prices
+https://verkauf-bochum.de/en/products/multiplus-ii-48-5000-70-50-gx?variant=41786306068641 801 € with 19% VAT
+https://verkauf-bochum.de/en/products/multiplus-ii-48-3000-35-32?variant=41741092651169 448 € with 19% VAT
+
+Small reduction on those
+https://verkauf-bochum.de/en/products/easysolar-ii-48-3000-35-32-mppt-250-70-gx?variant=44544561119499 1026.60€
+https://verkauf-bochum.de/en/products/easysolar-ii-48-5000-70-50-mppt-250-100-gx?variant=44544571703563 1501.42€
+This is a good surprise 100 € less
+
+Better to have the GX and the MPPT separated I think
+About 370 € for MPPT 250/70
+
+
+### BMS
+Similar prices more or less no major change
+So JKBMS from 80 to 110 € for a 150 A BMS with Active Balancing of 1A or 2A
+
+
+### PV 
+A bit lower in price and a bit more performance
+But not the revolution
+
+### Overview
+The big gain is on the battery 500 € less, with a bit more capacity 15KW at 48V instead of 13.4KW at 48V
+
+
+
 # Buy back program
 
 Guaranteed feed-in tariff model
