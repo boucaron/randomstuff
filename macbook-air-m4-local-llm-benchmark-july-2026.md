@@ -62,7 +62,7 @@ All those models were sourced from Unsloth.ai
 - LFM 2.5 1.2B
   - LFM2.5-1.2B-Instruct-Q4_K_M.gguf [Link](https://huggingface.co/unsloth/LFM2.5-1.2B-Instruct-GGUF/blob/main/LFM2.5-1.2B-Instruct-Q4_K_M.gguf)
 - LFM 2.5 8B A1B
-  - LFM2.5-8B-A1B-UD-Q4\_K\_M.gguf [Link]([https://](https://huggingface.co/unsloth/LFM2.5-8B-A1B-GGUF?show_file_info=LFM2.5-8B-A1B-UD-Q4_K_M.gguf))
+  - LFM2.5-8B-A1B-UD-Q4\_K\_M.gguf [Link](https://huggingface.co/unsloth/LFM2.5-8B-A1B-GGUF?show_file_info=LFM2.5-8B-A1B-UD-Q4_K_M.gguf)
 
 ## Prompts Used
 
