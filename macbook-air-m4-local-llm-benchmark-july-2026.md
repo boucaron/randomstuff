@@ -52,7 +52,7 @@ All those models were sourced from Unsloth.ai
 - Qwen 3 14B
   - Qwen3-14B-Q4_K_M.gguf [Link](https://huggingface.co/unsloth/Qwen3-14B-GGUF?show_file_info=Qwen3-14B-Q4_K_M.gguf)
 - Qwen 3.6 27B
-  - Qwen3.6-27B-UD-IQ2_XXS.gguf [Link]([https://](https://huggingface.co/unsloth/Qwen3.6-27B-GGUF?show_file_info=Qwen3.6-27B-UD-IQ2_XXS.gguf))
+  - Qwen3.6-27B-UD-IQ2_XXS.gguf [Link](https://huggingface.co/unsloth/Qwen3.6-27B-GGUF?show_file_info=Qwen3.6-27B-UD-IQ2_XXS.gguf)
 - Qwen 3.5 9B
   - Qwen3.5-9B-Q4_K_M.gguf [Link](https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/blob/main/Qwen3.5-9B-Q4_K_M.gguf)
 - Gemma 4 12B
@@ -135,7 +135,8 @@ Reduced memory usage by approximately 2 GB.
     --ctx-size 32768 \
     --temp 1.0 \
     --top-p 0.95 \
-    --top-k 64
+    --top-k 64 \
+    --reasoning off
 ```
 ````
 
