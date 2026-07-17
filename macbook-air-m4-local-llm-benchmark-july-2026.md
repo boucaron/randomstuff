@@ -564,7 +564,7 @@ The MacBook Air is fanless, so sustained workloads behave differently from activ
 * Qwen 3.6 27B exceeds the practical memory limits of this machine and triggers swapping.
 * Qwen 3.5 9B provides an excellent balance between capability and speed.
 * LFM 8B A1B demonstrates how efficient Mixture-of-Experts models can be on Apple Silicon.
-* Prism Bonsai 27TB fits well in the memory but the memory bandwidth requirement make it not useful in practice with about 6 tok/s.
+* Prism Bonsai 27B fits well in the memory but the memory bandwidth requirement makes it not useful in practice with about 6 tok/s.
 * KV cache quantization reduces memory usage by 2–3 GB but decreases throughput in these tests.
 * The fanless MacBook Air remains highly capable for local inference, although sustained workloads eventually trigger thermal throttling.
 
