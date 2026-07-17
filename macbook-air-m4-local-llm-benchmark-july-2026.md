@@ -30,21 +30,21 @@ After testing several recent GGUF models on a MacBook Air M4 (24 GB), I found th
 * **Qwen 3 14B** is noticeably slower because all parameters are active during inference.
 * **Qwen 3.6 27B** exceeds the practical memory limits of a 24 GB Air and swaps heavily without KV cache quantification reduction.
 * **LFM 8B A1B** demonstrates how efficient MoE models can be, sustaining more than 60 tok/s.
-* **Prism Bonsai 27B** fits easily in memory, but it is too slow to be usable with about 6 tok/s.
+* **Prism Bonsai 27B** fits easily in memory, but it is too slow to be usable with about 10 to 6 tok/s.
 * Quantized KV cache saves 2–3 GB of memory but slightly reduced throughput in these tests.
 
 Reported memory usage refers to total system memory consumption, including background applications such as VS Code, Terminal, Google Chrome (with a few tabs), and Safari.
 
 
-| Model           | Avg tok/s | Memory   | Practical on 24 GB? |
-| --------------- | --------- | -------- | ------------------- |
-| Gemma 4 26B A4B | \~30      | 22 GB    | ⭐⭐⭐⭐⭐        |
-| Qwen 3.5 9B     | \~15      | Moderate | ⭐⭐⭐⭐☆         |
-| Qwen 3 14B      | \~10      | High     | ⭐⭐⭐☆☆          |
-| Gemma 4 12B     | \~11      | Moderate | ⭐⭐⭐☆☆          |
-| LFM 8B A1B      | \~62      | Moderate | ⭐⭐⭐⭐☆         |
-| Qwen 3.6 27B    | \~5       | 22 GB    | ⭐⭐☆☆☆          |
-| Prism Bonsai 27B| \~6       | 19GB     | ⭐⭐☆☆☆          |
+| Model            | Avg tok/s   | Memory       | Practical on 24 GB? |
+| ---------------- | ----------- | ------------ | ------------------- |
+| Gemma 4 26B A4B  | \~30        | 22 GB        | ⭐⭐⭐⭐⭐          |
+| Qwen 3.5 9B      | \~15        | Moderate     | ⭐⭐⭐⭐☆          |
+| Qwen 3 14B       | \~10        | High         | ⭐⭐⭐☆☆          |
+| Gemma 4 12B      | \~11        | Moderate     | ⭐⭐⭐☆☆          |
+| LFM 8B A1B       | \~62        | Moderate     | ⭐⭐⭐⭐☆          |
+| Qwen 3.6 27B     | \~5         | 22 GB        | ⭐⭐☆☆☆          |
+| Prism Bonsai 27B | \~6 to ~10 | 17GB to 19GB | ⭐⭐⭐☆☆          |
 
 # LLM Models
 
@@ -68,6 +68,7 @@ All those models were sourced from Unsloth.ai
   - LFM2.5-8B-A1B-UD-Q4\_K\_M.gguf [Link](https://huggingface.co/unsloth/LFM2.5-8B-A1B-GGUF?show_file_info=LFM2.5-8B-A1B-UD-Q4_K_M.gguf)
 - Prism Bonsai 27B
   - Ternary-Bonsai-27B-Q2_0.gguf [Link](https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf/blob/main/Ternary-Bonsai-27B-Q2_0.gguf)
+  - Bonsai-27B-Q1_0.gguf [Link](https://huggingface.co/prism-ml/Bonsai-27B-gguf/blob/main/Bonsai-27B-Q1_0.gguf)
 
 ## Prompts Used
 
@@ -535,7 +536,6 @@ Prompt 2: Output 2341 tokens 8.04 t/s - run 1
 
 Prompt 3: Output 2449 tokens 3.81 t/s - run 1
 
-
 Prompt 1: Output 1799 tokens 9.43 t/s - run 2
 
 Prompt 2: Output 1978 tokens 6.87 t/s - run 2
@@ -547,6 +547,33 @@ Memory usage is slightly lower about 18.77 GB to 19.47GB at the end of the last 
 The token per seconds is getting slightly lower at the end of run 1, for sure thermal throttling, but may be something else. No swapping, nothing like that. Retried a second time.
 
 I would say it is not really usable, may be on a Pro or Max model thanks to the additional  memory bandwidth. It fits without any issue, there is enough room to put large context too. Still, this is really interesting because if there are MOE variants.
+
+### Variant 1 Bit
+
+````bash
+llama.cpp-prism-b9591-62061f9/build/bin/llama-server
+ -m ../Bonsai-27B-Q1_0.gguf \
+ --ctx-size 32768 \
+--temp 0.7 \
+--top-p 0.95 \
+--top-k 20 \
+-ngl 99 \
+-fa on \
+--cache-type-k q4_0 \
+--cache-type-v q4_0 \
+-np 1 \
+--port 8080
+````
+
+Prompt 1: Output 1868 tokens 14.56 t/s
+
+Prompt 2: Output 2471 tokens 11.38 t/s
+
+Prompt 3: Output 2506 tokens 10.24 t/s
+
+Memory usage is slightly lower about 16.5 GB to 17.5 GB at the end of the last prompt, which is pretty good.
+
+Not yet usable but it is slight improvement. The memory usage is really good too.
 
 # Sustained Performance
 
@@ -561,10 +588,10 @@ The MacBook Air is fanless, so sustained workloads behave differently from activ
 
 * Gemma 4 26B A4B provided the best overall balance of responsiveness, memory usage, and perceived capability in these tests.
 * Qwen 3 14B offers stronger dense-model behavior but at roughly one-third the throughput.
-* Qwen 3.6 27B exceeds the practical memory limits of this machine and triggers swapping.
+* Qwen 3.6 27B fits in memory with some KV cache optimization but too slow to be usable.
 * Qwen 3.5 9B provides an excellent balance between capability and speed.
 * LFM 8B A1B demonstrates how efficient Mixture-of-Experts models can be on Apple Silicon.
-* Prism Bonsai 27B fits well in the memory but the memory bandwidth requirement makes it not useful in practice with about 6 tok/s.
+* Prism Bonsai 27B fits well in the memory but the memory bandwidth requirement makes it not useful in practice with about 10 to 6 tok/s.
 * KV cache quantization reduces memory usage by 2–3 GB but decreases throughput in these tests.
 * The fanless MacBook Air remains highly capable for local inference, although sustained workloads eventually trigger thermal throttling.
 
